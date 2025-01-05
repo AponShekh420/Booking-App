@@ -6,14 +6,7 @@ import Image from 'next/image'
 
 export interface CardCategory5Props {
 	className?: string
-	taxonomy:  {
-    id: string,
-    href: any,
-    name: string,
-    taxonomy: string,
-    count: number,
-    thumbnail: string
-  }
+	taxonomy: TaxonomyType
 }
 
 const CardCategory5: FC<CardCategory5Props> = ({
