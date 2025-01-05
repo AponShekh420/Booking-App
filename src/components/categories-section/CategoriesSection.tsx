@@ -45,15 +45,12 @@ const CategoriesSection = () => {
           <CategorySlide slideTo={slideTo}/>
         </div>
         <Swiper
-          modules={[Navigation, Pagination, Grid]}
+          modules={[Navigation, Grid]}
           onSwiper={setSwiperRef}
           slidesPerView={4}
           slidesPerGroup={4}
           centeredSlides={false}
           spaceBetween={20}
-          pagination={{
-            type: 'fraction',
-          }}
           grid={{
             rows: 1, // Define 2 rows
             fill: "row", // Fill by rows
