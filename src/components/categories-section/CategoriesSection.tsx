@@ -1,5 +1,5 @@
 "use client"
-import Wrapper from "../common/wrapper";
+import Wrapper from "../common/Wrapper";
 import React, { useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from "next/image";
-import CategorySlide from "./categorySlide";
+import CategorySlide from "./CategorySlide";
 
 // import './styles.css';
 
