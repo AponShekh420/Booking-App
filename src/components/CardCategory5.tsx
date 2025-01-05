@@ -8,7 +8,7 @@ export interface CardCategory5Props {
 	className?: string
 	taxonomy:  {
     id: string,
-    href: string,
+    href: any,
     name: string,
     taxonomy: string,
     count: number,
