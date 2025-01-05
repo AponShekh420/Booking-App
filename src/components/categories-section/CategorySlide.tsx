@@ -10,69 +10,67 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from "next/image";
+import CategoryItem from './CategoryItem';
 
-const CategorySlide = () => {
-  const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
-  const [slides, setSlides] = useState<string[]>(
-    Array.from({ length: 500 }).map((_, index) => `Slide ${index + 1}`)
-  );
+interface CategorySlideProps {
+  slideTo: (index: number) => void
+}
 
-  const slideTo = (index: number) => {
-    if (swiperRef) {
-      swiperRef.slideTo(index - 1, 0);
-    }
-  };
+
+const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
+  const [active, setActive] = useState<string>("Trending");
     
   return (
     <div className="w-full mx-auto categoriesSlide">
       <div className="relative">
         <Swiper
           modules={[Navigation]}
-          onSwiper={setSwiperRef}
-          slidesPerView={14} // Default for large screens
-          spaceBetween={46.85} // Default gap for large screens
+          slidesPerView="auto" // Dynamic width calculation
+          spaceBetween={46.85} // Gap between slides
+          centeredSlides={false} // Prevent centering when all slides fit
+          centerInsufficientSlides={true} // Center slides if they are fewer than the available space
           navigation={{
             nextEl: ".custom-next-category",
             prevEl: ".custom-prev-category",
-            disabledClass: "swiper-button-disabled", // Optional styling for disabled arrows
+          }}
+          onReachBeginning={() => {
+            document?.querySelector(".custom-prev-category")?.classList.add("swiper-button-disabled");
+          }}
+          onReachEnd={() => {
+            document?.querySelector(".custom-next-category")?.classList.add("swiper-button-disabled");
+          }}
+          onFromEdge={() => {
+            document?.querySelector(".custom-prev-category")?.classList.remove("swiper-button-disabled");
+            document?.querySelector(".custom-next-category")?.classList.remove("swiper-button-disabled");
           }}
           breakpoints={{
             640: {
-              slidesPerView: 7,
-              spaceBetween: 20, // For mobile screens
+              spaceBetween: 20, // Gap for smaller screens
             },
             768: {
-              slidesPerView: 10,
-              spaceBetween: 30, // For tablets
+              spaceBetween: 30, // Medium gap for tablets
             },
             1024: {
-              slidesPerView: 12,
-              spaceBetween: 40, // For medium desktops
+              spaceBetween: 40, // Adjust gap for desktops
             },
             1280: {
-              slidesPerView: 14, // Full icons for large screens
-              spaceBetween: 46.85,
+              spaceBetween: 46.85, // Exact gap for large screens
             },
           }}
         >
           {categoriesList.map((category, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex items-center flex-col w-full">
-                <Image
-                  src={category?.icon}
-                  alt={category?.text}
-                  width={category?.width}
-                  height={category?.height}
-                />
-                <p className="text-[12.36px] font-[600] leading-[21.08px] text-center mt-[5.51px]">{category?.text}</p>
-              </div>
+            <SwiperSlide
+              key={index}
+              className="!w-auto" // Allows dynamic width calculation
+            >
+              <CategoryItem category={category} active={active} setActive={setActive} slideTo={slideTo} index={index}/>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Custom navigation buttons */}
+        {/* Custom Navigation Buttons */}
         <div className="absolute top-1/2 transform -translate-y-1/2 left-0 z-50">
-          <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
+          <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
             <Image
               src={"/assets/icons/categories/Arrows/left-arrow.svg"}
               alt="left arrow"
@@ -91,6 +89,7 @@ const CategorySlide = () => {
             />
           </button>
         </div>
+
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from "next/image";
 import CategorySlide from "./CategorySlide";
+import cardDemo from "@/data/cardDemo"
+import CardCategory from "./CardCategory";
 
 // import './styles.css';
 
@@ -35,8 +37,8 @@ const CategoriesSection = () => {
   return (
     <div className="w-full">
       <Wrapper>
-        <div className="w-full">
-          <CategorySlide/>
+        <div className="w-full h-[73.5px]">
+          <CategorySlide slideTo={slideTo}/>
         </div>
         <Swiper
           modules={[Virtual, Navigation, Pagination]}
@@ -69,12 +71,22 @@ const CategoriesSection = () => {
             },
           }}
         >
-          {slides.map((slideContent, index) => (
-            <SwiperSlide key={slideContent} virtualIndex={index}>
-              <div className="bg-red-400">
-                <h1>hello man {index}</h1>
+          {cardDemo.map((item, index) => (
+            <div className={`nc-SectionSliderNewCategories`} key={index}>
+              <div className="relative flow-root">
+                <div
+                  className="hiddenScrollbar relative -mx-2 flex snap-x snap-mandatory overflow-x-auto lg:-mx-3.5"
+                >
+                  <div
+                    className={`mySnapItem shrink-0 snap-start px-2 lg:px-3.5 w-[17rem] lg:w-[25%] xl:w-[20%]`}
+                  >
+                    <SwiperSlide key={item} virtualIndex={index}>
+                      <CardCategory taxonomy={item} />
+                    </SwiperSlide>
+                  </div>
+                </div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
         </Swiper>
 

@@ -8,18 +8,18 @@ interface Category {
 
 const categoriesList: Category[] = [
   {
-    text: "Wrinkle",
-    icon: "/assets/icons/categories/Wrinkle.svg",
-    hoverIcon: "/assets/icons/categories/hover/Wrinkle-hover.svg",
-    width: 22.97,
-    height: 27.56
-  },
-  {
     text: "Trending",
     icon: "/assets/icons/categories/Trending.svg",
     hoverIcon: "/assets/icons/categories/hover/Trending-hover.svg",
     width: 28.05,
     height: 28.05
+  },
+  {
+    text: "Wrinkle",
+    icon: "/assets/icons/categories/Wrinkle.svg",
+    hoverIcon: "/assets/icons/categories/hover/Wrinkle-hover.svg",
+    width: 22.97,
+    height: 27.56
   },
   {
     text: "Thermavein",
@@ -33,13 +33,6 @@ const categoriesList: Category[] = [
     icon: "/assets/icons/categories/Sweatiness.svg",
     hoverIcon: "/assets/icons/categories/hover/Sweatiness-hover.svg",
     width: 26.64,
-    height: 28.48
-  },
-  {
-    text: "Skin",
-    icon: "/assets/icons/categories/Skin.svg",
-    hoverIcon: "/assets/icons/categories/hover/Skin-hover.svg",
-    width: 22.05,
     height: 28.48
   },
   {
@@ -76,6 +69,13 @@ const categoriesList: Category[] = [
     hoverIcon: "/assets/icons/categories/hover/Face-Peel-hover.svg",
     width: 20.21,
     height: 27.56
+  },
+  {
+    text: "Skin",
+    icon: "/assets/icons/categories/Skin.svg",
+    hoverIcon: "/assets/icons/categories/hover/Restylane-hover.svg",
+    width: 22.05,
+    height: 28.48
   },
   {
     text: "Face Lift",
