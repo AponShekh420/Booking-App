@@ -1,3 +1,11 @@
+interface TaxonomyType {
+  id: string,
+  href: string,
+  name: string,
+  taxonomy: string,
+  count: number,
+  thumbnail: string
+}
 const DEMO_CATS: TaxonomyType[] = [
   {
     id: '1',

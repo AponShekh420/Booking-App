@@ -80,7 +80,7 @@ const CategoriesSection = () => {
                   <div
                     className={`mySnapItem shrink-0 snap-start px-2 lg:px-3.5 w-[17rem] lg:w-[25%] xl:w-[20%]`}
                   >
-                    <SwiperSlide key={item} virtualIndex={index}>
+                    <SwiperSlide virtualIndex={index}>
                       <CardCategory taxonomy={item} />
                     </SwiperSlide>
                   </div>

@@ -4,16 +4,18 @@ import convertNumbThousand from '@/utils/convertNumbThousand'
 import Link from 'next/link'
 import Image from 'next/image'
 
+
+export interface Taxonomy {
+  id: string;
+	href?: any;
+  name: string;
+  taxonomy: string;
+  count: number;
+  thumbnail: string;
+}
 export interface CardCategory5Props {
-	className?: string
-	taxonomy:  {
-    id: string,
-    href: string,
-    name: string,
-    taxonomy: string,
-    count: number,
-    thumbnail: string
-  }
+  className?: string;
+  taxonomy: Taxonomy;
 }
 
 const CardCategory5: FC<CardCategory5Props> = ({
