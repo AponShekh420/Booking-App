@@ -1,15 +1,19 @@
 "use client"
 import Wrapper from "../common/Wrapper";
 import React, { useRef, useState } from 'react';
-import { Virtual, Navigation, Pagination } from 'swiper/modules';
+import { Virtual, Navigation, Pagination, Grid } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
 
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
+
 import Image from "next/image";
 import CategorySlide from "./CategorySlide";
 import cardDemo from "@/data/cardDemo"
@@ -35,13 +39,13 @@ const CategoriesSection = () => {
 
 
   return (
-    <div className="w-full">
+    <div className="w-full categoryContainer">
       <Wrapper>
         <div className="w-full h-[73.5px]">
           <CategorySlide slideTo={slideTo}/>
         </div>
         <Swiper
-          modules={[Virtual, Navigation, Pagination]}
+          modules={[Navigation, Pagination, Grid]}
           onSwiper={setSwiperRef}
           slidesPerView={4}
           slidesPerGroup={4}
@@ -50,11 +54,16 @@ const CategoriesSection = () => {
           pagination={{
             type: 'fraction',
           }}
-          virtual
+          grid={{
+            rows: 1, // Define 2 rows
+            fill: "row", // Fill by rows
+          }}
+          // virtual
           navigation={{
             nextEl: '.custom-next',
             prevEl: '.custom-prev',
           }}
+          loopAddBlankSlides={true}
           breakpoints={{
             // Responsive breakpoints
             1024: {
@@ -67,7 +76,10 @@ const CategoriesSection = () => {
             },
             240: {
               slidesPerView: 2,
-              slidesPerGroup: 2,
+              slidesPerGroup: 4,
+              grid: {
+                rows: 2
+              }
             },
           }}
         >
@@ -91,7 +103,7 @@ const CategoriesSection = () => {
         </Swiper>
 
         {/* add button and custom arrow for slide*/}
-        <div className="w-full flex justify-center items-center gap-[14.7px]">
+        <div className="w-full flex justify-center items-center gap-[14.7px] mt-[15.79px]">
           <button className="custom-prev w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
             <Image src={"/assets/icons/categories/Arrows/left-arrow.svg"} alt="right arrow" width={8.13} height={13.71}/>
           </button>

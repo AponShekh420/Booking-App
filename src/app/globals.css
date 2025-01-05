@@ -58,7 +58,9 @@ h1{
   height: 300px;
   margin: 20px auto;
 }
-
+.categoryContainer .swiper{
+  height: auto;
+}
 
 /* for categories list icons only */
 .categoriesSlide .swiper{
@@ -69,3 +71,4 @@ h1{
   opacity: 0.5;
   pointer-events: none;
 }
+
