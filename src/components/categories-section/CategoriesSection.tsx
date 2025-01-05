@@ -3,6 +3,8 @@ import Wrapper from "../common/Wrapper";
 import React, { useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from 'swiper';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -15,7 +17,7 @@ import CategorySlide from "./CategorySlide";
 
 
 const CategoriesSection = () => {
-  const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
+  const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
 
 
   const [slides, setSlides] = useState<string[]>(
