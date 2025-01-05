@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import categoriesList from '@/data/categorieslist';
+import { Swiper as SwiperType } from 'swiper';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,7 +12,7 @@ import 'swiper/css/navigation';
 import Image from "next/image";
 
 const CategorySlide = () => {
-  const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
+  const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
   const [slides, setSlides] = useState<string[]>(
     Array.from({ length: 500 }).map((_, index) => `Slide ${index + 1}`)
   );
