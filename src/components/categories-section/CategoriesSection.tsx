@@ -35,7 +35,7 @@ const CategoriesSection = () => {
   return (
     <div className="w-full">
       <Wrapper>
-        <div className="append-buttons">
+        <div className="w-full">
           <CategorySlide/>
         </div>
         <Swiper

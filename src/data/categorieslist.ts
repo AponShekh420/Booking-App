@@ -18,15 +18,15 @@ const categoriesList: Category[] = [
     text: "Trending",
     icon: "/assets/icons/categories/Trending.svg",
     hoverIcon: "/assets/icons/categories/hover/Trending-hover.svg",
-    width: 22.05,
-    height: 22.05
+    width: 28.05,
+    height: 28.05
   },
   {
     text: "Thermavein",
     icon: "/assets/icons/categories/Thermavein.svg",
     hoverIcon: "/assets/icons/categories/hover/Thermavein-hover.svg",
-    width: 26.48,
-    height: 26.48
+    width: 28.48,
+    height: 28.48
   },
   {
     text: "Sweatiness",

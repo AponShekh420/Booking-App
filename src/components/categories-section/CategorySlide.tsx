@@ -24,46 +24,47 @@ const CategorySlide = () => {
   };
     
   return (
-    <div className="w-full max-w-4xl mx-auto categoriesSlide">
+    <div className="w-full mx-auto categoriesSlide">
       <div className="relative">
         <Swiper
           modules={[Navigation]}
           onSwiper={setSwiperRef}
-          slidesPerView={15} // Number of icons visible at once
-          spaceBetween={10} // Tight space between icons
+          slidesPerView={14} // Default for large screens
+          spaceBetween={46.85} // Default gap for large screens
           navigation={{
             nextEl: ".custom-next-category",
             prevEl: ".custom-prev-category",
+            disabledClass: "swiper-button-disabled", // Optional styling for disabled arrows
           }}
           breakpoints={{
             640: {
               slidesPerView: 7,
-              spaceBetween: 5,
+              spaceBetween: 20, // For mobile screens
             },
             768: {
               slidesPerView: 10,
-              spaceBetween: 8,
+              spaceBetween: 30, // For tablets
             },
             1024: {
-              slidesPerView: 14,
-              spaceBetween: 10,
+              slidesPerView: 12,
+              spaceBetween: 40, // For medium desktops
             },
             1280: {
-              slidesPerView: 14,
-              spaceBetween: 15, // Slightly more space on larger screens
+              slidesPerView: 14, // Full icons for large screens
+              spaceBetween: 46.85,
             },
           }}
         >
           {categoriesList.map((category, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center w-[64.31px] h-[55.12px]">
+              <div className="flex items-center flex-col w-full">
                 <Image
                   src={category?.icon}
                   alt={category?.text}
                   width={category?.width}
                   height={category?.height}
                 />
-                <p className="text-xs mt-2">{category?.text}</p>
+                <p className="text-[12.36px] font-[600] leading-[21.08px] text-center mt-[5.51px]">{category?.text}</p>
               </div>
             </SwiperSlide>
           ))}
