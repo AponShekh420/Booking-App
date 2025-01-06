@@ -102,13 +102,13 @@ const CategoriesSection = () => {
         {/* add button and custom arrow for slide*/}
         <div className="w-full flex justify-center items-center gap-[14.7px] mt-[15.79px]">
           <button className="custom-prev w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
-            <Image src={"/assets/icons/categories/arrows/left-arrow.svg"} alt="right arrow" width={8.13} height={13.71}/>
+            <Image src={"/assets/icons/categories/Arrows/left-arrow.svg"} alt="right arrow" width={8.13} height={13.71}/>
           </button>
           <button className="w-[135.05px] h-[45.4px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white">
             view more
           </button>
           <button className="custom-next w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
-            <Image src={"/assets/icons/categories/arrows/right-arrow.svg"} alt="right arrow" width={8.13} height={13.71}/>
+            <Image src={"/assets/icons/categories/Arrows/right-arrow.svg"} alt="right arrow" width={8.13} height={13.71}/>
           </button>
         </div>
       </Wrapper>
