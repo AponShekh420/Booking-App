@@ -10,18 +10,17 @@
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: 'CustomHeadingFont';
-  src: url('/fonts/CustomHeadingFont.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
 
 
 h1{
   @apply font-heading;
 }
 
+body {
+  @apply font-body;
+}
 
 .swiper {
   width: 100%;

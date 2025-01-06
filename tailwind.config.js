@@ -33,7 +33,8 @@ module.exports = {
 
 		extend: {
 			fontFamily: {
-				heading: ["CustomHeadingFont", 'sans-serif']
+				heading: ["CustomHeadingFont", 'sans-serif'],
+				body: ['Anek Devanagari', 'sans-serif']
 			},
 			colors: {
 				primary: {
