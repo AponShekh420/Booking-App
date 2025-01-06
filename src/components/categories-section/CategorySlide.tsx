@@ -23,7 +23,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
   return (
     <div className="w-full mx-auto categoriesSlide">
       <div className="flex items-center">
-        <div className="z-50 pr-3 md:block hidden">
+        <div className="z-40 pr-3 md:block hidden">
           <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
             <Image
               src={"/assets/icons/categories/arrows/left-arrow.svg"}
@@ -80,7 +80,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
         </Swiper>
 
         {/* Custom Navigation Buttons */}
-        <div className="z-50 pl-3 md:block hidden">
+        <div className="z-40 pl-3 md:block hidden">
           <button className="custom-next-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
             <Image
               src={"/assets/icons/categories/arrows/right-arrow.svg"}

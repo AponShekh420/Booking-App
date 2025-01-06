@@ -43,7 +43,7 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, sli
         active == category.text && (
           <Image
             className="mt-[4.61px]"
-            src={"/assets/icons/categories/arrows/down_arrow.svg"}
+            src={"/assets/icons/categories/arrows/down-arrow.svg"}
             alt={"icon"}
             width={9.68}
             height={5.74}

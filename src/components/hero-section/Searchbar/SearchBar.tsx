@@ -10,7 +10,7 @@ const SearchBar = () => {
 
 
   return (
-    <div className="mt-[57px] xl:w-[945px] lg:w-[800px] md:w-[600px] sm:w-[500px] w-[369px] xl:h-[73px] h-[35px] sm:h-[40px] md:h-[50px] lg:h-[65px] rounded-[41px] bg-white">
+    <div className="xl:mt-[57px] mt-[16.58px] md:mt-[23.58px] lg:mt-[27.58px] xl:w-[945px] lg:w-[800px] md:w-[600px] sm:w-[500px] w-[369px] xl:h-[73px] h-[35px] sm:h-[40px] md:h-[50px] lg:h-[65px] rounded-[41px] bg-white">
       <div className="xl:w-[870px] lg:w-[730px] sm:w-[465px] w-[340px] md:w-[550px] h-full m-auto flex items-center relative">
         <div className="lg:pr-[36px] pr-[11.16px] lg:h-[37px] h-[20.62px] flex items-center border-r-[1px] border-[#D8D8D8]">
           <Image src={"assets/icons/searchbar/AI-icon.svg"} alt="AI" 
