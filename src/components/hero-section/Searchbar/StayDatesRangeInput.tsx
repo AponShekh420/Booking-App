@@ -2,120 +2,90 @@
 
 import React, { Fragment, useState, FC } from 'react'
 import {
-	Popover,
-	PopoverButton,
-	PopoverPanel,
-	Transition,
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+  Transition,
 } from '@headlessui/react'
 import { CalendarIcon } from '@heroicons/react/24/outline'
-import DatePickerCustomHeaderTwoMonth from '@/components/DatePickerCustomHeaderTwoMonth'
-import DatePickerCustomDay from '@/components/DatePickerCustomDay'
 import DatePicker from 'react-datepicker'
 import ClearDataButton from './ClearDataButton'
-import T from '@/utils/getT'
+import DatePickerCustomHeaderTwoMonth from '@/components/DatePickerCustomHeaderTwoMonth'
+import DatePickerCustomDay from '@/components/DatePickerCustomDay'
+import Image from 'next/image'
 
 export interface StayDatesRangeInputProps {
-	className?: string
-	fieldClassName?: string
+  className?: string
+  fieldClassName?: string
 }
 
 const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
-	className = 'lg:nc-flex-2 ',
-	fieldClassName = 'nc-hero-field-padding',
+  className = 'lg:nc-flex-2 ',
+  fieldClassName = 'nc-hero-field-padding',
 }) => {
-	const [startDate, setStartDate] = useState<Date | null>(
-		new Date('2023/02/06'),
-	)
-	const [endDate, setEndDate] = useState<Date | null>(new Date('2023/02/23'))
-	//
+  const [startDate, setStartDate] = useState<Date | null>(
+    new Date('2023/02/06'),
+  )
+  const [endDate, setEndDate] = useState<Date | null>(new Date('2023/02/23'))
 
-	const onChangeDate = (dates: [Date | null, Date | null]) => {
-		const [start, end] = dates
-		setStartDate(start)
-		setEndDate(end)
-	}
+  const onChangeDate = (dates: [Date | null, Date | null]) => {
+    const [start, end] = dates
+    setStartDate(start)
+    setEndDate(end)
+  }
 
-	const renderInput = () => {
-		return (
-			<>
-				<div className="text-neutral-300 dark:text-neutral-400">
-					<CalendarIcon className="h-5 w-5 lg:h-7 lg:w-7" />
-				</div>
-				<div className="flex-grow text-start">
-					<span className="block font-semibold xl:text-lg">
-						{startDate?.toLocaleDateString('en-US', {
-							month: 'short',
-							day: '2-digit',
-						}) || T['HeroSearchForm']['Add dates']}
-						{endDate
-							? ' - ' +
-								endDate?.toLocaleDateString('en-US', {
-									month: 'short',
-									day: '2-digit',
-								})
-							: ''}
-					</span>
-					<span className="mt-1 block text-sm font-light leading-none text-neutral-400">
-						{T['HeroSearchForm']['CheckIn']} - {T['HeroSearchForm']['CheckOut']}
-					</span>
-				</div>
-			</>
-		)
-	}
+  const renderInput = () => (
+    <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] border-r-[1px] flex items-center border-[#D8D8D8]">
+			<Image 
+				src={"assets/icons/searchbar/Vector.svg"} 
+				alt="AI" 
+				width={100} 
+				height={100}
+				className="lg:w-[30px] lg:h-[30px] h-[16.72px] w-[16.72px] sm:h-[27.72px] sm:w-[27.72px]"
+			/>
+		</div>
+  )
 
-	return (
-		<Popover className={`StayDatesRangeInput relative z-10 flex ${className}`}>
-			{({ open }) => (
-				<>
-					<PopoverButton
-						className={`relative z-10 flex flex-1 ${fieldClassName} items-center gap-x-3 focus:outline-none ${
-							open ? 'nc-hero-field-focused' : ''
-						}`}
-					>
-						{renderInput()}
-						{startDate && open && (
-							<ClearDataButton onClick={() => onChangeDate([null, null])} />
-						)}
-					</PopoverButton>
+	const renderButtonList = () => (
+		Array.from({ length: 6 }).map((_, index) => (
+			<button
+				key={index}
+				className="md:w-[151px] w-5/12 h-[29px] rounded-[44px] bg-[#F3F3F3] hover:bg-[#E9082A] text-[13px] leading-[33.63px] font-[700] text-black hover:text-white"
+			>
+				1{index + 1}: 00 AM
+			</button>
+		))
+  )
 
-					{open && (
-						<div className="absolute -inset-x-0.5 top-1/2 z-0 h-8 -translate-y-1/2 self-center bg-white dark:bg-neutral-800"></div>
+  return (
+		<div className='flex md:gap-x-[30px] lg:gap-x-[40px] justify-between w-full flex-col md:flex-row'>
+			<div className="p-4 w-full">
+				<DatePicker
+					selected={startDate}
+					onChange={onChangeDate}
+					startDate={startDate}
+					endDate={endDate}
+					selectsRange
+					monthsShown={1}
+					showPopperArrow={false}
+					inline
+					className='w-full'
+					renderCustomHeader={(p) => (
+						<DatePickerCustomHeaderTwoMonth {...p} />
 					)}
-
-					<Transition
-						as={Fragment}
-						enter="transition ease-out duration-200"
-						enterFrom="opacity-0 translate-y-1"
-						enterTo="opacity-100 translate-y-0"
-						leave="transition ease-in duration-150"
-						leaveFrom="opacity-100 translate-y-0"
-						leaveTo="opacity-0 translate-y-1"
-					>
-						<PopoverPanel className="absolute left-1/2 top-full z-10 mt-3 w-screen max-w-sm -translate-x-1/2 px-4 sm:px-0 lg:max-w-3xl">
-							<div className="overflow-hidden rounded-3xl bg-white p-8 shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-neutral-800">
-								<DatePicker
-									selected={startDate}
-									onChange={onChangeDate}
-									startDate={startDate}
-									endDate={endDate}
-									selectsRange
-									monthsShown={2}
-									showPopperArrow={false}
-									inline
-									renderCustomHeader={(p) => (
-										<DatePickerCustomHeaderTwoMonth {...p} />
-									)}
-									renderDayContents={(day, date) => (
-										<DatePickerCustomDay dayOfMonth={day} date={date} />
-									)}
-								/>
-							</div>
-						</PopoverPanel>
-					</Transition>
-				</>
-			)}
-		</Popover>
-	)
+					renderDayContents={(day, date) => (
+						<DatePickerCustomDay dayOfMonth={day} date={date} />
+					)}
+				/>
+			</div>
+			<div className="p-4 w-full md:w-auto">
+				<p className='font-[700] text-[17.12px] leading-[33.63px] text-center mb-[2px]'>Time</p>
+				<div className='flex md:flex-col gap-y-[8px] md:gap-x-[0px] gap-x-[8px] flex-wrap justify-center'>
+					{renderButtonList()}
+				</div>
+			</div>
+		</div>
+  )
 }
 
 export default StayDatesRangeInput

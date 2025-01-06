@@ -1,5 +1,6 @@
 import Navbar from "./navbar/Navbar";
 import SearchBar from "./Searchbar/SearchBar";
+import StayDatesRangeInput from "./Searchbar/StayDatesRangeInput";
 
 
 const HeroSection = () => {

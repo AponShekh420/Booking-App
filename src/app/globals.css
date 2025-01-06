@@ -72,3 +72,61 @@ h1{
   pointer-events: none;
 }
 
+
+/* Customize the calendar size */
+.react-datepicker__month-container {
+  width: 100%; /* Ensure full width */
+}
+
+/* Calendar container */
+.react-datepicker {
+  border-radius: 0.5rem; /* Rounded corners */
+  grid-template-columns: none !important;
+}
+
+
+.react-datepicker__day--selected .react-datepicker__day_span {
+  background-color: #E9082A;
+}
+
+
+.react-datepicker__day_span:hover {
+  background-color: #E9082A !important;
+  color: white !important;
+}
+
+.react-datepicker__day--range-end .react-datepicker__day_span{
+  background-color: #E9082A !important;
+  color: white !important;
+}
+
+
+.react-datepicker__day--keyboard-selected .react-datepicker__day_span, .react-datepicker__day--in-selecting-range .react-datepicker__day_span:hover, .react-datepicker__day--selecting-range-end .react-datepicker__day_span {
+  background-color: #E9082A !important;
+  color: white !important;
+}
+
+
+
+/* custom scrollbar for search drowpdown menu */
+.search-dropdown-custom-scrollbar::-webkit-scrollbar {
+  width: 13px; /* Width of vertical scrollbar */
+  height: 13px; /* Height of horizontal scrollbar */
+}
+
+.search-dropdown-custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #828282; /* Color of the scroll thumb */
+  border-radius: 14px; /* Rounded edges for the thumb */
+  border: 2px solid #f9fafb; /* Space between thumb and track */
+}
+
+.search-dropdown-custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #e5e7eb; /* Color of the scroll track */
+  border-radius: 14px;
+}
+
+/* For Firefox (using scrollbar-color and scrollbar-width) */
+.search-dropdown-custom-scrollbar {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #828282 #e5e7eb; /* Thumb color and track color */
+}
