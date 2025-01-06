@@ -22,7 +22,18 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
     
   return (
     <div className="w-full mx-auto categoriesSlide">
-      <div className="relative">
+      <div className="flex items-center">
+        <div className="z-50 pr-3 md:block hidden">
+          <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
+            <Image
+              src={"/assets/icons/categories/Arrows/left-arrow.svg"}
+              alt="left arrow"
+              width={8.13}
+              height={13.71}
+            />
+          </button>
+        </div>
+
         <Swiper
           modules={[Navigation]}
           slidesPerView="auto" // Dynamic width calculation
@@ -69,17 +80,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
         </Swiper>
 
         {/* Custom Navigation Buttons */}
-        <div className="absolute top-1/2 transform -translate-y-1/2 left-0 z-50">
-          <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
-            <Image
-              src={"/assets/icons/categories/Arrows/left-arrow.svg"}
-              alt="left arrow"
-              width={8.13}
-              height={13.71}
-            />
-          </button>
-        </div>
-        <div className="absolute top-1/2 transform -translate-y-1/2 right-0 z-50">
+        <div className="z-50 pl-3 md:block hidden">
           <button className="custom-next-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
             <Image
               src={"/assets/icons/categories/Arrows/right-arrow.svg"}

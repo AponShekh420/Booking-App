@@ -70,6 +70,7 @@ h1{
 .swiper-button-disabled {
   opacity: 0.5;
   pointer-events: none;
+  visibility: hidden;
 }
 
 

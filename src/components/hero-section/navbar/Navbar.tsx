@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import Logo from '@/images/logo/gm-logo.png'
+import Logo from '@/images/logo/white-logo.svg'
 import AvatarDropdown from "./AvatarDropdown";
 import { useState } from "react";
 
