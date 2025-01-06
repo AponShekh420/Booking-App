@@ -44,7 +44,7 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, sli
           <Image
             className="mt-[4.61px]"
             src={"/assets/icons/categories/arrows/down_arrow.svg"}
-            alt={"Arrow"}
+            alt={"icon"}
             width={9.68}
             height={5.74}
           />

@@ -70,9 +70,11 @@ h1{
 .swiper-button-disabled {
   opacity: 0.5;
   pointer-events: none;
-  visibility: hidden;
 }
 
+.categoriesSlide .swiper-button-disabled {
+  visibility: hidden;
+}
 
 /* Customize the calendar size */
 .react-datepicker__month-container {

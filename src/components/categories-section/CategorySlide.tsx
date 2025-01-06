@@ -26,7 +26,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
         <div className="z-50 pr-3 md:block hidden">
           <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
             <Image
-              src={"/assets/icons/categories/Arrows/left-arrow.svg"}
+              src={"/assets/icons/categories/arrows/left-arrow.svg"}
               alt="left arrow"
               width={8.13}
               height={13.71}
@@ -83,7 +83,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
         <div className="z-50 pl-3 md:block hidden">
           <button className="custom-next-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
             <Image
-              src={"/assets/icons/categories/Arrows/right-arrow.svg"}
+              src={"/assets/icons/categories/arrows/right-arrow.svg"}
               alt="right arrow"
               width={8.13}
               height={13.71}
