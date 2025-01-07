@@ -75,7 +75,7 @@ const SearchBar = () => {
 
         {/* container of the dropdown content */}
         {tab && (
-          <div className="flex rounded-[10px] dark:bg-neutral-800 absolute w-full h-auto bg-white z-40 search-dropdown-custom-scrollbar top-11 sm:top-12 md:top-14 lg:top-20 p-[30px]">
+          <div className="flex rounded-[10px] dark:bg-neutral-800 absolute w-full h-auto bg-white z-40 search-dropdown-custom-scrollbar top-11 sm:top-12 md:top-14 lg:top-20 p-[30px] shadow-md">
             {tab == "clock" && (<StayDatesRangeInput/>)}
             {tab == "location" && (<StayLocation/>)}
             {tab == "searchDropdown" && (<StaySearchDropdown/>)}
