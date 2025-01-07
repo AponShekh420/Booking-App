@@ -58,8 +58,8 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
   )
 
   return (
-		<div className='flex md:gap-x-[30px] lg:gap-x-[40px] justify-between w-full flex-col md:flex-row'>
-			<div className="p-4 w-full">
+		<div className='flex md:gap-x-[30px] lg:gap-x-[40px] justify-between w-full flex-col md:flex-row overflow-y-auto h-[376px]'>
+			<div className="w-full">
 				<DatePicker
 					selected={startDate}
 					onChange={onChangeDate}
@@ -78,7 +78,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 					)}
 				/>
 			</div>
-			<div className="p-4 w-full md:w-auto">
+			<div className="w-full md:w-auto">
 				<p className='font-[700] text-[17.12px] leading-[33.63px] text-center mb-[2px]'>Time</p>
 				<div className='flex md:flex-col gap-y-[8px] md:gap-x-[0px] gap-x-[8px] flex-wrap justify-center'>
 					{renderButtonList()}
