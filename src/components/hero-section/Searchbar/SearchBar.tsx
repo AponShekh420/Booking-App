@@ -8,7 +8,7 @@ import StaySearchDropdown from "./StaySearchDropdown";
 
 const SearchBar = () => {
 
-  const [tab, setTab] = useState<string>("location");
+  const [tab, setTab] = useState<string>("");
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
