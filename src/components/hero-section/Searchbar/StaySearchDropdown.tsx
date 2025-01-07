@@ -1,7 +1,64 @@
+import Image from "next/image";
+import img from "@/images/search-dropdown/search-dropdown.png"
 const StaySearchDropdown = () => {
   return (
-    <div className="flex md:gap-x-[30px] lg:gap-x-[40px] justify-between w-full flex-col md:flex-row overflow-y-auto h-[376px]">
-      Enter
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 md:gap-3 gap-5 justify-between w-full overflow-y-auto h-[217px]">
+      <div>
+        <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Treatments</p>
+        <ul className="font-[400] text-[17.12px] capitalize">
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">PRP</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Botox</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Dermal fillers</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Teeth Whitening</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Dermal Fillers</li>
+        </ul>
+      </div>
+      <div>
+        <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Categories</p>
+        <ul className="font-[400] text-[17.12px] capitalize">
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Skin</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Face & Jawline</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Hair</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Fillers</li>
+          <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Body Lift</li>
+        </ul>
+      </div>
+      <div>
+
+        {/* title */}
+        <p className="font-[700] text-[17.12px] leading-[33.63px]">Clinics</p>
+
+        {/* box one */}
+        <div className="flex gap-x-[14px] items-center mb-[11.9px]">
+          <div className="w-[50px] h-[54.1px] rounded-[10px] overflow-hidden">
+            <Image src={img} alt="Dermamina Image" 
+              width={100} 
+              height={100}
+            />
+          </div>
+          <div>
+            <p className="font-[700] text-[15.27px] leading-[29.97px]">Dermamina</p>
+            <p className="font-[400] text-[11.03px] capitalize leading-[14px]">Aesthetics Clinic<br/>
+            114 New Cavendish St, London W1W 6XT</p>
+          </div>
+        </div>
+
+        {/* box 2 */}
+        {/* box one */}
+        <div className="flex gap-x-[14px] items-center">
+          <div className="w-[50px] h-[54.1px] rounded-[10px] overflow-hidden">
+            <Image src={img} alt="Dermamina Image" 
+              width={100} 
+              height={100}
+            />
+          </div>
+          <div>
+            <p className="font-[700] text-[15.27px] leading-[29.97px]">Dermamina</p>
+            <p className="font-[400] text-[11.03px] capitalize leading-[14px]">Aesthetics Clinic<br/>
+            114 New Cavendish St, London W1W 6XT</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
