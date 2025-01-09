@@ -2,47 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'CustomHeadingFont';
-  src: url('/fonts/FormulaCondensed-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'CustomHeadingFont';
+	src: url('/fonts/FormulaCondensed-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
 
-
-
-h1{
-  @apply font-heading;
-}
-
-body {
-  @apply font-body;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	@apply font-heading;
 }
 
 .swiper {
-  width: 100%;
-  /* height: 100%; */
+	width: 100%;
+	/* height: 100%; */
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* for categories icons list only */
 .categoriesSlide .swiper-slide {
-  width: auto !important;
+	width: auto !important;
 }
-
 
 /* 
 .swiper-slide img {
@@ -53,82 +49,79 @@ body {
 } */
 
 .swiper {
-  width: 100%;
-  height: 300px;
-  margin: 20px auto;
+	width: 100%;
+	height: 300px;
+	margin: 20px auto;
 }
-.categoryContainer .swiper{
-  height: auto;
+.categoryContainer .swiper {
+	height: auto;
 }
 
 /* for categories list icons only */
-.categoriesSlide .swiper{
-  height: auto !important;
+.categoriesSlide .swiper {
+	height: auto !important;
 }
 
 .swiper-button-disabled {
-  opacity: 0.5;
-  pointer-events: none;
+	opacity: 0.5;
+	pointer-events: none;
 }
 
 .categoriesSlide .swiper-button-disabled {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 /* Customize the calendar size */
 .react-datepicker__month-container {
-  width: 100%; /* Ensure full width */
+	width: 100%; /* Ensure full width */
 }
 
 /* Calendar container */
 .react-datepicker {
-  border-radius: 0.5rem; /* Rounded corners */
-  grid-template-columns: none !important;
+	border-radius: 0.5rem; /* Rounded corners */
+	grid-template-columns: none !important;
 }
-
 
 .react-datepicker__day--selected .react-datepicker__day_span {
-  background-color: #E9082A;
+	background-color: #e9082a;
 }
-
 
 .react-datepicker__day_span:hover {
-  background-color: #E9082A !important;
-  color: white !important;
+	background-color: #e9082a !important;
+	color: white !important;
 }
 
-.react-datepicker__day--range-end .react-datepicker__day_span{
-  background-color: #E9082A !important;
-  color: white !important;
+.react-datepicker__day--range-end .react-datepicker__day_span {
+	background-color: #e9082a !important;
+	color: white !important;
 }
 
-
-.react-datepicker__day--keyboard-selected .react-datepicker__day_span, .react-datepicker__day--in-selecting-range .react-datepicker__day_span:hover, .react-datepicker__day--selecting-range-end .react-datepicker__day_span {
-  background-color: #E9082A !important;
-  color: white !important;
+.react-datepicker__day--keyboard-selected .react-datepicker__day_span,
+.react-datepicker__day--in-selecting-range .react-datepicker__day_span:hover,
+.react-datepicker__day--selecting-range-end .react-datepicker__day_span {
+	background-color: #e9082a !important;
+	color: white !important;
 }
-
-
 
 /* custom scrollbar for search drowpdown menu */
 .search-dropdown-custom-scrollbar::-webkit-scrollbar {
-  width: 13px; /* Width of vertical scrollbar */
-  height: 13px; /* Height of horizontal scrollbar */
+	width: 13px; /* Width of vertical scrollbar */
+	height: 13px; /* Height of horizontal scrollbar */
 }
 
 .search-dropdown-custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #828282; /* Color of the scroll thumb */
-  border-radius: 14px; /* Rounded edges for the thumb */
-  border: 2px solid #f9fafb; /* Space between thumb and track */
+	background-color: #828282; /* Color of the scroll thumb */
+	border-radius: 14px; /* Rounded edges for the thumb */
+	border: 2px solid #f9fafb; /* Space between thumb and track */
 }
 
 .search-dropdown-custom-scrollbar::-webkit-scrollbar-track {
-  background-color: #e5e7eb; /* Color of the scroll track */
-  border-radius: 14px;
+	background-color: #e5e7eb; /* Color of the scroll track */
+	border-radius: 14px;
 }
 
 /* For Firefox (using scrollbar-color and scrollbar-width) */
 .search-dropdown-custom-scrollbar {
-  scrollbar-width: thin; /* Thin scrollbar */
-  scrollbar-color: #828282 #e5e7eb; /* Thumb color and track color */
+	scrollbar-width: thin; /* Thin scrollbar */
+	scrollbar-color: #828282 #e5e7eb; /* Thumb color and track color */
 }
