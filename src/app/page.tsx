@@ -6,6 +6,7 @@ import LatestTopicSection from '@/components/home/latest-topic/LatestTopicSectio
 import ResultSection from '@/components/home/results-section/ResultSection'
 import GentlemendSection from '@/components/home/why-gentlemend/GentlemendSection'
 
+import CreateConfidenceSection from '@/components/home/create-confidence/CreateConfidenceSection'
 import SearchTag from '@/components/home/search-tag/SearchTag'
 import { TaxonomyType } from '@/data/types'
 
@@ -146,12 +147,14 @@ function PageHome() {
 		<main className="nc-PageHome relative overflow-hidden">
 			<HeroSection />
 			<CategoriesSection />
-			<ResultSection />
-			<LatestTopicSection />
-			<GentlemendSection />
+
 			<GalleryLayout />
 			<SearchTag />
+			<ResultSection />
 
+			<LatestTopicSection />
+			<GentlemendSection />
+			<CreateConfidenceSection />
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}
 
