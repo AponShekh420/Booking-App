@@ -1,13 +1,10 @@
 import CategoriesSection from '@/components/home/categories-section/CategoriesSection'
 import GalleryLayout from '@/components/home/gallery-layout/GalleryLayout'
 import HeroSection from '@/components/home/hero-section/HeroSection'
-<<<<<<< HEAD
 import LatestTopicSection from '@/components/home/latest-topic/LatestTopicSection'
 import ResultSection from '@/components/home/results-section/ResultSection'
 import GentlemendSection from '@/components/home/why-gentlemend/GentlemendSection'
-=======
 import SearchTag from '@/components/home/search-tag/SearchTag'
->>>>>>> 86a679cfe0df6c66598600a62e7d8b4aabab1481
 import { TaxonomyType } from '@/data/types'
 
 const DEMO_CATS: TaxonomyType[] = [
@@ -147,14 +144,11 @@ function PageHome() {
 		<main className="nc-PageHome relative overflow-hidden">
 			<HeroSection />
 			<CategoriesSection />
-<<<<<<< HEAD
 			<ResultSection />
 			<LatestTopicSection />
 			<GentlemendSection />
-=======
 			<GalleryLayout/>
 			<SearchTag/>
->>>>>>> 86a679cfe0df6c66598600a62e7d8b4aabab1481
 
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}
