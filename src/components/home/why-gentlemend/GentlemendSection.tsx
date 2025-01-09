@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 export default function GentlemendSection() {
 	return (
-		<section className="m-auto mt-24 w-11/12 max-w-[1345px] sm:w-10/12">
-			<div className="grid lg:grid-cols-[2fr_3fr]">
+		<section className="m-auto mt-24 w-11/12 max-w-[1845px] sm:w-10/12">
+			<div className="grid items-center lg:grid-cols-[2fr_3fr]">
 				<div className="mb-16">
-					<h1 className="text-custom-red text-5xl lg:text-6xl">
+					<h1 className="text-5xl text-custom-red lg:text-6xl">
 						WHY GENTLEMEND?
 					</h1>
 					<div className="mt-8">
@@ -23,9 +23,13 @@ export default function GentlemendSection() {
 					</div>
 					<button>Search for treatments</button>
 				</div>
-				<div className="relative h-[27rem] overflow-hidden lg:h-[42rem]">
-					<Image className="object-cover" src={handMobile} alt="mobile-hand" />
-					<div className="absolute right-1 top-5 lg:top-32">
+				<div className="relative h-[27rem] overflow-hidden py-10 lg:h-[42rem]">
+					<Image
+						className="max-w-[549px] object-cover"
+						src={handMobile}
+						alt="mobile-hand"
+					/>
+					<div className="absolute right-10 top-1/2 -translate-y-1/2">
 						<h1 className="flex flex-col text-4xl font-extrabold lg:text-6xl">
 							<span>
 								Find the Right <br /> Treatment
@@ -36,6 +40,7 @@ export default function GentlemendSection() {
 							</span>
 						</h1>
 					</div>
+					<div className="absolute right-0 top-0 z-[-1] h-full w-4/5 bg-[#F3F3F3]"></div>
 				</div>
 			</div>
 		</section>
