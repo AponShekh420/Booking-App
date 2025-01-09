@@ -1,5 +1,8 @@
 import CategoriesSection from '@/components/home/categories-section/CategoriesSection'
 import HeroSection from '@/components/home/hero-section/HeroSection'
+import LatestTopicSection from '@/components/home/latest-topic/LatestTopicSection'
+import ResultSection from '@/components/home/results-section/ResultSection'
+import GentlemendSection from '@/components/home/why-gentlemend/GentlemendSection'
 import { TaxonomyType } from '@/data/types'
 
 const DEMO_CATS: TaxonomyType[] = [
@@ -139,6 +142,9 @@ function PageHome() {
 		<main className="nc-PageHome relative overflow-hidden">
 			<HeroSection />
 			<CategoriesSection />
+			<ResultSection />
+			<LatestTopicSection />
+			<GentlemendSection />
 
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}
