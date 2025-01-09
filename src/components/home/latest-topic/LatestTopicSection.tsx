@@ -25,7 +25,7 @@ const topics = [
 ]
 export default function LatestTopicSection() {
 	return (
-		<section className="mt-10">
+		<section className="mt-[48.68px]">
 			<Wrapper>
 				<h1 className="mb-8 mt-14 text-4xl text-custom-red xl:text-[5rem]">
 					LATEST TOPICS:

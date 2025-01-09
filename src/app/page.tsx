@@ -9,6 +9,8 @@ import GentlemendSection from '@/components/home/why-gentlemend/GentlemendSectio
 import CreateConfidenceSection from '@/components/home/create-confidence/CreateConfidenceSection'
 import SearchTag from '@/components/home/search-tag/SearchTag'
 import { TaxonomyType } from '@/data/types'
+import FollowSection from '@/components/home/follow-section/FollowSection'
+import CreateConfidenceSection from '@/components/home/create-confidence/CreateConfidenceSection'
 
 const DEMO_CATS: TaxonomyType[] = [
 	{
@@ -147,14 +149,13 @@ function PageHome() {
 		<main className="nc-PageHome relative overflow-hidden">
 			<HeroSection />
 			<CategoriesSection />
-
 			<GalleryLayout />
 			<SearchTag />
 			<ResultSection />
-
 			<LatestTopicSection />
 			<GentlemendSection />
-			<CreateConfidenceSection />
+			<CreateConfidenceSection/>
+			<FollowSection/>
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}
 

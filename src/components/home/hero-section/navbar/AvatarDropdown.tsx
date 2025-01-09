@@ -17,6 +17,7 @@ import {
 	UserSharingIcon,
 } from '@/components/Icons'
 import T from '@/utils/getT'
+import { AccountIcon, NavIcon } from '@/components/common/Icons'
 interface Props {
 	className?: string
 }
@@ -28,9 +29,15 @@ export default function AvatarDropdown({ className = '' }: Props) {
 				{({ open, close }) => (
 					<>
 						<PopoverButton
-							className={`flex h-10 w-10 items-center justify-center self-center rounded-full text-slate-700 hover:bg-slate-100 focus:outline-none dark:text-slate-300 dark:hover:bg-slate-800 sm:h-12 sm:w-12`}
+							className={`flex h-[39px] w-[179px] items-center justify-end gap-x-2 focus:outline-none`}
 						>
-							<Avatar sizeClass="w-8 h-8 sm:w-9 sm:h-9" />
+							<div>
+								<p className='text-[13.88px] text-white font-[700]'>LONDON, UK</p>
+							</div>
+							<div className="flex items-center justify-center gap-x-[6.4px] w-[74px] h-[32.17px] rounded-[63.54px] bg-white">
+								<NavIcon className='w-[24.17px] h-[18.7px]'/>
+								<AccountIcon className='w-[19.2px] h-[19.2px]'/>
+							</div>
 						</PopoverButton>
 						<Transition
 							as={Fragment}
