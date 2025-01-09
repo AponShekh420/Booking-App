@@ -1,9 +1,11 @@
 import CategoriesSection from '@/components/home/categories-section/CategoriesSection'
 import GalleryLayout from '@/components/home/gallery-layout/GalleryLayout'
 import HeroSection from '@/components/home/hero-section/HeroSection'
+
 import LatestTopicSection from '@/components/home/latest-topic/LatestTopicSection'
 import ResultSection from '@/components/home/results-section/ResultSection'
 import GentlemendSection from '@/components/home/why-gentlemend/GentlemendSection'
+
 import SearchTag from '@/components/home/search-tag/SearchTag'
 import { TaxonomyType } from '@/data/types'
 
@@ -147,8 +149,8 @@ function PageHome() {
 			<ResultSection />
 			<LatestTopicSection />
 			<GentlemendSection />
-			<GalleryLayout/>
-			<SearchTag/>
+			<GalleryLayout />
+			<SearchTag />
 
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}

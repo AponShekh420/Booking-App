@@ -41,13 +41,13 @@ export default function ResultCard() {
 					</div>
 				</div>
 			</div>
-			<h3 className="text-custom-red mt-4 text-2xl font-bold sm:text-4xl">
-				“I’m lost for words why didn’t know this existed!”{' '}
+			<h3 className="mt-4 text-2xl font-bold text-custom-red sm:text-4xl">
+				“I’m lost for words why didn’t know this existed!”
 			</h3>
 			<p className="py-4 text-sm sm:text-lg">
-				"The PRP hair treatment has been a game-changer. I didn’t think regrowth
-				was possible, but the results speak for themselves. I only wish I’d
-				started sooner!"
+				&quot;The PRP hair treatment has been a game-changer. I didn’t think
+				regrowth was possible, but the results speak for themselves. I only wish
+				I’d started sooner!&quot;
 			</p>
 			<div className="flex items-center gap-x-2">
 				<SuccessIcon />
