@@ -1,22 +1,11 @@
-import { Poppins } from 'next/font/google'
-import SiteHeader from './(client-components)/(Header)/SiteHeader'
-import ClientCommons from './ClientCommons'
 import '@/app/globals.css'
-import '@/styles/index.scss'
-import 'rc-slider/assets/index.css'
-import Footer from '@/components/Footer'
-import FooterNav from '@/components/FooterNav'
-import { Metadata } from 'next'
-import ThemeProvider from './theme-provider'
 import Footer2 from '@/components/Footer2'
-import Footer3 from '@/components/Footer3'
-import Footer4 from '@/components/Footer4'
-
-const poppins = Poppins({
-	subsets: ['latin'],
-	display: 'swap',
-	weight: ['300', '400', '500', '600', '700'],
-})
+import FooterNav from '@/components/FooterNav'
+import '@/styles/index.scss'
+import { Metadata } from 'next'
+import 'rc-slider/assets/index.css'
+import ClientCommons from './ClientCommons'
+import ThemeProvider from './theme-provider'
 
 export const metadata: Metadata = {
 	title: 'Chisfis - Booking online React Next Template',
@@ -34,7 +23,7 @@ export default function RootLayout({
 	params: any
 }) {
 	return (
-		<html lang="en" className={poppins.className}>
+		<html lang="en" className="font-body">
 			<ThemeProvider>
 				<body className="bg-white text-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
 					<div>
