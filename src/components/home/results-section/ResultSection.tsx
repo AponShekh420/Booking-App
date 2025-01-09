@@ -3,7 +3,7 @@ import ResultCard from './ResultCard'
 
 export default function ResultSection() {
 	return (
-		<section className="mt-10">
+		<section className="mt-[48.68px]">
 			<Wrapper>
 				<h1 className="text-custom-red mb-8 mt-14 text-4xl xl:text-6xl">
 					RESULTS THAT SPEAK FOR THEMSELVES
