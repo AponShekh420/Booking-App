@@ -38,7 +38,7 @@ const CarCard: FC<CarCardProps> = ({
 
 	const renderSliderGallery = () => {
 		return (
-			<div className="relative w-full overflow-hidden rounded-2xl">
+			<div className="relative w-full overflow-hidden rounded-2xl ">
 				<div className="aspect-h-9 aspect-w-16">
 					<Image
 						fill
