@@ -33,10 +33,11 @@ module.exports = {
 
 		extend: {
 			fontFamily: {
-				heading: ["CustomHeadingFont", 'sans-serif'],
-				body: ['Anek Devanagari', 'sans-serif']
+				heading: ['CustomHeadingFont', 'sans-serif'],
+				body: ['Anek Devanagari', 'sans-serif'],
 			},
 			colors: {
+				'custom-red': '#E9082A',
 				primary: {
 					50: customColors('--c-primary-50'),
 					100: customColors('--c-primary-100'),

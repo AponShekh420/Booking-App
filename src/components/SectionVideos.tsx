@@ -4,7 +4,7 @@ import Heading from '@/shared/Heading'
 import NcPlayIcon from '@/shared/NcPlayIcon'
 import NcPlayIcon2 from '@/shared/NcPlayIcon2'
 import Image from 'next/image'
-import React, { FC, useState } from 'react'
+import { FC, useState } from 'react'
 
 export interface VideoType {
 	id: string

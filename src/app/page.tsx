@@ -1,20 +1,6 @@
-import React from 'react'
-import SectionHero from '@/app/(server-components)/SectionHero'
-import BgGlassmorphism from '@/components/BgGlassmorphism'
+import CategoriesSection from '@/components/home/categories-section/CategoriesSection'
+import HeroSection from '@/components/home/hero-section/HeroSection'
 import { TaxonomyType } from '@/data/types'
-import SectionSliderNewCategories from '@/components/SectionSliderNewCategories'
-import SectionOurFeatures from '@/components/SectionOurFeatures'
-import BackgroundSection from '@/components/BackgroundSection'
-import SectionGridFeaturePlaces from '@/components/SectionGridFeaturePlaces'
-import SectionHowItWork from '@/components/SectionHowItWork'
-import SectionSubscribe2 from '@/components/SectionSubscribe2'
-import SectionGridAuthorBox from '@/components/SectionGridAuthorBox'
-import SectionGridCategoryBox from '@/components/SectionGridCategoryBox'
-import SectionBecomeAnAuthor from '@/components/SectionBecomeAnAuthor'
-import SectionVideos from '@/components/SectionVideos'
-import SectionClientSay from '@/components/SectionClientSay'
-import HeroSection from '@/components/hero-section/HeroSection'
-import CategoriesSection from '@/components/categories-section/CategoriesSection'
 
 const DEMO_CATS: TaxonomyType[] = [
 	{
@@ -151,19 +137,18 @@ const DEMO_CATS_2: TaxonomyType[] = [
 function PageHome() {
 	return (
 		<main className="nc-PageHome relative overflow-hidden">
-
-			<HeroSection/>
-			<CategoriesSection/>
+			<HeroSection />
+			<CategoriesSection />
 
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}
 
 			{/* <div className="container relative mb-24 space-y-24 lg:mb-28 lg:space-y-28"> */}
-				{/* SECTION HERO */}
-				{/* <SectionHero className="pt-10 lg:pb-16 lg:pt-16" /> */}
+			{/* SECTION HERO */}
+			{/* <SectionHero className="pt-10 lg:pb-16 lg:pt-16" /> */}
 
-				{/* SECTION 1 */}
-				{/* <SectionSliderNewCategories categories={DEMO_CATS} />
+			{/* SECTION 1 */}
+			{/* <SectionSliderNewCategories categories={DEMO_CATS} />
 
 				<SectionOurFeatures />
 
