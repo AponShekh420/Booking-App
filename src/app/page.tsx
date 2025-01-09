@@ -1,5 +1,7 @@
 import CategoriesSection from '@/components/home/categories-section/CategoriesSection'
+import GalleryLayout from '@/components/home/gallery-layout/GalleryLayout'
 import HeroSection from '@/components/home/hero-section/HeroSection'
+import SearchTag from '@/components/home/search-tag/SearchTag'
 import { TaxonomyType } from '@/data/types'
 
 const DEMO_CATS: TaxonomyType[] = [
@@ -139,6 +141,8 @@ function PageHome() {
 		<main className="nc-PageHome relative overflow-hidden">
 			<HeroSection />
 			<CategoriesSection />
+			<GalleryLayout/>
+			<SearchTag/>
 
 			{/* GLASSMOPHIN */}
 			{/* <BgGlassmorphism /> */}
