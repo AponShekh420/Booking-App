@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function GentlemendSection() {
 	return (
-		<section className="m-auto mt-24 w-11/12 max-w-[1345px]">
+		<section className="m-auto mt-24 w-11/12 max-w-[1345px] sm:w-10/12">
 			<div className="grid lg:grid-cols-[2fr_3fr]">
 				<div className="mb-16">
 					<h1 className="text-custom-red text-5xl lg:text-6xl">
@@ -25,8 +25,8 @@ export default function GentlemendSection() {
 				</div>
 				<div className="relative h-[27rem] overflow-hidden lg:h-[42rem]">
 					<Image className="object-cover" src={handMobile} alt="mobile-hand" />
-					<div className="absolute right-1 top-5">
-						<h1 className="flex flex-col text-4xl font-extrabold">
+					<div className="absolute right-1 top-5 lg:top-32">
+						<h1 className="flex flex-col text-4xl font-extrabold lg:text-6xl">
 							<span>
 								Find the Right <br /> Treatment
 							</span>
