@@ -27,10 +27,10 @@ export default function LatestTopicSection() {
 	return (
 		<section className="mt-[48.68px]">
 			<Wrapper>
-				<h1 className="text-custom-red mb-8 mt-14 text-4xl xl:text-6xl">
+				<h1 className="mb-8 mt-14 text-4xl text-custom-red xl:text-[5rem]">
 					LATEST TOPICS:
 				</h1>
-				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:gap-12">
 					{topics.map(({ id, title, image, desc }) => (
 						<TopicCard key={id} title={title} image={image} desc={desc} />
 					))}
