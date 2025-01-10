@@ -149,3 +149,16 @@ h2
 .home-video-slider .swiper-slide-shadow-coverflow {
 	transition: none !important;
 }
+
+
+
+
+/* result card arrow button of slider */
+
+@media (max-width: 640px) {
+  .custom-prev-result,
+  .custom-next-result {
+    width: 30px;
+    height: 30px;
+  }
+}
