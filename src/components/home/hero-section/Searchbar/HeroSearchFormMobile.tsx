@@ -19,20 +19,20 @@ import T from '@/utils/getT'
 
 
 interface HeroFromProps {
-	tab: string,
-	setTab: React.Dispatch<React.SetStateAction<string>>;
+	tabMobile: boolean,
+	setTabMobile: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 
-const HeroSearchForm2Mobile:FC<HeroFromProps> = ({tab, setTab}) => {
-	const variable = tab ? true : false;
+const HeroSearchFormMobile:FC<HeroFromProps> = ({tabMobile, setTabMobile}) => {
+	const variable = tabMobile ? true : false;
 
 	const closeModal = () => {
-		setTab("");
+		setTabMobile(false);
 	}
 
 	return (
-		<div className="HeroSearchForm2Mobile md:hidden block">
+		<div className="HeroSearchForm2Mobile md:hidden block w-full">
 			<Transition appear show={variable} as={Fragment}>
 				<Dialog
 					as="div"
@@ -54,14 +54,14 @@ const HeroSearchForm2Mobile:FC<HeroFromProps> = ({tab, setTab}) => {
 									<div
 										className="relative flex h-full flex-1 flex-col justify-between"
 									>
-										<div className="absolute start-4 top-4">
+										<div className="p-5">
 											<button onClick={closeModal}>
 												<XMarkIcon className="h-5 w-5 text-black dark:text-white" />
 											</button>
 										</div>
 
 										<div className="flex flex-1 overflow-hidden px-1.5 pt-3 sm:px-4">
-											<div className="animate-[myblur_0.4s_ease-in-out] transition-opacity">
+											<div className="animate-[myblur_0.4s_ease-in-out] transition-opacity w-full">
 												<StaySearchForm />
 											</div>
 										</div>
@@ -70,7 +70,7 @@ const HeroSearchForm2Mobile:FC<HeroFromProps> = ({tab, setTab}) => {
 												type="button"
 												className="flex-shrink-0 text-sm font-medium underline"
 												onClick={() => {
-													setTab("")
+													setTabMobile(false)
 												}}
 											>
 												{T['HeroSearchForm']['Clear all']}
@@ -88,4 +88,4 @@ const HeroSearchForm2Mobile:FC<HeroFromProps> = ({tab, setTab}) => {
 	)
 }
 
-export default HeroSearchForm2Mobile
+export default HeroSearchFormMobile

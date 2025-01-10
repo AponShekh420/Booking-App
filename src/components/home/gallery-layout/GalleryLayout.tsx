@@ -27,7 +27,7 @@ const GalleryLayout = () => {
             <h3 className={`relative font-[700] xl:text-[73px] xl:leading-[79.63px] lg:text-[63px] lg:leading-[69.63px] text-[41.34px] leading-[45.1px] text-right xl:mt-[15.28px] mt-[8.29px]`}>your first <br/>
             treatment</h3>
             <div className="w-full flex justify-end">
-              <button className="bg-custom-red rounded-[89.32px] xl:mt-[48.69px] lg:mt-[38.69px] mt-[8.29px] md:mt-[12.29px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px]">
+              <button className="bg-custom-red rounded-[89.32px] xl:mt-[48.69px] lg:mt-[38.69px] mt-[8.29px] md:mt-[12.29px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px] hover:text-white hover:bg-black">
                 Learn more
               </button>
             </div>
@@ -50,7 +50,7 @@ const GalleryLayout = () => {
             <h2 className={`relative font-[700] xl:text-[65.57px] xl:leading-[78.69px] lg:text-[43.55px] lg:leading-[50.26px] sm:text-[43.55px] sm:leading-[50.26px] text-[33.55px] leading-[40.26px] md:text-[33.55px] md:leading-[40.26px]`}>TURN BACK <span className="text-custom-red">TIME</span></h2>
             <h2 className={`relative font-[700] xl:text-[36.67px] xl:leading-[44px] text-[20.77px] leading-[24.92px] lg:text-[30.77px] lg:leading-[34.92px] sm:text-[30.77px] sm:leading-[34.92px] md:text-[20.77px] md:leading-[24.92px]`}>Explore Facial Rejuvenation Treatments</h2>
             <div className="w-full">
-              <button className="bg-custom-red rounded-[89.32px] mt-[18.69px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px]">
+              <button className="bg-custom-red rounded-[89.32px] mt-[18.69px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px] hover:text-white hover:bg-black">
                 Learn more
               </button>
             </div>
@@ -71,7 +71,7 @@ const GalleryLayout = () => {
             <h2 className={`relative font-[700] xl:text-[65.57px] xl:leading-[78.69px] lg:text-[43.55px] lg:leading-[50.26px] sm:text-[43.55px] sm:leading-[50.26px] text-[33.55px] leading-[40.26px] md:text-[33.55px] md:leading-[40.26px]`}>CATCH IT <span className="text-custom-red">EARLY</span></h2>
             <h2 className={`relative font-[700] xl:text-[36.67px] xl:leading-[44px] text-[20.77px] leading-[24.92px] lg:text-[30.77px] lg:leading-[34.92px] sm:text-[30.77px] sm:leading-[34.92px] md:text-[20.77px] md:leading-[24.92px]`}>Thicker Hair Awaits!</h2>
             <div className="w-full">
-              <button className="bg-custom-red rounded-[89.32px] mt-[18.69px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px]">
+              <button className="bg-custom-red rounded-[89.32px] mt-[18.69px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px] hover:text-white hover:bg-black">
                 Learn more
               </button>
             </div>
