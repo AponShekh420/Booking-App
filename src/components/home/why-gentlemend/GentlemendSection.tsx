@@ -12,7 +12,7 @@ export default function GentlemendSection() {
 							WHY GENTLEMEND?
 						</h1>
 						<div className="mt-12">
-							<h1 className="text-3xl font-bold capitalize lg:text-6xl">
+							<h1 className="text-3xl font-bold uppercase lg:text-6xl">
 								STREAMLINED BOOKING
 							</h1>
 							<p className="text-xl lg:text-2xl">
@@ -20,7 +20,7 @@ export default function GentlemendSection() {
 							</p>
 						</div>
 						<div className="my-6">
-							<h1 className="text-3xl font-bold capitalize lg:text-6xl">
+							<h1 className="text-3xl font-bold lg:text-6xl uppercase">
 								Trusted Experts
 							</h1>
 							<p className="text-xl lg:text-2xl">
@@ -28,7 +28,7 @@ export default function GentlemendSection() {
 							</p>
 						</div>
 						<div>
-							<h1 className="text-3xl font-bold lg:text-6xl">
+							<h1 className="text-3xl font-bold lg:text-6xl uppercase">
 								Tailored for Men
 							</h1>
 							<p className="text-xl lg:text-2xl">
