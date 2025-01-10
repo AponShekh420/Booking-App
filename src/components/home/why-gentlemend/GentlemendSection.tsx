@@ -35,7 +35,7 @@ export default function GentlemendSection() {
 								Find and book treatments in just a few clicks.
 							</p>
 						</div>
-						<button className="mt-20 rounded-3xl bg-custom-red px-8 py-3 text-xl font-medium text-white">
+						<button className="mt-20 rounded-3xl bg-custom-red px-8 py-3 text-xl font-medium text-white hover:text-white hover:bg-black">
 							Search for treatments
 						</button>
 						<div className="absolute left-0 top-0 z-[-1] h-full w-[90%] bg-[#F3F3F3] xl:hidden"></div>

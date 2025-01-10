@@ -11,7 +11,7 @@ export default function TopicCard({ image, title, desc }: TopicType) {
 			<div>
 				<h5 className="mt-5 text-xl lg:text-3xl">{title}</h5>
 				<p className="py-3 text-sm lg:text-lg">{desc}</p>
-				<button className="rounded-2xl bg-custom-red px-6 py-1.5 capitalize text-white">
+				<button className="rounded-2xl bg-custom-red px-6 py-1.5 capitalize text-white hover:text-white hover:bg-black">
 					learn more
 				</button>
 			</div>
