@@ -19,7 +19,7 @@ export default function ResultSection() {
 						slidesPerView={3}
 						slidesPerGroup={3}
 						centeredSlides={false}
-						spaceBetween={32}
+						spaceBetween={22}
 						// virtual
 						navigation={{
 							nextEl: '.custom-next-result',

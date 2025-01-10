@@ -14,7 +14,7 @@ const GalleryLayout = () => {
           href={"#"}
           className={`nc-CardCategory6 group relative z-0 flex w-full overflow-hidden rounded-2xl`}
         >
-          <div className="aspect-h-10 aspect-w-16 h-0 w-full sm:aspect-h-12 xl:aspect-h-9"></div>
+          <div className="aspect-h-10 aspect-w-16 h-0 w-full sm:aspect-h-12 xl:aspect-h-9 hidden md:block"></div>
           <Image
             alt="layout-image-one"
             src={ImageTwo}
