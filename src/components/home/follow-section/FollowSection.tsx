@@ -14,7 +14,7 @@ import { Grid, Navigation } from "swiper/modules";
 const FollowSection = () => {
   return (
     <Wrapper>
-      <div className="mt-[103px] follow-section-home">
+      <div className="mt-[103px] mb-[120px] follow-section-home">
         <div className="flex items-center lg:gap-x-[43px] gap-x-[23px] md:gap-x-[33px]">
           <h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red uppercase">Follow us</h1>
           <div className="flex items-center gap-x-[6px]">

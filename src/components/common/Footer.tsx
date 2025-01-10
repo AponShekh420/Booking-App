@@ -23,7 +23,7 @@ export default function Footer() {
 							>
 								<FacebookIcon />
 							</a>
-							<a className="rounded-full border border-[#9B9B9B] p-4" href="#">
+							<a className="rounded-full border border-[#9B9B9B] text-white p-4" href="#">
 								<TwiterIcon />
 							</a>
 							<a
