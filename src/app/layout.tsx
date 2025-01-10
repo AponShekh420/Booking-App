@@ -1,5 +1,5 @@
 import '@/app/globals.css'
-import Footer2 from '@/components/Footer2'
+import Footer from '@/components/common/Footer'
 import FooterNav from '@/components/FooterNav'
 import '@/styles/index.scss'
 import { Metadata } from 'next'
@@ -33,7 +33,7 @@ export default function RootLayout({
 
 						{/* Chose footer style here!!!! */}
 						{/* <Footer /> */}
-						<Footer2 />
+						<Footer />
 						{/* <Footer3 /> */}
 						{/* <Footer4 /> */}
 					</div>

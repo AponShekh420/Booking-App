@@ -11,7 +11,7 @@ export default function GentlemendSection() {
 						<h1 className="text-5xl font-bold capitalize text-custom-red lg:text-7xl">
 							WHY GENTLEMEND?
 						</h1>
-						<div className="mt-20">
+						<div className="mt-12">
 							<h1 className="text-3xl font-bold capitalize lg:text-6xl">
 								STREAMLINED BOOKING
 							</h1>
@@ -35,19 +35,19 @@ export default function GentlemendSection() {
 								Find and book treatments in just a few clicks.
 							</p>
 						</div>
-						<button className="mt-20 rounded-3xl bg-custom-red px-8 py-3 text-xl font-medium text-white hover:text-white hover:bg-black">
+						<button className="mt-20 rounded-3xl bg-custom-red px-8 py-3 text-xl font-medium text-white hover:bg-black hover:text-white">
 							Search for treatments
 						</button>
 						<div className="absolute left-0 top-0 z-[-1] h-full w-[90%] bg-[#F3F3F3] xl:hidden"></div>
 					</div>
 					<div className="relative h-fit overflow-hidden px-2 pt-10 sm:px-0">
 						<Image
-							className="h-[22rem] w-[80%] max-w-[549px] object-cover object-left-top sm:h-[35rem] lg:h-[40rem] lg:w-full"
+							className="xs:h-[30rem] h-[25rem] w-[80%] max-w-[549px] object-cover object-left-top sm:h-[35rem] lg:h-[40rem] lg:w-full"
 							src={handMobile}
 							alt="mobile-hand"
 						/>
-						<div className="absolute right-10 top-12 lg:top-1/2 lg:-translate-y-1/2">
-							<h1 className="flex flex-col text-4xl font-bold uppercase sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl">
+						<div className="absolute right-10 top-12 sm:top-40 lg:right-32 lg:top-1/2 lg:-translate-y-1/2 xl:right-10">
+							<h1 className="xs:text-4xl flex flex-col text-3xl font-bold uppercase sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-[4.9rem]">
 								<span>
 									Find the Right <br /> Treatment
 								</span>
