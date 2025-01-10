@@ -3,7 +3,7 @@ import confidence from '@/images/home/confidence.png'
 import Image from 'next/image'
 export default function CreateConfidenceSection() {
 	return (
-		<section className="mt-[48.68px]">
+		<section className="mt-[84.68px]">
 			<Wrapper>
 				<div className="grid w-full overflow-hidden rounded-lg lg:grid-cols-[7fr_8fr]">
 					<div className="">

@@ -14,7 +14,7 @@ const GalleryLayout = () => {
           href={"#"}
           className={`nc-CardCategory6 group relative z-0 flex w-full overflow-hidden rounded-2xl`}
         >
-          <div className="aspect-h-10 aspect-w-16 h-0 w-full sm:aspect-h-12 xl:aspect-h-9"></div>
+          <div className="aspect-h-10 aspect-w-16 h-0 w-full sm:aspect-h-12 xl:aspect-h-9 hidden md:block"></div>
           <Image
             alt="layout-image-one"
             src={ImageTwo}
@@ -24,7 +24,7 @@ const GalleryLayout = () => {
             <span className="absolute"></span>
             <h2 className={`relative font-[700] xl:text-[65.57px] xl:leading-[78.69px] lg:text-[55.57px] lg:leading-[68.69px] text-[37.14px] leading-[44.56px] text-right`}>BREAK THE <span className="text-custom-red">STIGMA</span><br/> EMBRACE THE BEST YOU</h2>
             <h2 className={`relative font-[700] xl:text-[100.48px] xl:leading-[120.58px] lg:text-[90.48px] lg:leading-[110.58px] text-[56.91px] leading-[68.29px] text-right text-custom-red xl:mt-[15.28px] mt-[8.29px]`}>50% OFF</h2>
-            <h3 className={`relative font-[700] xl:text-[73px] xl:leading-[79.63px] lg:text-[63px] lg:leading-[69.63px] text-[41.34px] leading-[45.1px] text-right xl:mt-[15.28px] mt-[8.29px]`}>your first <br/>
+            <h3 className={`relative font-[700] xl:text-[73px] xl:leading-[79.63px] lg:text-[63px] lg:leading-[69.63px] text-[41.34px] leading-[45.1px] text-right xl:mt-[15.28px] mt-[8.29px] font-heading`}>your first <br/>
             treatment</h3>
             <div className="w-full flex justify-end">
               <button className="bg-custom-red rounded-[89.32px] xl:mt-[48.69px] lg:mt-[38.69px] mt-[8.29px] md:mt-[12.29px] w-[162.01px] h-[45.23px] text-[20.1px] font-[400] leading-[34.28px] hover:text-white hover:bg-black">

@@ -30,7 +30,9 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, sli
         slideTo(index)
       }
     }>
-      <div className={`w-${(category?.width -10) + "px"} h-${(category?.height -10) + "px"} xl:w-${category?.width + "px"} xl:h-${category?.height + "px"}`}>
+
+      {/* className={`w-[${(category?.width -10) + "px"}] h-[${(category?.height -10) + "px"}] xl:w-[${category?.width + "px"}] xl:h-[${category?.height + "px"}]`} */}
+      <div className="h-[30px]">
         <Image
           src={action || active == category.text ? category?.hoverIcon : category?.icon}
           alt={category?.text}
