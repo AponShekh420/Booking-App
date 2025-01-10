@@ -24,7 +24,7 @@ import Wrapper from '@/components/common/Wrapper';
 export default function DiscoverSection() {
   return (
     <Wrapper>
-      <div className="w-full mx-auto mt-[48.68px]">
+      <div className="w-full mx-auto mt-[69.68px]">
         <h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red uppercase">Discover Treatments</h1>
         <div className="flex flex-col items-center mt-[43px] relative py-10">
           {/* slide section */}

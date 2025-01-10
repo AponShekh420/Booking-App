@@ -32,6 +32,9 @@ module.exports = {
 		// },
 
 		extend: {
+			screens: {
+				xs: '480px',
+			},
 			fontFamily: {
 				heading: ['CustomHeadingFont', 'sans-serif'],
 				body: ['Anek Devanagari', 'sans-serif'],

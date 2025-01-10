@@ -61,7 +61,7 @@ const CardCategory: FC<CardCategory5Props> = ({
 			</div>
 			<div className="mt-[9.9px]">
 				<h5
-					className={`lg:text-[17.99px] font-[700] lg:leading-[23.28px] text-left md:text-[16.99px] md:leading-[26.28px]`}
+					className={`lg:text-[17.99px] font-[700] lg:leading-[23.28px] text-left md:text-[16.99px] md:leading-[26.28px] hover:text-custom-red transition-all duration-300`}
 				>
 					Hair Regrowth Treatment
 					<br/>
