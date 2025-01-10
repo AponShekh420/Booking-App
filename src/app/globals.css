@@ -48,7 +48,7 @@ h2
 
 .swiper {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	margin: 20px auto;
 }
 .categoryContainer .swiper {
@@ -125,11 +125,9 @@ h2
 }
 
 
-
-
-.home-video-slider .swiper {
+/* .home-video-slider .swiper {
   width: 100%;
-}
+} */
 
 .home-video-slider .swiper-slide {
   background-position: center;
@@ -146,4 +144,12 @@ h2
 /* .home-video-slider .swiper-slide img {
   display: block;
   width: 100%;
+} */
+
+
+
+/* follow section slider */
+
+/* .follow-section-home .swiper {
+	height: auto !important;
 } */
