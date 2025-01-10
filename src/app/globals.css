@@ -48,7 +48,7 @@ h2
 
 .swiper {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	margin: 20px auto;
 }
 .categoryContainer .swiper {
@@ -123,3 +123,33 @@ h2
 	scrollbar-width: thin; /* Thin scrollbar */
 	scrollbar-color: #828282 #e5e7eb; /* Thumb color and track color */
 }
+
+
+/* .home-video-slider .swiper {
+  width: 100%;
+} */
+
+.home-video-slider .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  height: 520px;
+}
+
+.home-video-slider .mySwiper {
+	height: 520px !important;
+}
+
+
+/* .home-video-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+
+
+/* follow section slider */
+
+/* .follow-section-home .swiper {
+	height: auto !important;
+} */

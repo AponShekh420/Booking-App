@@ -100,7 +100,7 @@ const CategoriesSection = () => {
 							height={13.71}
 						/>
 					</button>
-					<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white">
+					<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white capitalize hover:text-white hover:bg-black">
 						view more
 					</button>
 					<button className="custom-next flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">

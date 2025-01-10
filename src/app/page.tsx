@@ -10,6 +10,7 @@ import CreateConfidenceSection from '@/components/home/create-confidence/CreateC
 import SearchTag from '@/components/home/search-tag/SearchTag'
 import { TaxonomyType } from '@/data/types'
 import FollowSection from '@/components/home/follow-section/FollowSection'
+import DiscoverSection from '@/components/home/discover-section/DiscoverSection'
 
 const DEMO_CATS: TaxonomyType[] = [
 	{
@@ -149,6 +150,7 @@ function PageHome() {
 			<HeroSection />
 			<CategoriesSection />
 			<GalleryLayout />
+			<DiscoverSection/>
 			<SearchTag />
 			<ResultSection />
 			<LatestTopicSection />
