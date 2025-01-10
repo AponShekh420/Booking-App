@@ -7,7 +7,7 @@ import { Navigation } from 'swiper/modules'
 
 export default function ResultSection() {
 	return (
-		<section className="mt-[48.68px]">
+		<section className="mt-[101px]">
 			<Wrapper>
 				<h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red">
 					RESULTS THAT SPEAK FOR THEMSELVES
@@ -19,7 +19,7 @@ export default function ResultSection() {
 						slidesPerView={3}
 						slidesPerGroup={3}
 						centeredSlides={false}
-						spaceBetween={32}
+						spaceBetween={22}
 						// virtual
 						navigation={{
 							nextEl: '.custom-next-result',
@@ -59,8 +59,8 @@ export default function ResultSection() {
 						))}
 
 						{/* add button and custom arrow for slide*/}
-						<div className="mt-[15.79px] flex w-full items-center justify-between xl:gap-x-[14.7px]">
-							<button className="custom-prev-result flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
+						<div className="mt-[15.79px] flex w-full items-center justify-between xl:gap-x-[14.7px] gap-x-[5px]">
+							<button className="custom-prev-result flex min-h-[40.42px] min-w-[40px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 								<Image
 									src={'/assets/icons/categories/Arrows/left-arrow.svg'}
 									alt="right arrow"
@@ -68,12 +68,14 @@ export default function ResultSection() {
 									height={13.71}
 								/>
 							</button>
-							<p className="mt-4 text-sm">
-								<span className='text-custom-red font-[700]'>Disclaimer:</span> Before and after images are provided by customers who have
-								booked treatments. These results are not independently verified, and
-								individual outcomes may vary.
-							</p>
-							<button className="custom-next-result flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
+							<div>
+								<p className="text-sm break-words whitespace-normal">
+									<span className='text-custom-red font-[700]'>Disclaimer:</span> Before and after images are provided by customers who have
+									booked treatments. These results are not independently verified, and
+									individual outcomes may vary.
+								</p>
+							</div>
+							<button className="custom-next-result flex min-h-[40.42px] min-w-[40px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 								<Image
 									src={'/assets/icons/categories/Arrows/right-arrow.svg'}
 									alt="right arrow"

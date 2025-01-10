@@ -5,14 +5,14 @@ import Image from 'next/image'
 export default function GentlemendSection() {
 	return (
 		<Wrapper className="w-full">
-			<section className="mt-[48.68px] w-full">
+			<section className="mt-[65.59px] w-full">
 				<div className="grid items-center xl:grid-cols-[2fr_3fr]">
 					<div className="relative mb-16 py-8 pl-5 pr-20 sm:pr-0">
 						<h1 className="text-5xl font-bold capitalize text-custom-red lg:text-7xl">
 							WHY GENTLEMEND?
 						</h1>
 						<div className="mt-12">
-							<h1 className="text-3xl font-bold capitalize lg:text-6xl">
+							<h1 className="text-3xl font-bold uppercase lg:text-6xl">
 								STREAMLINED BOOKING
 							</h1>
 							<p className="text-xl lg:text-2xl">
@@ -20,7 +20,7 @@ export default function GentlemendSection() {
 							</p>
 						</div>
 						<div className="my-6">
-							<h1 className="text-3xl font-bold capitalize lg:text-6xl">
+							<h1 className="text-3xl font-bold lg:text-6xl uppercase">
 								Trusted Experts
 							</h1>
 							<p className="text-xl lg:text-2xl">
@@ -28,7 +28,7 @@ export default function GentlemendSection() {
 							</p>
 						</div>
 						<div>
-							<h1 className="text-3xl font-bold lg:text-6xl">
+							<h1 className="text-3xl font-bold lg:text-6xl uppercase">
 								Tailored for Men
 							</h1>
 							<p className="text-xl lg:text-2xl">

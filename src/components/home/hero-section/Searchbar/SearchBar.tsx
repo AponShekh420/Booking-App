@@ -111,7 +111,7 @@ const SearchBar = () => {
               height={20}
               className="lg:w-[20px] lg:h-[20px] w-[13.38px] h-[13.38px] sm:w-[15.38px] sm:h-[15.38px]"
             />
-            <span className="text-[9.91px] lg:text-[17.78px] sm:text-[12.91px]">Seach</span>
+            <span className="text-[9.91px] lg:text-[17.78px] sm:text-[12.91px]">Search</span>
           </button>
         </div>
 

@@ -134,22 +134,31 @@ h2
   background-size: cover;
   width: 360px;
   height: 520px;
+	visibility: hidden !important;
+	overflow: hidden;
 }
 
 .home-video-slider .mySwiper {
 	height: 520px !important;
 }
 
+.home-video-slider .swiper-slide.swiper-slide-visible {
+	visibility: visible !important;
+}
 
-/* .home-video-slider .swiper-slide img {
-  display: block;
-  width: 100%;
-} */
+.home-video-slider .swiper-slide-shadow-coverflow {
+	transition: none !important;
+}
 
 
 
-/* follow section slider */
 
-/* .follow-section-home .swiper {
-	height: auto !important;
-} */
+/* result card arrow button of slider */
+
+@media (max-width: 640px) {
+  .custom-prev-result,
+  .custom-next-result {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -38,7 +38,7 @@ const topics = [
 ]
 export default function LatestTopicSection() {
 	return (
-		<section className="mt-[48.68px]">
+		<section className="mt-[79px]">
 			<Wrapper>
 				<h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red">
 					LATEST TOPICS:
@@ -50,7 +50,7 @@ export default function LatestTopicSection() {
 						slidesPerView={4}
 						slidesPerGroup={4}
 						centeredSlides={false}
-						spaceBetween={20}
+						spaceBetween={17}
 						// virtual
 						navigation={{
 							nextEl: '.custom-next-topic',
@@ -99,8 +99,8 @@ export default function LatestTopicSection() {
 										height={13.71}
 									/>
 								</button>
-								<button className="hover:text-white hover:bg-black h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white capitalize">
-									view more
+								<button className="hover:text-white hover:bg-black h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white">
+									View more
 								</button>
 								<button className="custom-next-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 									<Image

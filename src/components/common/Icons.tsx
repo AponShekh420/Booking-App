@@ -97,20 +97,8 @@ export const FacebookIcon = ({ className }: classNameT) => (
 )
 
 export const TwiterIcon = ({ className }: classNameT) => (
-	<svg
-		width="20"
-		height="19"
-		viewBox="0 0 20 19"
-		fill="none"
-		className={className}
-		xmlns="http://www.w3.org/2000/svg"
-	>
-		<path
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M7.49233 10.1435L0 0.833496H5.93445L10.5594 6.58775L15.5004 0.859405H18.7688L12.1397 8.55389L20 18.3335H14.0833L9.07538 12.1106L3.72896 18.3162H0.44287L7.49233 10.1435ZM14.9457 16.6085L3.63881 2.55848H5.07138L16.364 16.6085H14.9457Z"
-			fill="currentColor"
-		/>
+	<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fillRule="evenodd" clipRule="evenodd" d="M7.49233 10.1435L0 0.833496H5.93445L10.5594 6.58775L15.5004 0.859405H18.7688L12.1397 8.55389L20 18.3335H14.0833L9.07538 12.1106L3.72896 18.3162H0.44287L7.49233 10.1435ZM14.9457 16.6085L3.63881 2.55848H5.07138L16.364 16.6085H14.9457Z" fill="currentColor"/>
 	</svg>
 )
 

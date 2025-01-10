@@ -24,9 +24,9 @@ import Wrapper from '@/components/common/Wrapper';
 export default function DiscoverSection() {
   return (
     <Wrapper>
-      <div className="w-full mx-auto mt-[48.68px]">
+      <div className="w-full mx-auto mt-[69.68px]">
         <h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red uppercase">Discover Treatments</h1>
-        <div className="flex flex-col items-center mt-[43px]">
+        <div className="flex flex-col items-center mt-[43px] relative py-10">
           {/* slide section */}
           <div className="flex items-center">
             <div className="z-40 pr-3 md:block hidden">
@@ -40,32 +40,53 @@ export default function DiscoverSection() {
               </button>
             </div>
 
-            <div className='home-video-slider w-full'>
+            <div className='home-video-slider w-full max-w-[1200px]'>
               <Swiper
-                effect={'coverflow'}
+                effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={"auto"}
+                slidesPerView={3} // Set to 3 slides per view
+                loop={true}
+                spaceBetween={30} // Adjust space between slides
                 coverflowEffect={{
                   rotate: 0,
-                  stretch: -100,
+                  stretch: -100, // Reduce stretch to avoid slides overlapping
                   depth: 350,
                   modifier: 1,
-                  slideShadows: true,
+                  slideShadows: true, // Add shadow effect for depth
                 }}
-                pagination={true}
                 navigation={{
                   nextEl: ".custom-next-video",
                   prevEl: ".custom-prev-video",
                 }}
-                modules={[EffectCoverflow, Navigation]}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 1, // Mobile: 1 slide
+                  },
+                  768: {
+                    slidesPerView: 2, // Tablet: 2 slides
+                  },
+                  1024: {
+                    slidesPerView: 3, // Desktop: 3 slides
+                  },
+                }}
+                modules={[EffectCoverflow, Navigation, Pagination]}
                 className="mySwiper"
+                onInit={(swiper) => {
+                  swiper.slideToLoop(1); // Ensure the active slide is centered
+                }}
               >
                 <SwiperSlide>
                   <Image src={imageTwo} alt='slideone' fill className='w-full h-full'/>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image src={imageOne} alt='slideone' fill className='w-full h-full'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src={imageThree} alt='slideone' fill className='w-full h-full'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src={imageThree} alt='slideone' fill className='w-full h-full'/>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image src={imageThree} alt='slideone' fill className='w-full h-full'/>
@@ -93,10 +114,11 @@ export default function DiscoverSection() {
               Invisalign Consultation <br/>
               <span className='leading-[40.5px]'>Cosmetic Dental - London </span>
             </p>
-            <button className='text-[21.96px] font-[400] capitalize leading-[37.45px] bg-custom-red w-[184px] h-[49px] rounded-[97.59px] text-white hover:bg-black hover:text-white transition-all duration-400'>See treatment</button>
+            <button className='text-[21.96px] font-[400] leading-[37.45px] bg-custom-red w-[184px] h-[49px] rounded-[97.59px] text-white hover:bg-black hover:text-white transition-all duration-400'>See treatment</button>
           </div>
+          <div className='h-[346px] bg-[#F3F3F3] w-full bottom-0 absolute rounded-[10px] -z-10'></div>
         </div>
-    </div>
+      </div>
     </Wrapper>
   );
 }
