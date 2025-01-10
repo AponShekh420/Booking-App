@@ -25,7 +25,7 @@ export default function ResultCard() {
 						/>
 						<span>Daniel L.</span>
 					</div>
-					<div className="mt-4">
+					<div className="mt-4 flex flex-col items-start">
 						<p className="text-[1rem] font-bold">PRP Treatment</p>
 						<small>Dermamina</small>
 						<div className="flex gap-x-4">

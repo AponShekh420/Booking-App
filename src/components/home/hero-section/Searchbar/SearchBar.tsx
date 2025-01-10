@@ -4,6 +4,7 @@ import StayDatesRangeInput from "./StayDatesRangeInput";
 import { useEffect, useRef, useState } from "react";
 import StayLocation from "./StayLocation";
 import StaySearchDropdown from "./StaySearchDropdown";
+import HeroSearchFormMobile from "./HeroSearchFormMobile";
 
 
 const SearchBar = () => {
@@ -74,8 +75,10 @@ const SearchBar = () => {
         </div>
 
         {/* container of the dropdown content */}
+        {/* {tab && <HeroSearchFormMobile tab={tab} setTab={setTab}/>} */}
+
         {tab && (
-          <div className="flex rounded-[10px] dark:bg-neutral-800 absolute w-full h-auto bg-white z-40 search-dropdown-custom-scrollbar top-11 sm:top-12 md:top-14 lg:top-20 p-[30px] shadow-md">
+          <div className="rounded-[10px] dark:bg-neutral-800 absolute w-full h-auto bg-white z-40 search-dropdown-custom-scrollbar top-11 sm:top-12 md:top-14 lg:top-20 p-[30px] shadow-md hidden md:flex">
             {tab == "clock" && (<StayDatesRangeInput/>)}
             {tab == "location" && (<StayLocation/>)}
             {tab == "searchDropdown" && (<StaySearchDropdown/>)}
