@@ -61,9 +61,9 @@ const CardCategory: FC<CardCategory5Props> = ({
 			</div>
 			<div className="mt-[9.9px]">
 				<h5
-					className={`sm:text-[17.99px] font-[700] lg:leading-[23.28px] text-left text-[13.27px] xs:text-[16.90px] sm:leading-[26.25px] xs:leading-[20.25px] leading-[19.25px] hover:text-custom-red transition-all duration-300`}
+					className={`sm:text-[17.99px] font-[700] lg:leading-[23.28px] text-left text-[13.27px] xs:text-[16.90px] sm:leading-[26.25px] xs:leading-[20.25px] leading-[19.25px]`}
 				>
-					Hair Regrowth Treatment
+					<span className={"hover:text-custom-red transition-all duration-300"}>Hair Regrowth Treatment</span>
 					<br/>
 					<span className='font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px]'>PRP - platelet-rich plasma therapy</span>
 					<p className='font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px] sm:mt-[10px] xs:mt-[8px] mt-[5px]'>Dermamina - London</p>

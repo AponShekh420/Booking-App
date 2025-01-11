@@ -68,9 +68,9 @@ export default function ResultSection() {
 									height={13.71}
 								/>
 							</button>
-							<div>
-								<p className="text-sm break-words whitespace-normal">
-									<span className='text-custom-red font-[700]'>Disclaimer:</span> Before and after images are provided by customers who have
+							<div className='w-full'>
+								<p className="break-words whitespace-normal text-[11.26px]">
+									Disclaimer: Before and after images are provided by customers who have
 									booked treatments. These results are not independently verified, and
 									individual outcomes may vary.
 								</p>
