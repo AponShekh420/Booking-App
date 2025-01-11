@@ -61,15 +61,15 @@ const CardCategory: FC<CardCategory5Props> = ({
 			</div>
 			<div className="mt-[9.9px]">
 				<h5
-					className={`lg:text-[17.99px] font-[700] lg:leading-[23.28px] text-left md:text-[16.99px] md:leading-[26.28px] hover:text-custom-red transition-all duration-300`}
+					className={`sm:text-[17.99px] font-[700] lg:leading-[23.28px] text-left text-[13.27px] xs:text-[16.90px] sm:leading-[26.25px] xs:leading-[20.25px] leading-[19.25px] hover:text-custom-red transition-all duration-300`}
 				>
 					Hair Regrowth Treatment
 					<br/>
-					<span className='font-[400] text-[16.2px] leading-[26.25px]'>PRP - platelet-rich plasma therapy</span>
-					<p className='font-[400] text-[16.2px] leading-[20.25px] mt-[10px]'>Dermamina - London</p>
-					<div className='flex justify-between items-center mt-[10px]'>
-						<div className='font-[700] text-[13.99px] xs:text-[16.99px] leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px] md:mt-[2.8px] mt-[2.5px]'>
-							<span className='text-[10.03px] xs:text-[14.03px] font-[700] leading-[21.67px] md:text-[16.99px] md:leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px]'>From</span> £150
+					<span className='font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px]'>PRP - platelet-rich plasma therapy</span>
+					<p className='font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px] sm:mt-[10px] xs:mt-[8px] mt-[5px]'>Dermamina - London</p>
+					<div className='flex justify-between items-center sm:mt-[10px] xs:mt-[8px] mt-[5px]'>
+						<div className='font-[700] text-[13.99px] xs:text-[16.99px] lg:text-[17.99px] lg:leading-[29.28px] md:mt-[2.8px] mt-[2.5px]'>
+							<span className='text-[10.03px] xs:text-[14.03px] font-[700] md:text-[16.99px] lg:text-[17.99px]'>From</span> £150
 						</div>
 						<div className='flex items-center gap-x-[2px] xs:gap-x-2 md:mt-[-3px] mt-[-2px] flex-nowrap'>
 							<div className='flex items-center lg:w-[16.37px] lg:h-[16.37px] md:w-[15.37px] md:h-[15.37px] h-[12.72px] w-[12.72px] xs:h-[14.72px] xs:w-[14.72px] sm:h-[14.72px] sm:w-[14.72px] mt-[2px] xs:mt-0'>
