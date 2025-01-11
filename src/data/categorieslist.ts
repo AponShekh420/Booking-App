@@ -49,13 +49,6 @@ const categoriesList: Category[] = [
   //   width: 11.94,
   //   height: 27.56
   // },
-  {
-    text: "Hair",
-    icon: "/assets/icons/categories/Hair.svg",
-    hoverIcon: "/assets/icons/categories/hover/Hair-hover.svg",
-    width: 23.89,
-    height: 28.48
-  },
   // {
   //   text: "Hair Growth",
   //   icon: "/assets/icons/categories/Hair-Growth.svg",
@@ -139,6 +132,13 @@ const categoriesList: Category[] = [
     hoverIcon: "/assets/icons/categories/hover/Derma-Filler-hover.svg",
     width: 21,
     height: 27.44
+  },
+  {
+    text: "Hair",
+    icon: "/assets/icons/categories/Hair.svg",
+    hoverIcon: "/assets/icons/categories/hover/Hair-hover.svg",
+    width: 23.89,
+    height: 28.48
   },
   {
     text: "Fat Reduction",
