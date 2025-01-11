@@ -26,7 +26,8 @@ export default function DiscoverSection() {
     <Wrapper>
       <div className="w-full mx-auto mt-[69.68px]">
         <h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red uppercase">Discover Treatments</h1>
-        <div className="flex flex-col items-center mt-[43px] relative py-10">
+        <h4 className='md:text-[31.23px] sm:text-[27.23px] xs:text-[24.23px] text-[20.23px] font-bold leading-8'>Uncover the Top-Rated Treatments for Men</h4>
+        <div className="flex flex-col items-center sm:mt-[20px] xs:mt-[15px] mt-[5px] relative pb-10">
           {/* slide section */}
           <div className="flex items-center">
             <div className="z-40 pr-3 md:block hidden">

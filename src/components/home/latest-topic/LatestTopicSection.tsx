@@ -47,8 +47,8 @@ export default function LatestTopicSection() {
 					<Swiper
 						modules={[Navigation]}
 						// onSwiper={setSwiperRef}
-						slidesPerView={4}
-						slidesPerGroup={4}
+						slidesPerView={3}
+						slidesPerGroup={3}
 						centeredSlides={false}
 						spaceBetween={17}
 						// virtual
@@ -58,11 +58,6 @@ export default function LatestTopicSection() {
 						}}
 						loopAddBlankSlides={true}
 						breakpoints={{
-							// Responsive breakpoints
-							// 1024: {
-							// 	slidesPerView: 4,
-							// 	slidesPerGroup: 4,
-							// },
 							768: {
 								slidesPerView: 3,
 								slidesPerGroup: 3,
@@ -90,7 +85,7 @@ export default function LatestTopicSection() {
 						))}
 
 						{/* add button and custom arrow for slide*/}
-							<div className="mt-[15.79px] flex w-full items-center justify-center gap-[14.7px]">
+							<div className="mt-[58.53px] flex w-full items-center justify-center gap-[14.7px]">
 								<button className="custom-prev-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 									<Image
 										src={'/assets/icons/categories/Arrows/left-arrow.svg'}
