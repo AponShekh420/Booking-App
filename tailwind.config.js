@@ -34,6 +34,7 @@ module.exports = {
 		extend: {
 			screens: {
 				xs: '480px',
+				xm: "769px",
 			},
 			fontFamily: {
 				heading: ['CustomHeadingFont', 'sans-serif'],
