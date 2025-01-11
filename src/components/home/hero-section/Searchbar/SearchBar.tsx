@@ -29,11 +29,11 @@ const SearchBar = () => {
 
   return (
     <div 
-      className="xl:mt-[57px] mt-[16.58px] md:mt-[23.58px] lg:mt-[27.58px] xl:w-[945px] lg:w-[800px] md:w-[600px] sm:w-[500px] w-[369px] xl:h-[73px] h-[35px] sm:h-[40px] md:h-[50px] lg:h-[65px] rounded-[41px] bg-white"
+      className="xl:mt-[57px] mt-[16.58px] md:mt-[23.58px] lg:mt-[27.58px] xl:w-[945px] lg:w-[800px] md:w-[600px] sm:w-[500px] w-[310px] xs:w-[369px] xl:h-[73px] h-[35px] xs:h-[35px] sm:h-[40px] md:h-[50px] lg:h-[65px] rounded-[41px] bg-white py-2"
       ref={containerRef}
     >
-      <div className="xl:w-[870px] lg:w-[730px] sm:w-[465px] w-[340px] md:w-[550px] h-full m-auto flex items-center relative">
-        <div className="lg:pr-[36px] pr-[11.16px] lg:h-[37px] h-[20.62px] flex items-center border-r-[1px] border-[#D8D8D8]">
+      <div className="xl:w-[870px] lg:w-[730px] sm:w-[465px] w-[300px] xs:w-[340px] md:w-[550px] h-full m-auto flex items-center relative">
+        <div className="lg:pr-[36px] pr-[9.16px] xs:pr-[11.16px] pl-2 xs:pl-0 lg:h-[37px] h-[20.62px] flex items-center border-r-[1px] border-[#D8D8D8]">
           <Image src={"assets/icons/searchbar/AI-icon.svg"} alt="AI" 
             width={100} 
             height={100}
@@ -104,7 +104,7 @@ const SearchBar = () => {
         </div>
 
         <div className="lg:pl-[16px] pl-[7.8px]">
-          <button className="hover:text-white hover:bg-black transition-all duration-300 leading-[30.32px] text-white lg:w-[119px] lg:h-[40px] w-[66.32px] h-[22.29px] sm:w-[74.32px] sm:h-[30.29px] lg:rounded-[79px] rounded-[44.03px] bg-[#E9082A] flex items-center justify-center lg:gap-x-[7px] gap-x-[4px] sm:gap-x-[5px]">
+          <button className="hover:text-white h-[25.29px] hover:bg-black transition-all duration-300 leading-[30.32px] text-white lg:w-[119px] lg:h-[40px] w-[66.32px] sm:w-[85.32px] sm:h-[30.29px] lg:rounded-[79px] rounded-[44.03px] bg-[#E9082A] flex items-center justify-center lg:gap-x-[7px] gap-x-[4px] sm:gap-x-[5px]">
             <Image 
               src={"assets/icons/searchbar/Magnifier.svg"} alt="AI" 
               width={20} 

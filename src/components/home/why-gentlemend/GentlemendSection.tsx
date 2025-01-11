@@ -47,7 +47,7 @@ export default function GentlemendSection() {
 							alt="mobile-hand"
 						/>
 						<div className="absolute right-10 md:top-12 top-5 lg:right-32 lg:top-1/2 sm:top-7 lg:-translate-y-1/2 xl:right-10 xs:top-6">
-							<h1 className="xs:text-5xl flex flex-col text-3xl font-bold uppercase sm:text-6xl md:text-8xl lg:text-8xl xl:text-[65px] 2xl:text-[4.9rem] xm:text-7xl">
+							<h1 className="xs:text-5xl flex flex-col text-3xl font-bold uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-[65px] 2xl:text-[4.9rem]">
 								<span>
 									Find the Right <br /> Treatment
 								</span>
