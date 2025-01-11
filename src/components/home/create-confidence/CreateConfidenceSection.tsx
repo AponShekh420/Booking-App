@@ -28,7 +28,7 @@ export default function CreateConfidenceSection() {
 									className="w-full border-none text-sm font-medium outline-none placeholder:text-black focus:border-none focus:outline-none sm:text-lg"
 									placeholder="PLEASE ENTER YOUR EMAIL"
 								/>
-								<button className="hover:text-white hover:border-blue-600 hover:bg-blue-600 relative flex h-full items-center text-nowrap border-2 border-custom-red bg-custom-red px-4 pt-[1%] font-heading text-xl text-white outline-none sm:px-8 sm:text-[2.5rem]">
+								<button className="hover:text-white hover:border-blue-600 hover:bg-blue-600 relative flex h-full items-center text-nowrap border-2 border-custom-red bg-custom-red px-4 pt-[1%] font-heading text-xl text-white outline-none sm:px-8 sm:text-[2.5rem] whitespace-nowrap">
 									SIGN UP
 								</button>
 							</div>
