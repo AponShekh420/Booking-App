@@ -11,7 +11,7 @@ const categoriesList: Category[] = [
     text: "Trending",
     icon: "/assets/icons/categories/Trending.svg",
     hoverIcon: "/assets/icons/categories/hover/Trending-hover.svg",
-    width: 30,
+    width: 20,
     height: 19
   },
   {
