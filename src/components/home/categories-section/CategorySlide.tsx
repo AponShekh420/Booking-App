@@ -37,7 +37,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
         <Swiper
           modules={[Navigation]}
           slidesPerView="auto" // Dynamic width calculation
-          spaceBetween={36.85} // Gap between slides
+          spaceBetween={40} // Gap between slides
           centeredSlides={false} // Prevent centering when all slides fit
           centerInsufficientSlides={true} // Center slides if they are fewer than the available space
           navigation={{
@@ -56,22 +56,22 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
           }}
           breakpoints={{
             240: {
-              spaceBetween: 5, // Gap for xxl-smaller screens
+              spaceBetween: 22, // Gap for xxl-smaller screens
             },
             340: {
-              spaceBetween: 10, // Gap for xl-smaller screens
+              spaceBetween: 29, // Gap for xl-smaller screens
             },
             640: {
-              spaceBetween: 15, // Gap for smaller screens
+              spaceBetween: 35, // Gap for smaller screens
             },
             768: {
-              spaceBetween: 20, // Medium gap for tablets
+              spaceBetween: 37, // Medium gap for tablets
             },
             1024: {
-              spaceBetween: 25, // Adjust gap for desktops
+              spaceBetween: 40, // Adjust gap for desktops
             },
             1280: {
-              spaceBetween: 26.85, // Exact gap for large screens
+              spaceBetween: 45, // Exact gap for large screens
             },
           }}
         >
