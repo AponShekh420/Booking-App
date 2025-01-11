@@ -36,7 +36,7 @@ export default function ResultSection() {
 								slidesPerView: 3,
 								slidesPerGroup: 3,
 							},
-							390: {
+							0: {
 								slidesPerView: 1,
 								slidesPerGroup: 1,
 							},
