@@ -68,17 +68,17 @@ const CardCategory: FC<CardCategory5Props> = ({
 					<span className='font-[400] text-[16.2px] leading-[26.25px]'>PRP - platelet-rich plasma therapy</span>
 					<p className='font-[400] text-[16.2px] leading-[20.25px] mt-[10px]'>Dermamina - London</p>
 					<div className='flex justify-between items-center mt-[10px]'>
-						<div>
-							<span className='text-[14.03px] font-[700] leading-[21.67px] md:text-[16.99px] md:leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px]'>From</span> £150
+						<div className='font-[700] text-[13.99px] xs:text-[16.99px] leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px] md:mt-[2.8px] mt-[2.5px]'>
+							<span className='text-[10.03px] xs:text-[14.03px] font-[700] leading-[21.67px] md:text-[16.99px] md:leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px]'>From</span> £150
 						</div>
-						<div className='flex items-center gap-x-2 md:mt-[-3px] mt-[-2px]'>
-							<div className='flex items-center lg:w-[16.37px] lg:h-[16.37px] md:w-[15.37px] md:h-[15.37px] h-[15.72px] w-[15.72px] sm:h-[14.72px] sm:w-[14.72px]'>
+						<div className='flex items-center gap-x-[2px] xs:gap-x-2 md:mt-[-3px] mt-[-2px] flex-nowrap'>
+							<div className='flex items-center lg:w-[16.37px] lg:h-[16.37px] md:w-[15.37px] md:h-[15.37px] h-[12.72px] w-[12.72px] xs:h-[14.72px] xs:w-[14.72px] sm:h-[14.72px] sm:w-[14.72px] mt-[2px] xs:mt-0'>
 								<Image src={"/assets/icons/categories/star-color.svg"} alt="star" 
 									width={100} 
 									height={100}
 								/>
 							</div>
-							<p className='font-[700] text-[16.99px] leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px] md:mt-[2.8px] mt-[2.5px]'>4.9 (292)</p>
+							<p className='font-[700] text-[13.99px] xs:text-[16.99px] leading-[26.28px] lg:text-[17.99px] lg:leading-[29.28px] md:mt-[2.8px] mt-[2.5px]'>4.9 (292)</p>
 						</div>
 					</div>
 				</h5>
