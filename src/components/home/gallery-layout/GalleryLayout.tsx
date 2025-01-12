@@ -27,7 +27,7 @@ const GalleryLayout = () => {
             <h3 className={`relative font-[700] 2xl:text-[58.57px] xl:text-[47.14px] lg:text-[40.14px] md:text-[32.14px] sm:text-[27.14px] xs:text-[37.14px] text-[28.14px] leading-[32.56px] xs:leading-[44.56px] sm:leading-[35.56px] md:leading-[38.56px] lg:leading-[45.56px] xl:leading-[55.56px] 2xl:leading-[68.69px] text-right lg:mt-[15.28px] xl:mt-[18.28px] md:mt-[8.29px] sm:mt-[3px] mt-[8.29px] font-heading`}>your first <br/>
             treatment</h3>
             <div className="w-full flex justify-end">
-              <button className="bg-custom-red rounded-[89.32px] sm:mt-[3px] lg:mt-[35.69px] xl:mt-[45.69px] mt-[8.29px] md:mt-[12.29px] flex items-center justify-center 2xl:w-[162.01px] xl:h-[45.23px] xs:w-[120.01px] xs:h-[37.23px] md:w-[120.01px] md:h-[37.23px] lg:w-[145.01px] lg:h-[43.23px] w-[100.01px] h-[30.23px] sm:w-[100.01px] sm:h-[30.23px] xl:text-[20.1px] xs:text-[17.1px] sm:text-[14.1px] md:text-[17.1px] lg:text-[20.1px] text-[14.1px] font-[400] leading-[34.28px] hover:text-white hover:bg-black">
+              <button className="bg-custom-red rounded-[89.32px] sm:mt-[3px] xs:mt-[40px] lg:mt-[35.69px] xl:mt-[45.69px] mt-[25.29px] md:mt-[12.29px] flex items-center justify-center 2xl:w-[162.01px] xl:h-[45.23px] xs:w-[120.01px] xs:h-[37.23px] md:w-[120.01px] md:h-[37.23px] lg:w-[145.01px] lg:h-[43.23px] w-[100.01px] h-[30.23px] sm:w-[100.01px] sm:h-[30.23px] xl:text-[20.1px] xs:text-[17.1px] sm:text-[14.1px] md:text-[17.1px] lg:text-[20.1px] text-[14.1px] font-[400] leading-[34.28px] hover:text-white hover:bg-black">
                 Learn more
               </button>
             </div>
