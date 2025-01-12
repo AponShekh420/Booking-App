@@ -26,7 +26,7 @@ const CardCategory: FC<CardCategory5Props> = ({
 	return (
 		<Link href={href} className={`nc-CardCategory5 flex flex-col ${className}`}>
 			<div
-				className={`group aspect-h-3 aspect-w-4 relative h-0 w-full flex-shrink-0 overflow-hidden rounded-2xl`}
+				className={`group aspect-h-3 aspect-w-3 relative h-0 w-full flex-shrink-0 overflow-hidden rounded-2xl`}
 			>
 				<div className="absolute top-0 w-11/12 m-auto flex justify-between z-50 mt-[19.89px]">
 					{/* rating icons */}
