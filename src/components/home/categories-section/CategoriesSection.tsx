@@ -34,7 +34,7 @@ const CategoriesSection = () => {
 	return (
 		<div className="categoryContainer w-full">
 			<Wrapper>
-				<div className="h-[73.5px] w-full mb-[45.77px]">
+				<div className="h-[73.5px] w-full sm:mb-[34.77px] md:mb-[35.77px] lg:mb-[39.77px] xs:mb-[27.77px] mb-20.77px]">
 					<CategorySlide slideTo={slideTo} />
 				</div>
 				<Swiper
