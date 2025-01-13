@@ -9,7 +9,40 @@
 	font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+
+@font-face {
+	font-family: 'AnekBangla-Regular';
+	src: url('/fonts/AnekBangla-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'AnekBangla-Bold';
+	src: url('/fonts/AnekBangla-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AnekBangla-SemiBold';
+	src: url('/fonts/AnekBangla-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'AnekBangla-Medium';
+	src: url('/fonts/AnekBangla-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap'); */
 
 h1,
 h2
@@ -133,13 +166,32 @@ h2
   background-position: center;
   background-size: cover;
   width: 360px;
-  height: 520px;
+  height: auto;
 	visibility: hidden !important;
 	overflow: hidden;
+	background: transparent !important;
 }
 
+@media only screen and (max-width: 640px){
+	.home-video-slider .swiper-slide {
+		width: 300px !important;
+	}
+	.home-video-slider .mySwiper {
+		min-height: 400px !important;
+	}
+}
+@media only screen and (max-width: 430px){
+	.home-video-slider .swiper-slide {
+		width: 243.27px !important;
+	}
+	.home-video-slider .mySwiper {
+		min-height: 300px !important;
+	}
+}
+
+
 .home-video-slider .mySwiper {
-	height: 520px !important;
+	min-height: 650px;
 }
 
 .home-video-slider .swiper-slide.swiper-slide-visible {
@@ -147,11 +199,16 @@ h2
 }
 
 .home-video-slider .swiper-slide-shadow-coverflow {
-	transition: none !important;
+	display: none;
 }
 
+.home-video-slider .swiper-slide-prev .title {
+	visibility: hidden !important;
+}
 
-
+.home-video-slider .swiper-slide-next .title {
+	visibility: hidden !important;
+}
 
 /* result card arrow button of slider */
 
