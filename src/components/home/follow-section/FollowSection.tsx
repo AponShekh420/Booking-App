@@ -34,6 +34,7 @@ const FollowSection = () => {
           <Swiper
             modules={[Navigation]}
             // onSwiper={setSwiperRef}
+            grabCursor={true}
             slidesPerView={4}
             slidesPerGroup={4}
             centeredSlides={false}
@@ -72,9 +73,7 @@ const FollowSection = () => {
                           <Image
                             alt="instagram feed image"
                             src={item}
-                            width={100}
-                            height={100}
-                            className="h-full w-full rounded-2xl"
+                            className="h-full w-full rounded-[10px]"
                           />
                         </div>
                       </SwiperSlide>
