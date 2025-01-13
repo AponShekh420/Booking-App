@@ -41,7 +41,7 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, sli
           className="w-full h-full"
         />
       </div>
-      <p className={`sm:text-[11.124px] text-[9.124px] font-[600] leading-[21.08px] text-center mt-[5.51px] break-keep ${action || active == category.text ? "text-[#E9082A]": "text-black"}`}>
+      <p className={`sm:text-[11.124px] text-[9.124px] font-semibold leading-[21.08px] text-center mt-[5.51px] break-keep ${action || active == category.text ? "text-[#E9082A]": "text-black"}`}>
         {category?.text}
       </p>
       {

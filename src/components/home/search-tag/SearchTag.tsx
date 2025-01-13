@@ -6,7 +6,7 @@ const SearchTag = () => {
 		<Wrapper>
 			<div className="mt-[70px] grid font-body sm:grid-cols-[200px_1fr] sm:gap-x-[20px] md:grid-cols-[220px_1fr] md:gap-x-[30px] lg:grid-cols-[300px_1fr] lg:gap-x-[45px] xl:grid-cols-[350px_1fr] xl:gap-x-[70px] 2xl:grid-cols-[400px_1fr] 2xl:gap-x-[120px]">
 				<div className="border-b-[0.6px] border-black pb-[14px] sm:border-b-0 sm:border-r-[0.6px] lg:pb-[30px]">
-					<h1 className="w-fit text-[31.43px] font-bold leading-[44px] text-custom-red sm:mx-auto sm:px-2 sm:text-[50px] sm:leading-[60px] md:px-4 md:text-[55px] md:leading-[60px] lg:text-[75px] lg:leading-[80px] xl:mr-[52px] xl:text-[94.61px] xl:leading-[100px]">
+					<h1 className="w-fit text-[31.43px] font-bold leading-[44px] text-custom-red sm:mx-auto sm:px-2 sm:text-[50px] sm:leading-[60px] md:px-4 md:text-[55px] md:leading-[60px] lg:text-[75px] lg:leading-[80px] xl:mr-[52px] xl:text-[94.61px] xl:leading-[100px] font-heading">
 						MOST POPULAR SEARCHES
 					</h1>
 					<h5 className="font-body text-[17.65px] sm:hidden">

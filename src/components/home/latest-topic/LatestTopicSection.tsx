@@ -40,7 +40,7 @@ export default function LatestTopicSection() {
 	return (
 		<section className="mt-[79px]">
 			<Wrapper>
-				<h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red">
+				<h1 className="font-[700] xl:text-[64.288px] xl:leading-[80.43px] text-[34.72px] leading-[52.08px] sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] text-custom-red uppercase">
 					LATEST TOPICS:
 				</h1>
 				<div className="w-full">
@@ -73,7 +73,7 @@ export default function LatestTopicSection() {
 								<div className="relative flow-root">
 									<div className="hiddenScrollbar relative -mx-2 flex snap-x snap-mandatory overflow-x-auto lg:-mx-3.5">
 										<div
-											className={`w-[17rem] shrink-0 snap-start px-2 lg:w-[25%] lg:px-3.5 xl:w-[20%] min-h-[340px] rounded-[10px]`}
+											className={`w-[17rem] shrink-0 snap-start px-2 lg:w-[25%] lg:px-3.5 xl:w-[20%] min-h-[340px] rounded-[15px] overflow-hidden`}
 										>
 											<SwiperSlide virtualIndex={index}>
 												<TopicCard key={id} title={title} image={image} desc={desc} />

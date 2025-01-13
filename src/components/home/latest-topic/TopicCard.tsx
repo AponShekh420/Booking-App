@@ -17,9 +17,9 @@ export default function TopicCard({ image, title, desc }: TopicType) {
 				<span className={`absolute inset-0 bg-black transition-opacity duration-300 rounded-[10px] ${effect ? "opacity-50": "opacity-0 bg-opacity-10"}`}></span>
 			</div>
 			<div className='flex flex-col items-start'>
-				<h5 className={`mt-5 text-xl lg:text-3xl text-left font-heading ${effect && " text-custom-red"} cursor-pointer`} onMouseOver={()=> setEffect(true)} onMouseOut={()=> setEffect(false)}>{title}</h5>
-				<p className="py-3 lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px] leading-[22px] text-left">{desc}</p>
-				<button className="rounded-[87.82px] bg-custom-red px-6 py-1.5 text-white hover:text-white hover:bg-black">
+				<h5 className={`mt-2 text-[19.97px] lg:text-[29.25] lg:leading-[43px] leading-[25.5px] text-left font-heading ${effect && " text-custom-red"} cursor-pointer`} onMouseOver={()=> setEffect(true)} onMouseOut={()=> setEffect(false)}>{title}</h5>
+				<p className="lg:mt-0 mt-2 lg:text-[16.2px] md:text-[14.4px] sm:text-[13.5px] text-[12.6px] leading-[22px] text-left">{desc}</p>
+				<button className="lg:mt-4 mt-3 rounded-[87.82px] bg-custom-red lg:w-[143.361px] lg:h-[40.023px] w-[108.77px] h-[30.36px] text-white lg:text-[17.784px] text-[13.5px] hover:text-white hover:bg-black">
 					Learn more
 				</button>
 			</div>

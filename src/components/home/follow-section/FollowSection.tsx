@@ -16,16 +16,16 @@ const FollowSection = () => {
     <Wrapper>
       <div className="mt-[103px] sm:mb-[120px] mb-[50px] xs:mb-[70px] follow-section-home">
         <div className="flex items-center lg:gap-x-[43px] gap-x-[23px] md:gap-x-[33px]">
-          <h1 className="font-[700] xl:text-[80.36px] xl:leading-[96.43px] text-[43.4px] leading-[52.08px] sm:text-[53.4px] sm:leading-[62.08px] md:text-[63.4px] md:leading-[72.08px] lg:text-[73.4px] lg:leading-[82.08px] text-custom-red uppercase">Follow us</h1>
+          <h1 className="font-[700] xl:text-[64.288px] xl:leading-[80.43px] text-[34.72px] leading-[52.08px] sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] text-custom-red uppercase">Follow us</h1>
           <div className="flex items-center gap-x-[6px]">
-            <div className="lg:w-[54px] lg:h-[54px] sm:w-[37.53px] sm:h-[37.53px] md:w-[41.53px] md:h-[41.53px] w-[33.53px] h-[33.53px] border-[1px] border-[#9B9B9B] rounded-full flex items-center justify-center">
-              <FacebookIcon className="lg:w-[24px] xl:h-[24px] w-[8.69px] h-[13.66px] sm:w-[12.69px] sm:h-[17.66px] md:w-[16.69px] md:h-[21.66px]"/>
+            <div className="lg:w-[40px] lg:h-[40px] sm:w-[34.53px] sm:h-[34.53px] md:w-[36.53px] md:h-[36.53px] w-[28.53px] h-[28.53px] border-[1px] border-[#9B9B9B] rounded-full flex items-center justify-center">
+              <FacebookIcon className="lg:w-[16px] xl:h-[16px] w-[8.69px] h-[13.66px] sm:w-[10.69px] sm:h-[15.66px] md:w-[16.69px] md:h-[16.69px]"/>
             </div>
-            <div className="lg:w-[54px] lg:h-[54px] sm:w-[37.53px] sm:h-[37.53px] md:w-[41.53px] md:h-[41.53px] w-[33.53px] h-[33.53px] border-[1px] border-[#9B9B9B] rounded-full flex items-center justify-center">
-              <TwiterIcon className="lg:w-[20px] lg:h-[17.5px] w-[14.9px] h-[14.9px] sm:w-[18.9px] sm:h-[18.9px] md-[22.9px] md:h-[22.9px]"/>
+            <div className="lg:w-[40px] lg:h-[40px] sm:w-[34.53px] sm:h-[34.53px] md:w-[36.53px] md:h-[36.53px] w-[28.53px] h-[28.53px] border-[1px] border-[#9B9B9B] rounded-full flex items-center justify-center">
+              <TwiterIcon className="lg:w-[16px] lg:h-[13.5px] w-[10.9px] h-[9.9px] sm:w-[13.9px] sm:h-[14.9px] md-[18.9px] md:h-[18.9px]"/>
             </div>
-            <div className="lg:w-[54px] lg:h-[54px] sm:w-[37.53px] sm:h-[37.53px] md:w-[41.53px] md:h-[41.53px] w-[33.53px] h-[33.53px] border-[1px] border-[#9B9B9B] rounded-full flex items-center justify-center">
-              <InstagramIcon className="lg:w-[20px] lg:h-[20px] w-[14.9px] h-[14.9px] sm:w-[18.9px] sm:h-[18.9px] md:w-[22.9px] md:h-[22.9px]"/>
+            <div className="lg:w-[40px] lg:h-[40px] sm:w-[34.53px] sm:h-[34.53px] md:w-[36.53px] md:h-[36.53px] w-[28.53px] h-[28.53px] border-[1px] border-[#9B9B9B] rounded-full flex items-center justify-center">
+              <InstagramIcon className="lg:w-[20px] lg:h-[20px] w-[12.9px] h-[12.9px] sm:w-[16.9px] sm:h-[16.9px] md:w-[20.9px] md:h-[20.9px]"/>
             </div>
           </div>
         </div>
@@ -34,6 +34,7 @@ const FollowSection = () => {
           <Swiper
             modules={[Navigation]}
             // onSwiper={setSwiperRef}
+            grabCursor={true}
             slidesPerView={4}
             slidesPerGroup={4}
             centeredSlides={false}
@@ -60,7 +61,7 @@ const FollowSection = () => {
               },
             }}
           >
-            {[1, 2, 3, 4, 5].map((item, index) => (
+            {[followImgOne, followImgThree, followImgTwo, followImgfour].map((item, index) => (
               <div className={`nc-SectionSliderNewCategories`} key={index}>
                 <div className="relative flow-root">
                   <div className="hiddenScrollbar relative -mx-2 flex snap-x snap-mandatory overflow-x-auto lg:-mx-3.5">
@@ -71,10 +72,8 @@ const FollowSection = () => {
                         <div className="w-full">
                           <Image
                             alt="instagram feed image"
-                            src={followImgOne || ''}
-                            width={100}
-                            height={100}
-                            className="h-full w-full rounded-2xl object-cover"
+                            src={item}
+                            className="h-full w-full rounded-[10px]"
                           />
                         </div>
                       </SwiperSlide>
