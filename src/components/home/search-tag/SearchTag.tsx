@@ -31,6 +31,11 @@ const SearchTag = () => {
 						<SearchBtn name="Hair transplant" />
 						<SearchBtn name="I’m sweating too much" />
 						<SearchBtn name="Dark circles" />
+						<SearchBtn name="Treatments for acne" />
+						<SearchBtn name="How does botox work" />
+						<SearchBtn name="Jawline contouring" />
+						<SearchBtn name="Under-eye bags" />
+						<SearchBtn name="Stretch marks" />
 					</div>
 				</div>
 
