@@ -26,8 +26,8 @@ export default function DiscoverSection() {
   return (
     <Wrapper>
       <section className="w-full mx-auto mt-[69.68px]">
-        <h1 className="font-[700] xl:text-[64.288px] xl:leading-[80.43px] text-[34.72px] leading-[52.08px] sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] text-custom-red uppercase">Discover Treatments</h1>
-        <h4 className='md:text-[31.23px] sm:text-[27.23px] xs:text-[24.23px] text-[20.23px] font-medium leading-8'>Explore Freely, Learn Confidently!</h4>
+        <h1 className="font-[700] xl:text-[64.288px] xl:leading-[80.43px] text-[34.72px] leading-[40.08px] sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] text-custom-red uppercase">Discover Treatments</h1>
+        <h4 className='md:text-[31.23px] sm:text-[27.23px] xs:text-[24.23px] text-[17.65px] font-medium leading-8'>Explore Freely, Learn Confidently!</h4>
         <div className="flex flex-col items-center sm:mt-[20px] xs:mt-[15px] mt-[5px] relative pb-10">
           {/* slide section */}
           <div className="flex items-center relative">
