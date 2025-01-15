@@ -6,6 +6,7 @@ import SearchBar from "./Searchbar/SearchBar";
 import AvatarDropdown from "./AvatarDropdown";
 import { useState } from "react";
 import CategorySlide from "./CategorySlide";
+import Link from "next/link";
 
 const Header = () => {
 
@@ -15,9 +16,9 @@ const Header = () => {
     <div className="w-full bg-white">
       <Wrapper>
         <div className="w-full flex justify-between items-center py-[24px] sm:gap-x-5 md:gap-x-7 lg:gap-x-10 xl:gap-x-12">
-          <div className="xl:w-[266px] xl:h-[57px] w-[236px] h-[27px] md:w-[246px] md:h-[37px] lg:w-[256px] lg:h-[47px] hidden sm:flex items-center">
+          <Link href={"/"} className="xl:w-[266px] xl:h-[57px] w-[236px] h-[27px] md:w-[246px] md:h-[37px] lg:w-[256px] lg:h-[47px] hidden sm:flex items-center">
             <Image src={logo} alt="Logo" width={100} height={100} className="w-full h-full"/>
-          </div>
+          </Link>
           <div className="sm:w-8/12 w-full lg:pr-16 xl:pr-28 2xl:pr-52 flex items-center">
             <SearchBar/>
           </div>

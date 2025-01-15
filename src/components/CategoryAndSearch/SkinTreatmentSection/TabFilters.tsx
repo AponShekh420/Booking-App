@@ -13,6 +13,7 @@ import ButtonClose from './ButtonClose'
 import ButtonPrimary from './ButtonPrimary'
 import ButtonThird from './ButtonThird'
 import Checkbox from './Checkbox'
+import PriceRange from './PriceRange'
 
 // DEMO DATA
 const typeOfPaces = [
@@ -139,7 +140,7 @@ const TabFilters = () => {
 				<Dialog
 					open={isOpenMoreFilter}
 					onClose={closeModalMoreFilter}
-					className="relative z-50"
+					className="relative z-50 p-5"
 				>
 					<DialogBackdrop
 						transition
@@ -150,20 +151,36 @@ const TabFilters = () => {
 							className="flex max-h-full w-full max-w-3xl flex-col overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl duration-200 ease-out data-[closed]:translate-y-16 data-[closed]:opacity-0 dark:border dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
 							transition
 						>
-							<div className="relative flex-shrink-0 border-b border-neutral-200 px-6 py-4 text-center dark:border-neutral-800">
+							<div className="relative p-10 pb-0 flex justify-between w-full">
 								<DialogTitle
 									as="h3"
-									className="font-medium text-lg leading-6 text-gray-900"
+									className="font-semibold text-xl leading-[30px]"
 								>
 									{T['common']['Filters']}
 								</DialogTitle>
-								<span className="absolute start-3 top-3">
+								<span className="top-3">
 									<ButtonClose onClick={closeModalMoreFilter} />
 								</span>
 							</div>
 
 							<div className="hiddenScrollbar flex-1 overflow-y-auto">
-								<div className="divide-y divide-neutral-200 px-10 text-start dark:divide-neutral-800">
+								<div className="px-10 text-start dark:divide-neutral-800">
+									<div className="py-7">
+										<p className="font-semibold text-md">Sort by</p>
+										<div className="relative mt-4 flex gap-5 flex-wrap">
+											<button className='w-40 h-10 bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Recommended</button>
+											<button className='w-40 h-10 bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Nearest</button>
+											<button className='w-40 h-10 bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Top Rated</button>
+										</div>
+									</div>
+
+									<div>
+										<p className="font-semibold text-md">Maximum Price</p>
+										<div className="relative mt-2">
+											<PriceRange/>
+										</div>
+									</div>
+									
 									<div className="py-7">
 										<h3 className="font-medium text-xl">Amenities</h3>
 										<div className="relative mt-6">

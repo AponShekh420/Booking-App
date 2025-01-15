@@ -24,7 +24,7 @@ const CategorySlide = () => {
     <div className="w-full mx-auto categoriesSlideHeader categoriesSlide">
       <div className="flex items-start h-auto">
         <div className="z-40 md:flex hidden items-center">
-          <button className="custom-prev-category w-[35.42px] h-[35.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
+          <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
             <Image
               src={"/assets/icons/categories/Arrows/left-arrow.svg"}
               alt="left arrow"
@@ -76,7 +76,7 @@ const CategorySlide = () => {
 
         {/* Custom Navigation Buttons */}
         <div className="z-40 md:block hidden">
-          <button className="custom-next-category w-[35.42px] h-[35.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
+          <button className="custom-next-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
             <Image
               src={"/assets/icons/categories/Arrows/right-arrow.svg"}
               alt="right arrow"
