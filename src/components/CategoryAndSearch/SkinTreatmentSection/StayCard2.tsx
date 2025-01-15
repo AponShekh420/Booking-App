@@ -51,7 +51,7 @@ const StayCard2: FC<StayCard2Props> = ({
 				/>
 				<BtnLikeIcon isLiked={like} className="absolute start-3 top-3" />
 				<DownloadBtn className="absolute end-3 top-3 z-[1]" />
-				<span className="absolute inset-0 bg-black bg-opacity-10 opacity-0 transition-opacity group-hover:opacity-100"></span>
+				<span className="absolute inset-0 bg-black bg-opacity-10 opacity-0 transition-opacity group-hover:opacity-100 rounded-xl"></span>
 			</div>
 		)
 	}
