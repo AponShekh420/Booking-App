@@ -219,3 +219,12 @@ h2
     height: 30px;
   }
 }
+
+
+
+
+
+/* header category */
+.categoriesSlideHeader .swiper.swiper-initialized {
+	margin: 0px 8px;
+}
