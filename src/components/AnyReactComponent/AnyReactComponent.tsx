@@ -1,12 +1,11 @@
 'use client'
 
-import { Transition } from '@headlessui/react'
 import CarCard from '@/components/CarCard'
 import ExperiencesCard from '@/components/ExperiencesCard'
 import StayCard from '@/components/StayCard'
 import { CarDataType, ExperiencesDataType, StayDataType } from '@/data/types'
-import React, { FC, Fragment } from 'react'
-import { useState } from 'react'
+import { Transition } from '@headlessui/react'
+import { FC, Fragment, useState } from 'react'
 
 export interface AnyReactComponentProps {
 	className?: string
@@ -34,7 +33,7 @@ const AnyReactComponent: FC<AnyReactComponentProps> = ({
 			onMouseLeave={() => setIsOpen(false)}
 		>
 			<span
-				className={`flex min-w-max items-center justify-center rounded-lg px-2 py-1 text-sm font-semibold shadow-lg transition-colors ${
+				className={`flex min-w-max items-center justify-center rounded-lg px-2 py-1 font-semibold text-sm shadow-lg transition-colors ${
 					isSelected
 						? 'bg-neutral-900 text-white dark:bg-white dark:text-neutral-900'
 						: 'bg-white hover:bg-neutral-900 hover:text-white dark:bg-neutral-900 dark:hover:bg-white dark:hover:text-neutral-900'
