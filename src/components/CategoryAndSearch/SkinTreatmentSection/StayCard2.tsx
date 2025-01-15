@@ -41,7 +41,7 @@ const StayCard2: FC<StayCard2Props> = ({
 
 	const renderSliderGallery = () => {
 		return (
-			<div className="relative w-full">
+			<div className="relative w-full group cursor-pointer">
 				<GallerySlider
 					uniqueID={`StayCard2_${id}`}
 					ratioClass="aspect-w-12 aspect-h-12"
@@ -51,12 +51,13 @@ const StayCard2: FC<StayCard2Props> = ({
 				/>
 				<BtnLikeIcon isLiked={like} className="absolute start-3 top-3" />
 				<DownloadBtn className="absolute end-3 top-3 z-[1]" />
+				<span className="absolute inset-0 bg-black bg-opacity-10 opacity-0 transition-opacity group-hover:opacity-100"></span>
 			</div>
 		)
 	}
 
 	return (
-		<div className={`nc-StayCard2 group relative bg-white ${className}`}>
+		<div className={`nc-StayCard2 relative bg-white ${className}`}>
 			{renderSliderGallery()}
 			{hiddenExtra ? (
 				<div className={`flex items-end justify-between ${childclass}`}>
@@ -98,7 +99,7 @@ const StayCard2: FC<StayCard2Props> = ({
 						</div>
 					</div>
 
-					<button className="mt-[5px] font-bold text-[18.09px] capitalize text-custom-red md:text-[15.09px] lg:text-[17.09px] xl:text-[18.09px]">
+					<button className="mt-[5px] font-bold text-[18.09px] capitalize text-custom-red hover:text-black transition-all duration-300 md:text-[15.09px] lg:text-[17.09px] xl:text-[18.09px]">
 						see more
 					</button>
 				</div>
