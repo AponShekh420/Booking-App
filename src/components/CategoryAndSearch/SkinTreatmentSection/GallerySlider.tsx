@@ -133,7 +133,7 @@ export default function GallerySlider({
 					)}
 
 					{/* Bottom Nav bar */}
-					<div className="absolute inset-x-0 bottom-0 h-10 rounded-b-lg bg-gradient-to-t from-neutral-900 opacity-50"></div>
+					{/* <div className="absolute inset-x-0 bottom-0 h-10 rounded-b-lg bg-gradient-to-t from-neutral-900 opacity-50"></div>
 					<div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center justify-center gap-x-1.5">
 						{images.map((_, i) => (
 							<button
@@ -144,7 +144,7 @@ export default function GallerySlider({
 								key={i}
 							/>
 						))}
-					</div>
+					</div> */}
 				</>
 			</div>
 		</MotionConfig>

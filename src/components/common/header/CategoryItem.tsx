@@ -30,7 +30,7 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, ind
     }>
 
       {/* className={`w-[${(category?.width -10) + "px"}] h-[${(category?.height -10) + "px"}] xl:w-[${category?.width + "px"}] xl:h-[${category?.height + "px"}]`} */}
-      <div className="md:h-[20px] sm:h-[18px] h-[17px]">
+      <div className="sm:h-[27px] h-[24px]">
         <Image
           src={action || active == category.text ? category?.hoverIcon : category?.icon}
           alt={category?.text}
@@ -39,7 +39,7 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, ind
           className="w-full h-full"
         />
       </div>
-      <p className={`sm:text-[10.124px] text-[8.124px] xs:text-[9px] font-semibold md:leading-[21.08px] leading-[10.08px] text-center lg:mt-[5.51px] md:mt-[5px] sm:mt-[4.50px] mt-[3.50px] break-keep ${action || active == category.text ? "text-[#E9082A]": "text-black"}`}>
+      <p className={`sm:text-[11.124px] text-[9.124px] font-semibold leading-[21.08px] text-center mt-[5.51px] break-keep ${action || active == category.text ? "text-[#E9082A]": "text-black"}`}>
         {category?.text}
       </p>
       {
