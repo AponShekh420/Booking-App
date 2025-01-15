@@ -9,15 +9,12 @@
 	font-style: normal;
 }
 
-
-
 @font-face {
 	font-family: 'AnekBangla-Regular';
 	src: url('/fonts/AnekBangla-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
-
 
 @font-face {
 	font-family: 'AnekBangla-Bold';
@@ -33,7 +30,6 @@
 	font-style: normal;
 }
 
-
 @font-face {
 	font-family: 'AnekBangla-Medium';
 	src: url('/fonts/AnekBangla-Medium.ttf') format('truetype');
@@ -41,12 +37,18 @@
 	font-style: normal;
 }
 
-
 /* @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap'); */
+@layer components {
+	.search-card-bold {
+		@apply font-semibold text-[18.09px] md:text-[12px] lg:text-[17px];
+	}
+	.search-card-regular {
+		@apply text-[16px] leading-[30px] text-black md:text-[12px] lg:text-[16px];
+	}
+}
 
 h1,
-h2
-{
+h2 {
 	@apply font-heading;
 }
 
@@ -157,22 +159,21 @@ h2
 	scrollbar-color: #828282 #e5e7eb; /* Thumb color and track color */
 }
 
-
 /* .home-video-slider .swiper {
   width: 100%;
 } */
 
 .home-video-slider .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 360px;
-  height: auto;
+	background-position: center;
+	background-size: cover;
+	width: 360px;
+	height: auto;
 	visibility: hidden !important;
 	overflow: hidden;
 	background: transparent !important;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px) {
 	.home-video-slider .swiper-slide {
 		width: 300px !important;
 	}
@@ -180,7 +181,7 @@ h2
 		min-height: 400px !important;
 	}
 }
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 430px) {
 	.home-video-slider .swiper-slide {
 		width: 243.27px !important;
 	}
@@ -188,7 +189,6 @@ h2
 		min-height: 300px !important;
 	}
 }
-
 
 .home-video-slider .mySwiper {
 	min-height: 650px;
