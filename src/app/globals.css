@@ -213,9 +213,18 @@ h2 {
 /* result card arrow button of slider */
 
 @media (max-width: 640px) {
-	.custom-prev-result,
-	.custom-next-result {
-		width: 30px;
-		height: 30px;
-	}
+  .custom-prev-result,
+  .custom-next-result {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+
+
+/* header category */
+.categoriesSlideHeader .swiper.swiper-initialized {
+	margin: 0px 8px;
 }
