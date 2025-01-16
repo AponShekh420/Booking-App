@@ -167,41 +167,41 @@ const TabFilters = () => {
 								<div className="px-10 text-start dark:divide-neutral-800">
 									<div className="py-7">
 										<p className="font-semibold text-md">Sort by</p>
-										<div className="relative mt-4 flex gap-5 flex-wrap">
-											<button className='w-40 h-10 bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Recommended</button>
-											<button className='w-40 h-10 bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Nearest</button>
-											<button className='w-40 h-10 bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Top Rated</button>
+										<div className="relative mt-4 flex sm:gap-5 gap-2 sm:flex-row flex-col">
+											<button className='sm:w-40 h-10 w-full bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Recommended</button>
+											<button className='sm:w-40 h-10 w-full bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Nearest</button>
+											<button className='sm:w-40 h-10 w-full bg-black font-body rounded-[59.21px] text-white hover:bg-custom-red transition-all duration-300'>Top Rated</button>
 										</div>
 									</div>
 
-									<div>
+									<div className='pb-7'>
 										<p className="font-semibold text-md">Maximum Price</p>
 										<div className="relative mt-2">
 											<PriceRange/>
 										</div>
 									</div>
 									
-									<div className="py-7">
-										<h3 className="font-medium text-xl">Amenities</h3>
-										<div className="relative mt-6">
+									<div className="pt-7 pb-5">
+										<h3 className="font-semibold text-md">Amenities</h3>
+										<div className="relative mt-3">
 											{renderMoreFilterItem(moreFilter1)}
 										</div>
 									</div>
-									<div className="py-7">
-										<h3 className="font-medium text-xl">Facilities</h3>
-										<div className="relative mt-6">
+									<div className="py-5">
+										<h3 className="font-semibold text-md">Facilities</h3>
+										<div className="relative mt-3">
 											{renderMoreFilterItem(moreFilter2)}
 										</div>
 									</div>
-									<div className="py-7">
-										<h3 className="font-medium text-xl">Property type</h3>
-										<div className="relative mt-6">
+									<div className="py-5">
+										<h3 className="font-semibold text-md">Property type</h3>
+										<div className="relative mt-3">
 											{renderMoreFilterItem(moreFilter3)}
 										</div>
 									</div>
-									<div className="py-7">
-										<h3 className="font-medium text-xl">House rules</h3>
-										<div className="relative mt-6">
+									<div className="py-5">
+										<h3 className="font-semibold text-md">House rules</h3>
+										<div className="relative mt-3">
 											{renderMoreFilterItem(moreFilter4)}
 										</div>
 									</div>
@@ -212,12 +212,14 @@ const TabFilters = () => {
 								<ButtonThird
 									onClick={closeModalMoreFilter}
 									sizeClass="px-4 py-2.5 sm:px-5"
+									className='hover:!bg-black text-black hover:text-white border border-black font-bold'
 								>
 									{T['common']['Clear']}
 								</ButtonThird>
 								<ButtonPrimary
 									onClick={closeModalMoreFilter}
 									sizeClass="px-4 py-2.5 sm:px-5"
+									className='!bg-custom-red hover:!bg-black font-bold'
 								>
 									{T['common']['Apply']}
 								</ButtonPrimary>
