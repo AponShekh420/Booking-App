@@ -108,7 +108,7 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 						/>
 					)}
 
-					<div className="fixed left-0 top-0 h-full w-full overflow-hidden rounded-md md:sticky xl:h-[calc(100vh-65px)]">
+					<div className="fixed left-0 top-0 h-full w-full overflow-hidden rounded-md md:sticky xl:h-[calc(100vh)]">
 						<MapContainer
 							currentHoverID={currentHoverID}
 							DEMO_DATA={DEMO_STAYS}
