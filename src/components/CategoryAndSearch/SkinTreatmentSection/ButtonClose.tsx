@@ -21,7 +21,8 @@ const ButtonClose: React.FC<ButtonCloseProps> = ({
 			onClick={onClick}
 		>
 			<span className="sr-only">Close</span>
-			<FilterIconNav className='hover:text-custom-red text-black h-8 w-8'/>
+			{/* <FilterIconNav className='hover:text-custom-red text-black h-8 w-8'/> */}
+			<XMarkIcon className='hover:text-custom-red text-black h-7 w-7'/>
 		</button>
 	)
 }

@@ -20,12 +20,12 @@ const Checkbox: FC<CheckboxProps> = ({
 	onChange,
 }) => {
 	return (
-		<div className={`flex text-sm sm:text-base ${className}`}>
+		<div className={`flex text-sm font-body items-center ${className}`}>
 			<input
 				id={name}
 				name={name}
 				type="checkbox"
-				className="focus:ring-action-primary h-5 w-5 rounded border-neutral-400 bg-white text-primary-500 hover:border-neutral-900 focus:ring-primary-500 dark:border-neutral-700 dark:bg-neutral-700 dark:checked:bg-primary-500 dark:hover:border-neutral-400 sm:h-6 sm:w-6"
+				className="focus:ring-action-primary h-4 w-4 rounded border-neutral-400 bg-white text-custom-red hover:border-neutral-900 focus:ring-custom-red dark:border-neutral-700 dark:bg-neutral-700 dark:checked:bg-custom-red dark:hover:border-neutral-400 sm:h-5 sm:w-5"
 				defaultChecked={defaultChecked}
 				onChange={(e) => onChange && onChange(e.target.checked)}
 			/>
