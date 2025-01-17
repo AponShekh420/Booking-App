@@ -1,33 +1,41 @@
-"use client"
-import Image from "next/image";
-import Wrapper from "../Wrapper";
-import logo from "@/images/logo/black-logo.svg"
-import SearchBar from "./Searchbar/SearchBar";
-import AvatarDropdown from "./AvatarDropdown";
-import { useState } from "react";
-import CategorySlide from "./CategorySlide";
-import Link from "next/link";
+'use client'
+import logo from '@/images/logo/black-logo.svg'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+import Wrapper from '../Wrapper'
+import AvatarDropdown from './AvatarDropdown'
+import CategorySlide from './CategorySlide'
+import SearchBar from './Searchbar/SearchBar'
 
 const Header = () => {
+	const [mobileSidebarOpen, setMobileSidebarOpen] = useState<boolean>(false)
 
-  const [mobileSidebarOpen, setMobileSidebarOpen] = useState<boolean>(false)
-  
-  return (
-    <div className="w-full bg-white">
-      <Wrapper>
-        <div className="w-full flex justify-between items-center py-[24px] sm:gap-x-5 md:gap-x-7 lg:gap-x-10 xl:gap-x-12">
-          <Link href={"/"} className="xl:w-[266px] xl:h-[57px] w-[236px] h-[27px] md:w-[246px] md:h-[37px] lg:w-[256px] lg:h-[47px] hidden sm:flex items-center">
-            <Image src={logo} alt="Logo" width={100} height={100} className="w-full h-full"/>
-          </Link>
-          <div className="sm:w-8/12 w-full lg:pr-16 xl:pr-28 2xl:pr-52 flex items-center">
-            <SearchBar/>
-          </div>
-          <div className="hidden sm:block">
-            <AvatarDropdown className="hidden sm:block"/>
-      
-            {/* mobile menu */}
-      
-            {/* <div className="cursor-pointer sm:hidden block">
+	return (
+		<div className="w-full bg-white">
+			<Wrapper>
+				<div className="flex w-full items-center justify-between py-[24px] sm:gap-x-5 md:gap-x-7 lg:gap-x-10 xl:gap-x-12">
+					<Link
+						href={'/'}
+						className="hidden h-[27px] w-[236px] items-center sm:flex md:h-[37px] md:w-[246px] lg:h-[47px] lg:w-[256px] xl:h-[57px] xl:w-[266px]"
+					>
+						<Image
+							src={logo}
+							alt="Logo"
+							width={100}
+							height={100}
+							className="h-full w-full"
+						/>
+					</Link>
+					<div className="flex w-full items-center sm:w-8/12 lg:pr-16 xl:pr-28 2xl:pr-52">
+						<SearchBar />
+					</div>
+					<div className="hidden sm:block">
+						<AvatarDropdown className="hidden sm:block" />
+
+						{/* mobile menu */}
+
+						{/* <div className="cursor-pointer sm:hidden block">
               <Image 
                 src={"/assets/icons/mobile-menu.svg"} 
                 alt="menu" 
@@ -38,27 +46,35 @@ const Header = () => {
               />
             </div> */}
 
-            <aside
-              className={` ${mobileSidebarOpen ? "translate-x-0 opacity-100 z-50" : "translate-x-[200px] opacity-0 z-[-1]"} lg:hidden bg-white boxShadow p-4 text-center absolute top-[65px] right-0 w-full rounded-md transition-all duration-300`}>
-              <ul className="items-center gap-[20px] text-[1rem] text-gray-600 flex flex-col">
-                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">home</li>
-                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-poin ter capitalize">Features
-                  </li>
-                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">Blogs</li>
-                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">Shop</li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </Wrapper>
-      
-      <Wrapper>
-        <div className="w-full">
-          <CategorySlide/>
-        </div>
-      </Wrapper>
-    </div>
-  );
+						<aside
+							className={` ${mobileSidebarOpen ? 'z-50 translate-x-0 opacity-100' : 'z-[-1] translate-x-[200px] opacity-0'} boxShadow absolute right-0 top-[65px] w-full rounded-md bg-white p-4 text-center transition-all duration-300 sm:hidden`}
+						>
+							<ul className="flex flex-col items-center gap-[20px] text-[1rem] text-gray-600">
+								<li className="cursor-pointer border-b-[2px] border-transparent capitalize transition-all duration-500 hover:border-b-[#3B9DF8]">
+									home
+								</li>
+								<li className="cursor-poin ter border-b-[2px] border-transparent capitalize transition-all duration-500 hover:border-b-[#3B9DF8]">
+									Features
+								</li>
+								<li className="cursor-pointer border-b-[2px] border-transparent capitalize transition-all duration-500 hover:border-b-[#3B9DF8]">
+									Blogs
+								</li>
+								<li className="cursor-pointer border-b-[2px] border-transparent capitalize transition-all duration-500 hover:border-b-[#3B9DF8]">
+									Shop
+								</li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</Wrapper>
+
+			<Wrapper>
+				<div className="w-full">
+					<CategorySlide />
+				</div>
+			</Wrapper>
+		</div>
+	)
 }
 
-export default Header;
+export default Header
