@@ -7,7 +7,7 @@ export interface ListingCarMapPageProps {}
 const ListingCarMapPage: FC<ListingCarMapPageProps> = () => {
 	return (
 		<div>
-			<Header/>
+			<Header />
 			<SkinTreatmentSection />
 		</div>
 	)

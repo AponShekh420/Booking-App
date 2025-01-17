@@ -3,34 +3,32 @@ import Wrapper from '@/components/common/Wrapper'
 import { DEMO_STAY_LISTINGS } from '@/data/listings'
 import T from '@/utils/getT'
 import { MapIcon } from '@heroicons/react/24/outline'
-import { FC, useState } from 'react'
+import { CSSProperties, FC, useState } from 'react'
+import { MoonLoader } from 'react-spinners'
 import ButtonClose from './ButtonClose'
 import MapContainer from './MapContainer'
 import StayCard2 from './StayCard2'
 import TabFilters from './TabFilters'
-import { CSSProperties } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
-import { MoonLoader, RingLoader } from 'react-spinners'
 
 const override: CSSProperties = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "black",
-};
+	display: 'block',
+	margin: '0 auto',
+	borderColor: 'black',
+}
 
 const DEMO_STAYS = DEMO_STAY_LISTINGS.filter((_, i) => i < 12)
 export interface SectionGridHasMapProps {}
 
 const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 	const [currentHoverID, setCurrentHoverID] = useState<string | number>(-1)
-	const [showFullMapFixed, setShowFullMapFixed] = useState(false);
-	const [loading, setLoading] = useState<boolean>(true);
+	const [showFullMapFixed, setShowFullMapFixed] = useState(false)
+	const [loading, setLoading] = useState<boolean>(true)
 
 	return (
-		<Wrapper>
+		<Wrapper className="md:w-full">
 			<div className="relative my-8 flex min-h-screen">
 				{/* CARDSSSS */}
-				<div className="min-h-screen w-full max-w-[1184px] flex-shrink-0 md:w-[60%] md:px-4 xl:w-[60%] xl:px-8 2xl:w-[60%] 2xl:pl-0">
+				<div className="3xl:ml-0 min-h-screen w-full max-w-[1184px] flex-shrink-0 md:ml-[3%] md:w-[60%] md:px-4 xl:ml-[2%] xl:w-[60%] xl:px-8 2xl:ml-[3%] 2xl:w-[60%] 2xl:pl-0">
 					<h1 className="text-[34.72px] font-[700] uppercase leading-[38.08px] text-black sm:text-[42.72px] sm:leading-[43.08px] md:text-[35px] md:leading-[45.08px] lg:text-[40px] lg:leading-[50.08px] xl:text-[50px] xl:leading-[50.43px]">
 						skin treatment for men in london
 					</h1>
@@ -52,9 +50,9 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 						))}
 
 						{/* loader */}
-						<div className='w-full flex justify-center mt-5'>
+						<div className="mt-5 flex w-full justify-center">
 							<MoonLoader
-								color={"#E9082A"}
+								color={'#E9082A'}
 								loading={loading}
 								cssOverride={override}
 								size={30}
@@ -62,9 +60,9 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 								data-testid="loader"
 							/>
 						</div>
-						<div className='w-full justify-center mt-5 sm:flex hidden'>
+						<div className="mt-5 hidden w-full justify-center sm:flex">
 							<MoonLoader
-								color={"#E9082A"}
+								color={'#E9082A'}
 								loading={loading}
 								cssOverride={override}
 								size={30}
@@ -72,9 +70,9 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 								data-testid="loader"
 							/>
 						</div>
-						<div className='w-full justify-center mt-5 2xl:flex hidden'>
+						<div className="mt-5 hidden w-full justify-center 2xl:flex">
 							<MoonLoader
-								color={"#E9082A"}
+								color={'#E9082A'}
 								loading={loading}
 								cssOverride={override}
 								size={30}
