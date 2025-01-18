@@ -40,7 +40,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap'); */
 @layer components {
 	.search-card-bold {
-		@apply font-semibold text-[18.09px] md:text-[12px] lg:text-[17px];
+		@apply text-[18.09px] font-semibold md:text-[12px] lg:text-[17px];
 	}
 	.search-card-regular {
 		@apply text-[16px] leading-[30px] text-black md:text-[12px] lg:text-[16px];

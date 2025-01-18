@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import {
 	LeftArrowIcon,
+	RatingGroup,
 	RightArrowIcon,
 	VideoIndicatorIcon,
 } from '@/components/common/Icons'
@@ -13,50 +14,36 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-// interface CategorySlideProps {
-//   slideTo: (index: number) => void
-// }
+
+
+
 const clinicApi = [
 	{
 		id: 1,
-		image: '/assets/clinic/clinic-1.png',
+		image: '/assets/clinic/image-1.png',
 		video: true,
 	},
 	{
-		id: 2,
-		image: '/assets/clinic/clinic-2.png',
+		id: 1,
+		image: '/assets/clinic/image-2.png',
 		video: false,
 	},
 	{
-		id: 3,
-		image: '/assets/clinic/clinic-3.png',
-		video: false,
-	},
-	{
-		id: 4,
-		image: '/assets/clinic/clinic-1.png',
-		video: true,
-	},
-	{
-		id: 5,
-		image: '/assets/clinic/clinic-3.png',
-		video: false,
-	},
-	{
-		id: 6,
-		image: '/assets/clinic/clinic-2.png',
+		id: 1,
+		image: '/assets/clinic/image-1.png',
 		video: false,
 	},
 ]
-const ClinicVideoSlider = () => {
-	return (
-		<div className="mx-auto w-full">
+
+const ReviewSlider = () => {
+  return (
+    <div className="mx-auto w-full">
 			<div className="relative flex h-auto items-start">
 				{/* Custom Navigation Buttons */}
 
 				<Swiper
 					modules={[Navigation]}
-					slidesPerView="auto" // Dynamic width calculation
+					slidesPerView={2} // Dynamic width calculation
 					spaceBetween={48} // Gap between slides
 					centeredSlides={false} // Prevent centering when all slides fit
 					centerInsufficientSlides={true} // Center slides if they are fewer than the available space
@@ -95,36 +82,34 @@ const ClinicVideoSlider = () => {
 					{clinicApi.map((item, index) => (
 						<SwiperSlide
 							key={index}
-							className="!w-auto" // Allows dynamic width calculation
+							className="!w-6/12" // Allows dynamic width calculation
 						>
-							<div className="relative">
-								<Image
-									className="h-[432px] w-[362px] object-cover md:w-full"
-									src={item.image}
-									alt="video/image"
-									width={item.video ? 777 : 410}
-									height={432}
-								/>
-								{item.video && (
-									<button className="absolute left-1/2 top-1/2 !z-[10] -translate-x-1/2 -translate-y-1/2 text-white transition-colors duration-300 hover:text-custom-red">
-										<VideoIndicatorIcon />
-									</button>
-								)}
-							</div>
+              <div className="flex items-center gap-x-4">
+                <div className="w-[172.32px] h-[172.32px] relative rounded-[8.37px] overflow-hidden">
+                  <Image src={item?.image} alt="image" className="w-full h-full object-cover" fill/>
+                </div>
+                <div>
+                  <RatingGroup/>
+                  <p className="text-[20.08px] font-semibold leading-[21.7px] mt-2 text-left">Great care &<br/>
+                  Service</p>
+                  <p className="text-[13.38px] leading-[21px mt-1 text-left">Treatment by Jess</p>
+                  <p className="text-[13.38px] leading-[21px] mt-4 text-left">Dave - 5 months ago</p>
+                </div>
+              </div>
 						</SwiperSlide>
 					))}
 				</Swiper>
 				<div className="hidden md:block">
-					<button className="custom-prev-video-slider swiper-button-disabled absolute left-4 top-1/2 z-[20] flex h-[40.42px] w-[40.42px] -translate-y-1/2 items-center justify-center rounded-full border-[0.92px] border-white text-white transition-colors duration-300 hover:border-custom-red hover:text-custom-red disabled:hidden">
+					<button className="custom-prev-video-slider swiper-button-disabled absolute left-4 top-1/2 z-[20] flex h-[40.42px] w-[40.42px] -translate-y-1/2 items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B] text-black transition-colors duration-300 hover:border-custom-red hover:text-custom-red disabled:hidden">
 						<LeftArrowIcon />
 					</button>
-					<button className="custom-next-video-slider absolute right-4 top-1/2 z-[20] flex h-[40.42px] w-[40.42px] -translate-y-1/2 items-center justify-center rounded-full border-[0.92px] border-white text-white transition-colors duration-300 hover:border-custom-red hover:text-custom-red disabled:hidden">
+					<button className="custom-next-video-slider absolute right-4 top-1/2 z-[20] flex h-[40.42px] w-[40.42px] -translate-y-1/2 items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B] text-black transition-colors duration-300 hover:border-custom-red hover:text-custom-red disabled:hidden">
 						<RightArrowIcon />
 					</button>
 				</div>
 			</div>
 		</div>
-	)
+  );
 }
 
-export default ClinicVideoSlider
+export default ReviewSlider;

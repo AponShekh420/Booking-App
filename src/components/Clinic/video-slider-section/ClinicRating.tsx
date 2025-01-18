@@ -8,23 +8,23 @@ import {
 
 export default function ClinicRating() {
 	return (
-		<div className="flex gap-4">
+		<div className="flex gap-4 text-[13.84] sm:text-[12.84px] md:text-[15.84px] lg:text-[18.64px]">
 			<div className="flex items-center gap-2">
 				<span className="flex">
-					<StarIconFull />
-					<StarIconFull />
-					<StarIconFull />
-					<StarIconFull />
-					<StarIconHalf />
+					<StarIconFull className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
+					<StarIconFull className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
+					<StarIconFull className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
+					<StarIconFull className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
+					<StarIconHalf className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
 				</span>
-				<span>4.9 (292)</span>
+				<span className="lg:text-[20.97px]">4.9 (292)</span>
 			</div>
-			<div className="flex items-center">
-				<LocationIcon />
-				<p>114 New Cavendish St, London W1W 6XT</p>
+			<div className="hidden items-center gap-2 sm:flex">
+				<LocationIcon className="h-auto w-[18px] md:w-[20px] lg:w-[27px]" />
+				<p className="font-semibold">114 New Cavendish St, London W1W 6XT</p>
 			</div>
-			<div className="flex items-center gap-2">
-				<WatchIcon />
+			<div className="hidden items-center gap-2 font-semibold sm:flex">
+				<WatchIcon className="h-auto w-[17px] md:w-[19px] lg:w-[23px]" />
 				<Link className="text-custom-red" href={'/'}>
 					Open Today
 				</Link>
