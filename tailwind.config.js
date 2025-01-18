@@ -40,10 +40,7 @@ module.exports = {
 			},
 			fontFamily: {
 				heading: ['CustomHeadingFont', 'sans-serif'],
-				body: ['AnekBangla-Regular', 'sans-serif'],
-				bold: ['AnekBangla-Bold', 'sans-serif'],
-				semibold: ['AnekBangla-SemiBold', 'sans-serif'],
-				medium: ['AnekBangla-Medium', 'sans-serif'],
+				body: ['AnekBangla', 'sans-serif'],
 			},
 			colors: {
 				'custom-red': '#E9082A',
