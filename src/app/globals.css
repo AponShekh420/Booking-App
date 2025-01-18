@@ -10,28 +10,28 @@
 }
 
 @font-face {
-	font-family: 'AnekBangla-Regular';
+	font-family: 'AnekBangla';
 	src: url('/fonts/AnekBangla-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'AnekBangla-Bold';
+	font-family: 'AnekBangla';
 	src: url('/fonts/AnekBangla-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'AnekBangla-SemiBold';
+	font-family: 'AnekBangla';
 	src: url('/fonts/AnekBangla-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'AnekBangla-Medium';
+	font-family: 'AnekBangla';
 	src: url('/fonts/AnekBangla-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -213,16 +213,12 @@ h2 {
 /* result card arrow button of slider */
 
 @media (max-width: 640px) {
-  .custom-prev-result,
-  .custom-next-result {
-    width: 30px;
-    height: 30px;
-  }
+	.custom-prev-result,
+	.custom-next-result {
+		width: 30px;
+		height: 30px;
+	}
 }
-
-
-
-
 
 /* header category */
 .categoriesSlideHeader .swiper.swiper-initialized {
