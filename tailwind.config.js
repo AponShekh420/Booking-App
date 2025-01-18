@@ -35,14 +35,15 @@ module.exports = {
 			screens: {
 				xs: '480px',
 				xxs: '430px',
-				xm: "769px",
+				xm: '769px',
+				'3xl': '1580px',
 			},
 			fontFamily: {
 				heading: ['CustomHeadingFont', 'sans-serif'],
 				body: ['AnekBangla-Regular', 'sans-serif'],
 				bold: ['AnekBangla-Bold', 'sans-serif'],
 				semibold: ['AnekBangla-SemiBold', 'sans-serif'],
-				medium: ["AnekBangla-Medium", 'sans-serif']
+				medium: ['AnekBangla-Medium', 'sans-serif'],
 			},
 			colors: {
 				'custom-red': '#E9082A',

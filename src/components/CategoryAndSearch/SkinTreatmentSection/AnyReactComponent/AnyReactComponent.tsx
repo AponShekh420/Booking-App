@@ -1,8 +1,7 @@
 'use client'
 
 import { StayDataType } from '@/data/types'
-import { Transition } from '@headlessui/react'
-import { FC, Fragment, useState } from 'react'
+import { FC, useState } from 'react'
 import StayCard2 from '../StayCard2'
 
 export interface AnyReactComponentProps {
@@ -27,7 +26,7 @@ const AnyReactComponent: FC<AnyReactComponentProps> = ({
 			onMouseLeave={() => setIsOpen(false)}
 		>
 			<div
-				className={`relative font-semibold text-sm shadow-lg transition-colors ${
+				className={`relative z-[99] font-semibold text-sm shadow-lg transition-colors ${
 					isSelected ? '' : ''
 				}`}
 			>
@@ -46,28 +45,20 @@ const AnyReactComponent: FC<AnyReactComponentProps> = ({
 					{listing?.reviewStart}
 				</span>
 			</div>
-			<Transition
-				show={isOpen}
-				as={Fragment}
-				enter="transition-opacity duration-75"
-				enterFrom="opacity-0"
-				enterTo="opacity-100"
-				leave="transition-opacity duration-150"
-				leaveFrom="opacity-100"
-				leaveTo="opacity-0"
-			>
-				<div className="aspect-w-1 absolute -left-12 bottom-full z-50 w-[260px] pb-3">
+
+			{isOpen && (
+				<div className="aspect-w-1 absolute -left-12 bottom-full !z-50 w-[260px] pb-3">
 					{listing && (
 						<StayCard2
 							size="small"
 							hiddenExtra={true}
 							data={listing}
-							className="overflow-hidden rounded-xl shadow-2xl"
+							className="!z-[999999] overflow-hidden rounded-xl shadow-2xl"
 							childclass="px-3 pb-3"
 						/>
 					)}
 				</div>
-			</Transition>
+			)}
 		</div>
 	)
 }
