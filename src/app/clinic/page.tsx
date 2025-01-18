@@ -1,3 +1,4 @@
+import ServicesSection from '@/components/Clinic/services-section/ServicesSection'
 import LatestTopicSection from '@/components/Clinic/latest-topic/LatestTopicSection'
 import NearbySection from '@/components/Clinic/nearby/NearbySection'
 import ReviewSection from '@/components/Clinic/review/ReviewSection'
@@ -11,6 +12,7 @@ export default function ClinicPage() {
 		<div>
 			<Header />
 			<ClinicVideoSection />
+			<ServicesSection/>
 
 			<Wrapper className="mt-[79px]">
 				<div className="sm:w-4/5 lg:w-4/5 xl:w-1/2">
