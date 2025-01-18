@@ -23,27 +23,27 @@ const clinicApi = [
 		video: true,
 	},
 	{
-		id: 1,
+		id: 2,
 		image: '/assets/clinic/clinic-2.png',
 		video: false,
 	},
 	{
-		id: 1,
+		id: 3,
 		image: '/assets/clinic/clinic-3.png',
 		video: false,
 	},
 	{
-		id: 1,
+		id: 4,
 		image: '/assets/clinic/clinic-1.png',
 		video: true,
 	},
 	{
-		id: 1,
+		id: 5,
 		image: '/assets/clinic/clinic-3.png',
 		video: false,
 	},
 	{
-		id: 1,
+		id: 6,
 		image: '/assets/clinic/clinic-2.png',
 		video: false,
 	},
