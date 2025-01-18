@@ -130,7 +130,7 @@ const TabFilters = () => {
 					</span>
 				</div> */}
 				<div
-					className="flex h-[38.89px] cursor-pointer items-center justify-center gap-x-1.5 rounded-[65.12px] bg-custom-red px-4 capitalize text-white"
+					className="flex lg:h-[35.89px] h-[32px] cursor-pointer items-center justify-center gap-x-1.5 rounded-[65.12px] bg-custom-red px-4 capitalize text-white"
 					onClick={openModalMoreFilter}
 				>
 					<FilterIcon />
