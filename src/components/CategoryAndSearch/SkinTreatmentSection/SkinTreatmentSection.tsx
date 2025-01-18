@@ -28,15 +28,18 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 		<Wrapper className="md:w-full">
 			<div className="relative my-8 flex min-h-screen">
 				{/* CARDSSSS */}
-				<div className="3xl:ml-0 min-h-screen w-full max-w-[1184px] flex-shrink-0 md:ml-[3%] md:w-[60%] md:px-4 xl:ml-[2%] xl:w-[60%] xl:px-8 2xl:ml-[3%] 2xl:w-[60%] 2xl:pl-0">
-					<h1 className="text-[34.72px] font-[700] uppercase leading-[38.08px] text-black sm:text-[42.72px] sm:leading-[43.08px] md:text-[35px] md:leading-[45.08px] lg:text-[40px] lg:leading-[50.08px] xl:text-[50px] xl:leading-[50.43px]">
-						skin treatment for men in london
-					</h1>
-					<h2 className="block font-body font-semibold text-[18.85px] text-neutral-500">
-						268 Clinics Within map area
-					</h2>
-					<div className="mb-4 mt-4 lg:mb-6">
+				<div className="min-h-screen w-full max-w-[1184px] flex-shrink-0 md:w-[60%] md:px-4 xl:w-[60%] xl:px-8 2xl:w-[60%] 2xl:pl-0">
+					<div className='flex justify-between gap-x-2'>
+						<h1 className="text-[34.72px] font-[700] uppercase leading-[33.08px] text-black sm:text-[42.72px] sm:leading-[43.08px] md:text-[35px] md:leading-[32.08px] lg:text-[40px] lg:leading-[50.08px] xl:text-[50px] xl:leading-[53.43px] font-heading">
+							skin treatment
+						</h1>
 						<TabFilters />
+					</div>
+					<div className='flex md:gap-x-3 gap-x-2 mb-4'>
+						<h1 className='lg:text-[29px] text-[21px] sm:text-[25px] md:text-[21px] font-heading uppercase'>for men in <span className='text-custom-red'>BATTERSEA LONDON</span></h1>
+						<p className="block font-body font-semibold lg:text-[16.85px] xs:text-[13.52px] text-[10.52px] text-neutral-500 md:text-[14.85px] sm:text-[16.85px]">
+							268 Clinics Within map area
+						</p>
 					</div>
 					<div className="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 2xl:grid-cols-3 2xl:gap-x-6">
 						{DEMO_STAYS.map((item) => (
