@@ -61,12 +61,12 @@ const StayCard2: FC<StayCard2Props> = ({
 			{renderSliderGallery()}
 			{hiddenExtra ? (
 				<div className={`flex items-end justify-between ${childclass}`}>
-					<h5 className="mt-0.5 text-[16px]">
+					<h3 className="mt-0.5 text-[16px]">
 						<span className="block font-semibold text-[16.27px]">
 							Dermamina
 						</span>
 						<span className="text-sm">Battersea, London</span>
-					</h5>
+					</h3>
 					<div className="flex items-center gap-x-1 font-bold text-[16px] leading-[40.5px]">
 						<StarIconFull className="h-[19px] w-[19px] text-custom-red" />
 						<span>4.9 (292)</span>
@@ -75,26 +75,29 @@ const StayCard2: FC<StayCard2Props> = ({
 			) : (
 				<div className={`mt-[15px] px-1 ${childclass}`}>
 					<div className="space-y-1.5">
-						<div className="flex items-center justify-between">
-							<h5 className="search-card-regular">Profhilo face or neck</h5>
-							<h3 className="search-card-bold">From £250</h3>
-						</div>
-						<div className="flex items-center justify-between">
-							<h5 className="search-card-regular">Laser hair removal</h5>
-							<h3 className="search-card-bold">From £340</h3>
-						</div>
-						<div className="flex items-center justify-between">
-							<h5 className="search-card-regular">Masseter (wide set jaw)</h5>
-							<h3 className="search-card-bold">From £200</h3>
-						</div>
 						<div className="flex justify-between">
-							<h5 className="font-semibold text-[16px] leading-[16px] md:text-[12px] lg:text-[16px]">
+							<h3 className="font-semibold text-[16px] leading-[16px] md:text-[12px] lg:text-[16px]">
 								Dermamina <br />
 								Battersea, London
-							</h5>
+							</h3>
 							<div className="flex items-center gap-x-1 font-bold text-[17px] leading-[40.5px] md:text-[12px] lg:text-[17px]">
 								<StarIconFull className="h-[19px] w-[19px] text-custom-red md:h-[14px] md:w-[14px] lg:h-[19px] lg:w-[19px]" />
-								<span>4.9 (292)</span>
+								<p>4.9 (292)</p>
+							</div>
+						</div>
+						<hr/>
+						<div className='space-y-0.5 space-x-0.1'>
+							<div className="flex items-center justify-between">
+								<p className="search-card-regular">Profhilo face or neck</p>
+								<p className="search-card-bold">From £250</p>
+							</div>
+							<div className="flex items-center justify-between">
+								<p className="search-card-regular">Laser hair removal</p>
+								<p className="search-card-bold">From £340</p>
+							</div>
+							<div className="flex items-center justify-between">
+								<p className="search-card-regular">Masseter (wide set jaw)</p>
+								<p className="search-card-bold">From £200</p>
 							</div>
 						</div>
 					</div>
