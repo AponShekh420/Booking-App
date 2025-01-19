@@ -4,13 +4,11 @@ import NearbySection from '@/components/Clinic/nearby/NearbySection'
 import ReviewSection from '@/components/Clinic/review/ReviewSection'
 import TeamSection from '@/components/Clinic/team/TeamSection'
 import ClinicVideoSection from '@/components/Clinic/video-slider-section/ClinicVideoSection'
-import Header from '@/components/common/header/Header'
 import Wrapper from '@/components/common/Wrapper'
 
 export default function ClinicPage() {
 	return (
 		<div>
-			<Header />
 			<ClinicVideoSection />
 			<ServicesSection/>
 
