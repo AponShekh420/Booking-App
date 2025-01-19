@@ -91,7 +91,7 @@ const BookingCard = () => {
       </div>
 
       {/* about collapse */}
-      <div className="xl:mt-[22px] w-full">
+      <div className="xl:mt-[22px] md:mt-2 lg:mt-3 w-full">
         <div className="flex gap-x-3 items-center font-semibold cursor-pointer hover:text-custom-red transition-all duration-300" onClick={()=> setAboutToggle(pre => !pre)}>
           <h3 className="xl:text-[24px] md:text-[18px] lg:text-[20px] text-[20.35px] font-bold">About</h3>
           <DownArrowIcon className="h-3 w-3"/>
