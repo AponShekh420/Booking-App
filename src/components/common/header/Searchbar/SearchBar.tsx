@@ -52,11 +52,11 @@ const SearchBar = () => {
 
         {/* for mobile */}
         <div className="w-full items-center flex md:hidden" onClick={() => setTabMobile(true)}>
-            <input 
-            type="text" 
-            placeholder="Type, speak, book & search treatments" 
-            className="w-full h-full outline-none border-none placeholder-black placeholder-font-normal lg:placeholder:text-[16.35px] placeholder:text-[9.11px] sm:placeholder:text-[12.11px] lg:placeholder:leading-[27.88px] placeholder:leading-[15.54px] border-gray-300 focus:outline-none focus:ring-0 focus:border-transparent py-0 lg:text-[18.35px] text-[9.11px] sm:text-[12.11px] md:text-[16.35px]"
-            />
+          <input 
+          type="text" 
+          placeholder="Type, speak, book & search treatments" 
+          className="w-full h-full outline-none border-none placeholder-black placeholder-font-normal lg:placeholder:text-[16.35px] placeholder:text-[9.11px] sm:placeholder:text-[12.11px] lg:placeholder:leading-[27.88px] placeholder:leading-[15.54px] border-gray-300 focus:outline-none focus:ring-0 focus:border-transparent py-0 lg:text-[18.35px] text-[9.11px] sm:text-[12.11px] md:text-[16.35px]"
+          />
         </div>
 
         {/* desktop */}
@@ -83,7 +83,7 @@ const SearchBar = () => {
         {/* desktop */}
         <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] border-r-[1px] hidden md:flex items-center cursor-pointer border-[#D8D8D8]" onClick={() => setTab((oldState) => oldState === "clock" ? "" : "clock")}>
           <Image 
-            src={"/assets/icons/searchbar/vector.svg"} 
+            src={"/assets/icons/searchbar/vector-one.svg"} 
             alt="AI" 
             width={100} 
             height={100}
@@ -95,7 +95,7 @@ const SearchBar = () => {
         {/* mobile */}
         <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] border-r-[1px] flex md:hidden items-center cursor-pointer border-[#D8D8D8]" onClick={() => setTabMobile(true)}>
           <Image 
-            src={"/assets/icons/searchbar/vector.svg"} 
+            src={"/assets/icons/searchbar/vector-one.svg"} 
             alt="AI" 
             width={100} 
             height={100}
@@ -106,7 +106,7 @@ const SearchBar = () => {
         <div className="lg:pl-[16px] pl-[7.8px]">
           <button className="hover:text-white h-[25.29px] hover:bg-black transition-all duration-300 leading-[30.32px] text-white xl:w-[119px] xl:h-[40px] lg:w-[105px] lg:h-[35px] w-[66.32px] sm:w-[75.32px] sm:h-[25.29px] lg:rounded-[79px] rounded-[44.03px] bg-[#E9082A] flex items-center justify-center xl:gap-x-[7px] lg:gap-x-1 gap-x-[4px] sm:gap-x-[3px] md:h-[30px]">
             <Image 
-              src={"/assets/icons/searchbar/magnifier.svg"} alt="AI" 
+              src={"/assets/icons/searchbar/magnifier-one.svg"} alt="AI" 
               width={20} 
               height={20}
               className="xl:w-[20px] xl:h-[20px] w-[13.38px] h-[13.38px] sm:w-[13.38px] sm:h-[13.38px] md:h-[14px] md:w-[14px] lg:w-[18px] lg:h-[18px]"
