@@ -23,7 +23,7 @@ const DEMO_STAYS = DEMO_STAY_LISTINGS.filter((_, i) => i < 12)
 
 const MapContainer = () => {
 	return (
-		<div className='w-full h-[300px] rounded-[10px] overflow-hidden'>
+		<div className='w-full xl:h-[300px] md:h-[200px] lg:h-[230px] h-60 xs:h-72 sm:h-80 rounded-[10px] overflow-hidden'>
 			{/* BELLOW IS MY GOOGLE API KEY -- PLEASE DELETE AND TYPE YOUR API KEY */}
 			<Map
 				style={{

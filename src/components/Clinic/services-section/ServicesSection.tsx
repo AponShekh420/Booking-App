@@ -11,17 +11,17 @@ import Item from "./Item";
 const ServicesSection = () => {
   return (
     <Wrapper>
-      <div className="flex gap-x-8 justify-between">
-        <div className="w-7/12">
+      <div className="flex gap-x-8 justify-between md:flex-row flex-col-reverse">
+        <div className="md:w-7/12 w-full">
           {/* title */}
           <ClinicHeadingText title="Services"/>
 
           {/* buttons list */}
           <div className="flex flex-wrap gap-3">
-            <button className="py-2 px-7 bg-black rounded-[80.12px] text-white text-[18.03px] hover:bg-custom-red transition-all duration-300 capitalize">Skin</button>
-            <button className="py-2 px-7 bg-black rounded-[80.12px] text-white text-[18.03px] hover:bg-custom-red transition-all duration-300 capitalize">Hair</button>
-            <button className="py-2 px-7 bg-black rounded-[80.12px] text-white text-[18.03px] hover:bg-custom-red transition-all duration-300 capitalize">Health</button>
-            <button className="py-2 px-7 bg-black rounded-[80.12px] text-white text-[18.03px] hover:bg-custom-red transition-all duration-300 capitalize">Rejuvenation</button>
+            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize">Skin</button>
+            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize">Hair</button>
+            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize">Health</button>
+            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize">Rejuvenation</button>
           </div>
 
           <Item title="PRP Hair Loss Treatment" price={200} time="1h"/>
@@ -37,23 +37,23 @@ const ServicesSection = () => {
           </div>
 
         </div>
-        <div className="w-5/12">
+        <div className="md:w-5/12 w-full mb-7 md:mb-0">
           <BookingCard/>
           
           {/* outline box below of the booking card */}
-          <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 flex justify-between mt-3">
+          <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
             <div>
-              <p className="text-[24px] font-bold">Gift Vouchers</p>
-              <p className="text-[16px]">Treat yourself or a friend</p>
+              <p className="lg:text-[24px] md:text-[18px] text-[24px] font-bold">Gift Vouchers</p>
+              <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
             </div>
-            <button className="text-[23.22px] font-semibold bg-black hover:bg-custom-red transition-all duration-300 py-2 px-6 text-white rounded-[94.05px]">Book</button>
+            <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Book</button>
           </div>
-          <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 flex justify-between mt-3">
+          <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
             <div>
-              <p className="text-[24px] font-bold">Memberships</p>
-              <p className="text-[16px]">Buy a bundle of appointments</p>
+              <p className="lg:text-[24px] md:text-[18px] text-[24px] font-bold">Memberships</p>
+              <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
             </div>
-            <button className="text-[23.22px] font-semibold bg-black hover:bg-custom-red transition-all duration-300 py-2 px-6 text-white rounded-[94.05px]">Book</button>
+            <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Book</button>
           </div>
 
         </div>
