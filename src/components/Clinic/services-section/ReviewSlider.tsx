@@ -37,14 +37,14 @@ const clinicApi = [
 
 const ReviewSlider = () => {
   return (
-    <div className="mx-auto w-full">
+    <div className="w-full">
 			<div className="relative flex h-auto items-start">
 				{/* Custom Navigation Buttons */}
 
 				<Swiper
 					modules={[Navigation]}
-					slidesPerView={2} // Dynamic width calculation
-					spaceBetween={48} // Gap between slides
+					slidesPerView={1.5} // Dynamic width calculation
+					spaceBetween={4} // Gap between slides
 					centeredSlides={false} // Prevent centering when all slides fit
 					centerInsufficientSlides={true} // Center slides if they are fewer than the available space
 					navigation={{
@@ -70,30 +70,43 @@ const ReviewSlider = () => {
 							?.classList.remove('swiper-button-disabled')
 					}}
 					breakpoints={{
-						0: { spaceBetween: 24 },
-						240: { spaceBetween: 32 },
-						340: { spaceBetween: 34 },
-						640: { spaceBetween: 35 },
-						768: { spaceBetween: 38 },
-						1024: { spaceBetween: 43 },
-						1280: { spaceBetween: 48 },
+						0: {
+							 spaceBetween: 4, 
+							 slidesPerView: 1,
+						},
+						424: {
+							spaceBetween: 4, 
+							slidesPerView: 1.2,
+						},
+						586: { 
+							spaceBetween: 4,
+							slidesPerView: 2
+						},
+						640: {
+							spaceBetween: 4, 
+							slidesPerView: 1.2,
+						},
+						1024: { 
+							spaceBetween: 20,
+							slidesPerView: 2,
+						 },
 					}}
 				>
 					{clinicApi.map((item, index) => (
 						<SwiperSlide
 							key={index}
-							className="!w-6/12" // Allows dynamic width calculation
+							// className="lg:!w-6/12 w-full" // Allows dynamic width calculation
 						>
               <div className="flex items-center gap-x-4">
-                <div className="w-[172.32px] h-[172.32px] relative rounded-[8.37px] overflow-hidden">
+                <div className="xl:min-w-[160.32px] xl:min-h-[160.32px] md:min-w-[110.32px] md:min-h-[110.32px] lg:min-w-[100.32px] lg:min-h-[100.32px] min-w-[110.32px] min-h-[110.32px] sm:min-w-[140.32px] sm:min-h-[140.32px] relative rounded-[8.37px] overflow-hidden">
                   <Image src={item?.image} alt="image" className="w-full h-full object-cover" fill/>
                 </div>
                 <div>
-                  <RatingGroup/>
-                  <p className="text-[20.08px] font-semibold leading-[21.7px] mt-2 text-left">Great care &<br/>
+                  <RatingGroup className='md:w-20 lg:w-16 xl:w-24 w-16 sm:w-20'/>
+                  <p className="xl:text-[20.08px] sm:text-[20.08px] md:text-[16.08px] mt-2 lg:text-[17.08px] font-semibold lg:leading-[15.7px] leading-3 xl:leading-[21.7px] sm:leading-[21.7px] md:leading-[15.7px] xl:mt-2 md:mt-1 text-left text-[12.69px]">Great care &<br/>
                   Service</p>
-                  <p className="text-[13.38px] leading-[21px mt-1 text-left">Treatment by Jess</p>
-                  <p className="text-[13.38px] leading-[21px] mt-4 text-left">Dave - 5 months ago</p>
+                  <p className="xl:text-[13.38px] md:text-[11px] sm:text-[13.38px] lg:text-[12px] md:leading-[21px] leading-[10px] xl:mt-1 md:mt-1 mt-2 text-left text-[13px]">Treatment by Jess</p>
+                  <p className="xl:text-[13.38px] md:text-[11px] sm:text-[13.38px] lg:text-[12px] md:leading-[21px] leading-[10px] xl:mt-4 md:mt-0 mt-4 text-left text-[13px]">Dave - 5 months ago</p>
                 </div>
               </div>
 						</SwiperSlide>

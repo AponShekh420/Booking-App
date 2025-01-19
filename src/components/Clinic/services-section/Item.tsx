@@ -16,37 +16,37 @@ const Item:FC<ServiceItemProps> = ({title, price, time}) => {
 
   return (
     <>
-      <div className="rounded-[10px] border border-[#9B9B9B] p-6 mt-[32px]">
+      <div className="rounded-[10px] border border-[#9B9B9B] p-6 md:mt-[32px] mt-3">
         <div className="flex justify-between items-center">
           <div>
-            <p className="text-[24px] font-semibold">{title}<br/>
+            <p className="lg:text-[24px] md:text-[18px] text-[16px] font-semibold">{title}<br/>
             <span className="font-bold">£{price}</span> - <span className="font-body font-[400]">{time}</span>
             </p>
-            <p className="flex gap-x-3 font-bold text-[24px] items-center mt-3 cursor-pointer hover:text-custom-red transition-all duration-300" onClick={() => setToggle((pre => !pre))}>
+            <p className="flex gap-x-3 font-bold lg:text-[24px] text-[16px] md:text-[18px] items-center mt-3 cursor-pointer hover:text-custom-red transition-all duration-300" onClick={() => setToggle((pre => !pre))}>
               Show details
               <DownArrowIcon/>
             </p>
           </div>
-          <button className="text-[23.22px] font-semibold bg-black hover:bg-custom-red transition-all duration-300 py-3 px-6 text-white rounded-[94.05px]">Book</button>
+          <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Book</button>
         </div>
 
         <div className={`transition-[max-height] duration-300 delay-0 ease-in-out overflow-hidden ${toggle ? "max-h-[9999px]" : "max-h-[0px]"}`}>
           {/* video column*/}
-          <div className="flex gap-x-8 justify-between mt-[31px]">
-            <p className="text-[24px] whitespace-normal leading-8 mt-2">PRP treatment can help support wound healing in trauma and joint injury. The technique can address male pattern baldness, stimulate the growth  of hair transplants and enhance other cosmetic procedures.</p>
-            <div className="min-w-[319px] min-h-[270px] rounded-[10px] relative overflow-hidden">
+          <div className="flex gap-x-8 justify-between md:mt-[31px] mt-3 lg:flex-row flex-col">
+            <p className="lg:text-[24px] text-[15px] md:text-[18px] whitespace-normal leading-8 lg:mt-2 mt-1 mb-2 lg:mb-0">PRP treatment can help support wound healing in trauma and joint injury. The technique can address male pattern baldness, stimulate the growth  of hair transplants and enhance other cosmetic procedures.</p>
+            <div className="xl:min-w-[319px] xl:min-h-[270px] lg:min-w-[240px] lg:min-h-[180px] lg:max-h-[180px] rounded-[10px] w-full h-60 relative overflow-hidden sm:min-h-[400px] max-h-[270px] xs:min-h-[380px]">
               <Image src={video} alt="video" className="object-cover w-full h-full object-top" fill/>
-              <VideoIndicatorIcon className="absolute left-1/2 top-1/2 !z-[10] -translate-x-1/2 -translate-y-1/2 text-white hover:text-custom-red h-20 w-20 cursor-pointer"/>
-              <p className="text-[17.65px] leading-[25px] absolute bottom-2 z-30 text-white left-3">Dr. Van Der Press  - Dermamina</p>
+              <VideoIndicatorIcon className="absolute left-1/2 top-1/2 !z-[10] -translate-x-1/2 -translate-y-1/2 text-white hover:text-custom-red xl:h-20 xl:w-20 lg:h-10 lg:w-10 w-20 h-20 cursor-pointer"/>
+              <p className="xl:text-[17.65px] lg:text-[15px] text-[17.65px] leading-[25px] absolute bottom-2 z-30 text-white left-3">Dr. Van Der Press  - Dermamina</p>
             </div>
           </div>
 
           {/* service review */}
           <div>
-            <p className="text-[24px] font-semibold mt-8">Service Review</p>
+            <p className="lg:text-[24px] text-[16.74px] md:text-[18px] font-semibold md:mt-8 mt-10">Service Review</p>
             
             {/* box container or slider container */}
-            <div className="flex gap-x-10 mt-7">
+            <div className="flex gap-x-10 md:mt-1">
               {/* review box slider */}
               <ReviewSlider/>
             </div>

@@ -34,7 +34,7 @@ const SearchBar = () => {
     >
       <div className="w-full h-full m-auto flex items-center relative">
         <div className="xl:pr-[36px] pr-[9.16px] xs:pr-[11.16px] pl-2 xs:pl-0 lg:h-[37px] h-[20.62px] flex items-center border-r-[1px] border-[#D8D8D8]">
-          <Image src={"assets/icons/searchbar/AI-icon.svg"} alt="AI" 
+          <Image src={"/assets/icons/searchbar/aiicon.svg"} alt="AI" 
             width={100} 
             height={100}
             className="lg:w-[60px] lg:h-[60px] h-[23.41px] w-[24.52px] md:h-[27px] md:w-[39px] sm:h-[30.50px] sm:w-[42.50px]"
@@ -62,7 +62,7 @@ const SearchBar = () => {
         {/* desktop */}
         <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] hidden md:flex items-center border-r-[1px] border-[#D8D8D8] cursor-pointer" onClick={() => setTab((oldState) => oldState === "location" ? "" : "location")}>
           {/* should be change */}
-          <Image src={"assets/icons/searchbar/location.svg"} alt="AI" 
+          <Image src={"/assets/icons/searchbar/location.svg"} alt="AI" 
             width={100} 
             height={100}
             className="xl:w-[25px] xl:h-[25px] h-[17px] w-[17px] sm:h-[21px] sm:w-[21px] lg:w-[30px] lg:h-[30px]"
@@ -73,7 +73,7 @@ const SearchBar = () => {
         {/* mobile */}
         <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] flex md:hidden items-center border-r-[1px] border-[#D8D8D8] cursor-pointer" onClick={() => setTabMobile(true)}>
           {/* should be change */}
-          <Image src={"assets/icons/searchbar/location.svg"} alt="AI" 
+          <Image src={"/assets/icons/searchbar/location.svg"} alt="AI" 
             width={100} 
             height={100}
             className="lg:w-[25px] lg:h-[25px] h-[17px] w-[17px] sm:h-[21px] sm:w-[21px]"
@@ -83,7 +83,7 @@ const SearchBar = () => {
         {/* desktop */}
         <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] border-r-[1px] hidden md:flex items-center cursor-pointer border-[#D8D8D8]" onClick={() => setTab((oldState) => oldState === "clock" ? "" : "clock")}>
           <Image 
-            src={"assets/icons/searchbar/Vector.svg"} 
+            src={"/assets/icons/searchbar/vector.svg"} 
             alt="AI" 
             width={100} 
             height={100}
@@ -95,7 +95,7 @@ const SearchBar = () => {
         {/* mobile */}
         <div className="lg:px-[16px] px-[7.8px] lg:h-[37px] h-[20.62px] border-r-[1px] flex md:hidden items-center cursor-pointer border-[#D8D8D8]" onClick={() => setTabMobile(true)}>
           <Image 
-            src={"assets/icons/searchbar/Vector.svg"} 
+            src={"/assets/icons/searchbar/vector.svg"} 
             alt="AI" 
             width={100} 
             height={100}
@@ -106,7 +106,7 @@ const SearchBar = () => {
         <div className="lg:pl-[16px] pl-[7.8px]">
           <button className="hover:text-white h-[25.29px] hover:bg-black transition-all duration-300 leading-[30.32px] text-white xl:w-[119px] xl:h-[40px] lg:w-[105px] lg:h-[35px] w-[66.32px] sm:w-[75.32px] sm:h-[25.29px] lg:rounded-[79px] rounded-[44.03px] bg-[#E9082A] flex items-center justify-center xl:gap-x-[7px] lg:gap-x-1 gap-x-[4px] sm:gap-x-[3px] md:h-[30px]">
             <Image 
-              src={"assets/icons/searchbar/Magnifier.svg"} alt="AI" 
+              src={"/assets/icons/searchbar/magnifier.svg"} alt="AI" 
               width={20} 
               height={20}
               className="xl:w-[20px] xl:h-[20px] w-[13.38px] h-[13.38px] sm:w-[13.38px] sm:h-[13.38px] md:h-[14px] md:w-[14px] lg:w-[18px] lg:h-[18px]"
