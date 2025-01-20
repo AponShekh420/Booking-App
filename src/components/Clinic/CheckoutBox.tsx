@@ -1,9 +1,17 @@
 'use client'
 
 import { DownArrowIcon, LocationIcon, LocationIconTwo, RatingGroup, WatchIcon } from '@/components/common/Icons'
-import { useState } from 'react'
+import Link from 'next/link'
+import { FC, useState } from 'react'
 
-const CheckOutBox = ({ className }: { className?: string }) => {
+interface CheckOutBoxProps {
+	path: any,
+	className?: string,
+}
+
+
+
+const CheckOutBox:FC<CheckOutBoxProps> = ({ className, path }) => {
 	const [aboutToggle, setAboutToggle] = useState<boolean>(false)
 	const [timeToggle, setTimeToggle] = useState<boolean>(false)
 	const [locationToggle, setLocationToggle] = useState<boolean>(false)
@@ -60,7 +68,7 @@ const CheckOutBox = ({ className }: { className?: string }) => {
 			</div>
 
 			{/* continue btn */}
-      <button className="hidden md:flex w-full xl:h-[57px] md:h-[40px] bg-custom-red rounded-[94.05px] font-semibold text-white xl:text-[23.22px] md:text-[20.22px] items-center justify-center xl:mt-[36px] md:mt-[30px] hover:bg-black transition-all duration-300">Continue</button>
+      <Link href={path} className="hidden md:flex w-full xl:h-[57px] md:h-[40px] bg-custom-red rounded-[94.05px] font-semibold text-white xl:text-[23.22px] md:text-[20.22px] items-center justify-center xl:mt-[36px] md:mt-[30px] hover:bg-black transition-all duration-300">Continue</Link>
 		</div>
 	)
 }
