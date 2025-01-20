@@ -4,6 +4,7 @@ import { useState } from "react";
 import ClinicHeadingText from "../ClinicHeadingText";
 import { CircleRightIcon, DownArrowIcon, DownloadIcon, LocationIcon, LocationIconTwo, OutlineHeartIcon, RatingGroup, WatchIcon } from "@/components/common/Icons";
 import MapContainer from "./MapContainer";
+import Link from "next/link";
 
 const BookingCard = () => {
   const [aboutToggle, setAboutToggle] = useState<boolean>(false);
@@ -32,7 +33,7 @@ const BookingCard = () => {
       </div>
 
       {/* booking btn */}
-      <button className="hidden md:flex w-full xl:h-[57px] md:h-[40px] bg-custom-red rounded-[94.05px] font-semibold text-white xl:text-[23.22px] md:text-[20.22px] items-center justify-center xl:mt-[36px] md:mt-[30px] hover:bg-black transition-all duration-300">Book now</button>
+      <Link href={'/clinic/booking'} className="hidden md:flex w-full xl:h-[57px] md:h-[40px] bg-custom-red rounded-[94.05px] font-semibold text-white xl:text-[23.22px] md:text-[20.22px] items-center justify-center xl:mt-[36px] md:mt-[30px] hover:bg-black transition-all duration-300">Book now</Link>
 
       {/* time and location */}
       <div className="md:mt-[36px] flex flex-col justify-start items-start md:gap-y-4 gap-y-2">

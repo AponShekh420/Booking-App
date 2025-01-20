@@ -8,7 +8,7 @@ const DatePickerCustomHeaderTwoMonth = ({
   increaseMonth,
 }: ReactDatePickerCustomHeaderProps) => {
   return (
-    <div className="flex items-center justify-between mb-4">
+    <div className="flex items-center justify-center mb-4 gap-x-4">
       <button
         aria-label="Previous Month"
         className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -17,16 +17,16 @@ const DatePickerCustomHeaderTwoMonth = ({
       >
         <ChevronLeftIcon className="h-5 w-5" />
       </button>
-      <span className="text-lg font-medium">
+      <span className="text-[20.52px] font-bold">
         {monthDate.toLocaleString('en-US', { month: 'long', year: 'numeric' })}
       </span>
       <button
         aria-label="Next Month"
-        className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+        className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 font-bold"
         onClick={increaseMonth}
         type="button"
       >
-        <ChevronRightIcon className="h-5 w-5" />
+        <ChevronRightIcon className="h-5 w-5 font-bold" />
       </button>
     </div>
   )

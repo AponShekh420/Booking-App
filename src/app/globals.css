@@ -15,6 +15,12 @@
 	font-weight: 400;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'AnekBangla';
+	src: url('/fonts/AnekBangla-VariableFont_wdth,wght.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: 'AnekBangla';
@@ -114,19 +120,35 @@ h2 {
 	border-radius: 0.5rem; /* Rounded corners */
 	grid-template-columns: none !important;
 }
-
+.react-datepicker__day {
+	height: 29px;
+	width: 29px;
+}
+.react-datepicker__day-name {
+	font-size: 20.52px !important;
+	color: black !important;
+}
 .react-datepicker__day--selected .react-datepicker__day_span {
 	background-color: #e9082a;
+	font-size: 20.52px;
+	height: 29px;
+  width: 29px;
 }
 
 .react-datepicker__day_span:hover {
 	background-color: #e9082a !important;
 	color: white !important;
+	font-size: 20.52px;
+	height: 29px;
+  width: 29px;
 }
 
 .react-datepicker__day--range-end .react-datepicker__day_span {
 	background-color: #e9082a !important;
 	color: white !important;
+	font-size: 20.52px;
+	height: 29px;
+  width: 29px;
 }
 
 .react-datepicker__day--keyboard-selected .react-datepicker__day_span,
@@ -134,6 +156,9 @@ h2 {
 .react-datepicker__day--selecting-range-end .react-datepicker__day_span {
 	background-color: #e9082a !important;
 	color: white !important;
+	font-size: 20.52px;
+	height: 29px;
+  width: 29px;
 }
 
 /* custom scrollbar for search drowpdown menu */
