@@ -11,7 +11,7 @@ import ClinicHeadingText from '../ClinicHeadingText'
 export default function CheckoutSection() {
 	const [paymentToggle, setpaymentToggle] = useState(false)
 	return (
-		<Wrapper className="my-[79px] min-h-screen">
+		<Wrapper className="md:my-[40px] lg:my-[79px] min-h-screen">
 			<div className="flex gap-x-8 justify-between md:flex-row flex-col-reverse">
 				<div className="md:w-7/12 w-full">
 					<ClinicHeadingText title='Review and confirm'/>
@@ -141,7 +141,7 @@ export default function CheckoutSection() {
 					</form>
 				</div>
 				<div className="md:w-5/12 w-full mb-7 md:mb-0">
-					<CheckOutBox className="hidden md:block" />
+					<CheckOutBox path={"/clinic/checkout"} className="hidden md:block" />
 				</div>
 			</div>
 		</Wrapper>
