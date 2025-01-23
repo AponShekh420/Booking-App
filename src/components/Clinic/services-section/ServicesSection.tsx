@@ -175,7 +175,7 @@ const ServicesSection = () => {
 	}
 	return (
 		<Wrapper>
-			<div className="flex flex-col-reverse justify-between gap-x-8 md:flex-row">
+			<div className="flex flex-col-reverse justify-between gap-x-8 md:flex-row md:mt-7 lg:mt-9">
 				<div className="w-full md:w-7/12">
 					{/* title */}
 					<div className="flex items-center justify-between">
