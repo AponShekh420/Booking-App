@@ -27,7 +27,7 @@ const CheckOutBox: FC<CheckOutBoxProps> = ({ className, path }) => {
 				{/* title, rating and time-icon */}
 				<div className="hidden md:block">
 					<div className="flex items-center justify-between">
-						<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[57.28px]">
+						<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[50px]">
 							Dermamina
 						</h3>
 						<div className="flex cursor-pointer items-center gap-x-1 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:text-[16px] xl:text-[18.64px]">

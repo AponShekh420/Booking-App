@@ -23,7 +23,7 @@ const BookingCard = () => {
 			{/* title, rating and header-download */}
 			<div className="hidden md:block">
 				<div className="flex items-center justify-between">
-					<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[57.28px]">
+					<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[50px]">
 						Dermamina
 					</h3>
 					<div className="flex items-center gap-x-4">
