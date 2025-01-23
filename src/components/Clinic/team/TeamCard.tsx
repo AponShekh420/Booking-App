@@ -1,4 +1,7 @@
+'use client'
 import { StarIconFull } from '@/components/common/Icons'
+import { addTeam } from '@/redux-toolkit/features/team/teamSlice'
+import { useAppDispatch, useAppSelector } from '@/redux-toolkit/hooks'
 import Image from 'next/image'
 
 type TeamT = {
@@ -11,10 +14,16 @@ type TeamT = {
 }
 
 export default function TeamCard({ team }: TeamT) {
+	const activeTeam = useAppSelector((state) => state.team.activeTeam)
+	const dispatch = useAppDispatch()
+
 	return (
-		<div className="text-[17.89px] lg:text-[24px]">
+		<div
+			className="cursor-pointer text-[17.89px] lg:text-[24px]"
+			onClick={() => dispatch(addTeam(team))}
+		>
 			<Image
-				className="w-full rounded-lg"
+				className={`w-full rounded-xl ${activeTeam.id === team.id ? 'border-2 border-custom-red p-1' : ''}`}
 				src={team?.image}
 				alt="team"
 				width={124}

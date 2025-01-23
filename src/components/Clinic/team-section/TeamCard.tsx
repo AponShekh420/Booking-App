@@ -1,21 +1,29 @@
-import { StarIconFull } from '@/components/common/Icons';
-import Image from 'next/image';
+'use client'
+import { StarIconFull } from '@/components/common/Icons'
+import { addTeam } from '@/redux-toolkit/features/team/teamSlice'
+import { useAppDispatch, useAppSelector } from '@/redux-toolkit/hooks'
+import Image from 'next/image'
 
 type TeamT = {
 	team: {
-		id: number;
-		image: string;
-		name: string;
-		rating: number;
-	};
-};
+		id: number
+		image: string
+		name: string
+		rating: number
+	}
+}
 
 export default function TeamCard({ team }: TeamT) {
+	const activeTeam = useAppSelector((state) => state.team.activeTeam)
+	const dispatch = useAppDispatch()
 	return (
-		<div className="text-[17.89px] lg:text-[24px] flex flex-col items-center">
+		<div
+			onClick={() => dispatch(addTeam(team))}
+			className="flex cursor-pointer flex-col items-center text-[17.89px] lg:text-[24px]"
+		>
 			{/* Fix the blurry image */}
 			<Image
-				className="rounded-lg object-cover" // Ensures proper scaling
+				className={`rounded-3xl object-cover ${activeTeam.id === team.id ? 'border-2 border-custom-red p-1' : ''}`}
 				src={team?.image}
 				alt="team"
 				width={1000} // Larger width
@@ -30,5 +38,5 @@ export default function TeamCard({ team }: TeamT) {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
