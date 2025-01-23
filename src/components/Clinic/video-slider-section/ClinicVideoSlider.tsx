@@ -83,13 +83,9 @@ const ClinicVideoSlider = () => {
 							?.classList.remove('swiper-button-disabled')
 					}}
 					breakpoints={{
-						0: { spaceBetween: 24 },
-						240: { spaceBetween: 32 },
-						340: { spaceBetween: 34 },
-						640: { spaceBetween: 35 },
-						768: { spaceBetween: 38 },
-						1024: { spaceBetween: 43 },
-						1280: { spaceBetween: 48 },
+						0: { spaceBetween: 18 },
+						1024: { spaceBetween: 20 },
+						1280: { spaceBetween: 25 },
 					}}
 				>
 					{clinicApi.map((item, index) => (

@@ -29,15 +29,18 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 			<div className="relative my-8 flex min-h-screen">
 				{/* CARDSSSS */}
 				<div className="min-h-screen w-full max-w-[1184px] flex-shrink-0 md:w-[60%] md:px-4 xl:w-[60%] xl:px-8 2xl:w-[60%] 2xl:pl-0">
-					<div className='flex justify-between gap-x-2'>
-						<h1 className="text-[34.72px] font-[700] uppercase leading-[33.08px] text-black sm:text-[42.72px] sm:leading-[43.08px] md:text-[35px] md:leading-[32.08px] lg:text-[40px] lg:leading-[50.08px] xl:text-[50px] xl:leading-[53.43px] font-heading">
+					<div className="flex justify-between gap-x-2">
+						<h1 className="font-heading text-[34.72px] font-[700] uppercase leading-[33.08px] text-black sm:text-[42.72px] sm:leading-[43.08px] md:text-[35px] md:leading-[32.08px] lg:text-[40px] lg:leading-[50.08px] xl:text-[50px] xl:leading-[53.43px]">
 							skin treatment
 						</h1>
 						<TabFilters />
 					</div>
-					<div className='flex md:gap-x-3 gap-x-2 mb-4'>
-						<h1 className='lg:text-[29px] text-[21px] sm:text-[25px] md:text-[21px] font-heading uppercase'>for men in <span className='text-custom-red'>BATTERSEA LONDON</span></h1>
-						<p className="block font-body font-semibold lg:text-[16.85px] xs:text-[13.52px] text-[10.52px] text-neutral-500 md:text-[14.85px] sm:text-[16.85px]">
+					<div className="mb-4 flex gap-x-2 md:gap-x-3">
+						<h1 className="font-heading text-[21px] uppercase sm:text-[25px] md:text-[21px] lg:text-[29px]">
+							for men in{' '}
+							<span className="text-custom-red">BATTERSEA LONDON</span>
+						</h1>
+						<p className="block font-body text-[10.52px] font-semibold text-neutral-500 xs:text-[13.52px] sm:text-[16.85px] md:text-[14.85px] lg:text-[16.85px]">
 							268 Clinics Within map area
 						</p>
 					</div>
@@ -109,7 +112,7 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 						/>
 					)}
 
-					<div className="fixed left-0 top-0 h-full w-full overflow-hidden rounded-md md:sticky xl:h-[calc(100vh)]">
+					<div className="fixed left-0 top-0 h-full w-full overflow-hidden rounded-md md:sticky md:h-[calc(100vh)]">
 						<MapContainer
 							currentHoverID={currentHoverID}
 							DEMO_DATA={DEMO_STAYS}

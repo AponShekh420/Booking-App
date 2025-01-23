@@ -1,13 +1,13 @@
 'use client'
 
+import { Route } from '@/routers/types'
+import { variants } from '@/utils/animationVariants'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion'
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import { variants } from '@/utils/animationVariants'
-import Link from 'next/link'
-import { Route } from '@/routers/types'
 
 export interface GallerySliderProps {
 	className?: string
@@ -99,7 +99,7 @@ export default function GallerySlider({
 									src={currentImage || ''}
 									fill
 									alt="listing card gallery"
-									className={`object-cover ${imageClass}`}
+									className={`object-cover ${imageClass} `}
 									onLoad={() => setLoaded(true)}
 									sizes="(max-width: 1025px) 100vw, 300px"
 								/>

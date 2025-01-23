@@ -1,61 +1,84 @@
-"use client"
-import { DownArrowIcon, VideoIndicatorIcon } from "@/components/common/Icons"
-import ReviewSlider from "./ReviewSlider"
-import Image from "next/image"
-import video from "@/images/home/video-2.png"
-import { FC, useState } from "react"
+'use client'
+import { DownArrowIcon, VideoIndicatorIcon } from '@/components/common/Icons'
+import video from '@/images/home/video-2.png'
+import Image from 'next/image'
+import { FC, useState } from 'react'
+import ReviewSlider from './ReviewSlider'
 
 interface ServiceItemProps {
-  title: string,
-  price: number,
-  time: string,
+	title: string
+	price: number
+	time: string
 }
 
-const Item:FC<ServiceItemProps> = ({title, price, time}) => {
-  const [toggle, setToggle] = useState<boolean>(false);
+const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
+	const [toggle, setToggle] = useState<boolean>(false)
 
-  return (
-    <>
-      <div className="rounded-[10px] border border-[#9B9B9B] p-6 md:mt-[32px] mt-3">
-        <div className="flex justify-between items-center">
-          <div>
-            <p className="lg:text-[24px] md:text-[18px] text-[16px] font-semibold">{title}<br/>
-            <span className="font-bold">£{price}</span> - <span className="font-body font-[400]">{time}</span>
-            </p>
-            <p className="flex gap-x-3 font-bold lg:text-[24px] text-[16px] md:text-[18px] items-center mt-3 cursor-pointer hover:text-custom-red transition-all duration-300" onClick={() => setToggle((pre => !pre))}>
-              Show details
-              <DownArrowIcon/>
-            </p>
-          </div>
-          <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Book</button>
-        </div>
+	return (
+		<>
+			<div className="mt-3 rounded-[10px] border border-[#9B9B9B] p-6 md:mt-[32px]">
+				<div className="flex items-center justify-between">
+					<div>
+						<p className="text-[16px] font-semibold md:text-[18px] lg:text-[24px]">
+							{title}
+							<br />
+							<span className="font-bold">£{price}</span> -{' '}
+							<span className="font-body font-[400]">{time}</span>
+						</p>
+						<p
+							className="mt-3 flex cursor-pointer items-center gap-x-3 text-[16px] font-bold transition-all duration-300 hover:text-custom-red md:text-[18px] lg:text-[24px]"
+							onClick={() => setToggle((pre) => !pre)}
+						>
+							Show details
+							<DownArrowIcon />
+						</p>
+					</div>
+					<button className="rounded-[94.05px] bg-black px-6 py-2 text-[23.22px] font-semibold text-white transition-all duration-300 hover:bg-custom-red md:px-4 md:py-2 md:text-[18px] lg:px-6 lg:py-2 lg:text-[23.22px]">
+						Book
+					</button>
+				</div>
 
-        <div className={`transition-[max-height] duration-300 delay-0 ease-in-out overflow-hidden ${toggle ? "max-h-[9999px]" : "max-h-[0px]"}`}>
-          {/* video column*/}
-          <div className="flex gap-x-8 justify-between md:mt-[31px] mt-3 lg:flex-row flex-col">
-            <p className="lg:text-[24px] text-[15px] md:text-[18px] whitespace-normal leading-8 lg:mt-2 mt-1 mb-2 lg:mb-0">PRP treatment can help support wound healing in trauma and joint injury. The technique can address male pattern baldness, stimulate the growth  of hair transplants and enhance other cosmetic procedures.</p>
-            <div className="xl:min-w-[319px] xl:min-h-[270px] lg:min-w-[240px] lg:min-h-[180px] lg:max-h-[180px] rounded-[10px] w-full h-60 relative overflow-hidden sm:min-h-[400px] max-h-[270px] xs:min-h-[380px]">
-              <Image src={video} alt="video" className="object-cover w-full h-full object-top" fill/>
-              <VideoIndicatorIcon className="absolute left-1/2 top-1/2 !z-[10] -translate-x-1/2 -translate-y-1/2 text-white hover:text-custom-red xl:h-20 xl:w-20 lg:h-10 lg:w-10 w-20 h-20 cursor-pointer"/>
-              <p className="xl:text-[17.65px] lg:text-[15px] text-[17.65px] leading-[25px] absolute bottom-2 z-30 text-white left-3">Dr. Van Der Press  - Dermamina</p>
-            </div>
-          </div>
+				<div
+					className={`overflow-hidden transition-[max-height] delay-0 duration-300 ease-in-out ${toggle ? 'max-h-[9999px]' : 'max-h-[0px]'}`}
+				>
+					{/* video column*/}
+					<div className="mt-3 flex flex-col justify-between gap-x-8 md:mt-[31px] lg:flex-row">
+						<p className="mb-2 mt-1 whitespace-normal text-[15px] leading-8 md:text-[18px] lg:mb-0 lg:mt-2 lg:text-[24px]">
+							PRP treatment can help support wound healing in trauma and joint
+							injury. The technique can address male pattern baldness, stimulate
+							the growth of hair transplants and enhance other cosmetic
+							procedures.
+						</p>
+						<div className="relative h-60 max-h-[270px] w-full overflow-hidden rounded-[10px] xs:min-h-[380px] sm:min-h-[400px] lg:max-h-[180px] lg:min-h-[180px] lg:min-w-[240px] xl:min-h-[270px] xl:min-w-[319px]">
+							<Image
+								src={video}
+								alt="video"
+								className="h-full w-full object-cover object-top"
+								fill
+							/>
+							<VideoIndicatorIcon className="absolute left-1/2 top-1/2 !z-[10] h-20 w-20 -translate-x-1/2 -translate-y-1/2 cursor-pointer text-white hover:text-custom-red lg:h-10 lg:w-10 xl:h-20 xl:w-20" />
+							<p className="absolute bottom-2 left-3 z-30 text-[17.65px] leading-[25px] text-white lg:text-[15px] xl:text-[17.65px]">
+								Dr. Van Der Press - Dermamina
+							</p>
+						</div>
+					</div>
 
-          {/* service review */}
-          <div>
-            <p className="lg:text-[24px] text-[16.74px] md:text-[18px] font-semibold md:mt-8 mt-10">Service Review</p>
-            
-            {/* box container or slider container */}
-            <div className="flex gap-x-10 md:mt-1">
-              {/* review box slider */}
-              <ReviewSlider/>
-            </div>
-          </div>
-        </div>
+					{/* service review */}
+					<div>
+						<p className="mt-10 text-[16.74px] font-semibold md:mt-8 md:text-[18px] lg:text-[24px]">
+							Service Review
+						</p>
 
-      </div>
-    </>
-  );
+						{/* box container or slider container */}
+						<div className="flex gap-x-10 md:mt-1">
+							{/* review box slider */}
+							<ReviewSlider />
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	)
 }
 
-export default Item;
+export default Item

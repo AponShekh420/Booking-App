@@ -25,7 +25,7 @@ const Amenities = () => {
 			<Dialog
 				open={isOpenModalAmenities}
 				onClose={closeModalAmenities}
-				className="relative z-50 hidden lg:block"
+				className="relative z-50"
 			>
 				<DialogBackdrop
 					transition
