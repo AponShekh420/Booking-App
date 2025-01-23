@@ -16,17 +16,17 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 
 	return (
 		<>
-			<div className="mt-3 rounded-[10px] border border-[#9B9B9B] p-6 md:mt-[32px]">
+			<div className="mt-3 rounded-[10px] border border-[#9B9B9B] p-4 md:mt-[32px]">
 				<div className="flex items-center justify-between">
 					<div>
-						<p className="text-[16px] font-semibold md:text-[18px] lg:text-[24px]">
+						<p className="font-semibold leading-7 text-[16px] md:text-[12px] lg:text-[16px]">
 							{title}
 							<br />
 							<span className="font-bold">£{price}</span> -{' '}
 							<span className="font-body font-[400]">{time}</span>
 						</p>
 						<p
-							className="mt-3 flex cursor-pointer items-center gap-x-3 text-[16px] font-bold transition-all duration-300 hover:text-custom-red md:text-[18px] lg:text-[24px]"
+							className="mt-1 flex cursor-pointer items-center gap-x-3 font-bold transition-all duration-300 hover:text-custom-red text-[16px] md:text-[12px] lg:text-[16px]"
 							onClick={() => setToggle((pre) => !pre)}
 						>
 							Show details
@@ -43,7 +43,7 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 				>
 					{/* video column*/}
 					<div className="mt-3 flex flex-col justify-between gap-x-8 md:mt-[31px] lg:flex-row">
-						<p className="mb-2 mt-1 whitespace-normal text-[15px] leading-8 md:text-[18px] lg:mb-0 lg:mt-2 lg:text-[24px]">
+						<p className="mb-2 mt-1 whitespace-normal leading-8 lg:mb-0 lg:mt-2 text-[16px] md:text-[12px] lg:text-[16px]">
 							PRP treatment can help support wound healing in trauma and joint
 							injury. The technique can address male pattern baldness, stimulate
 							the growth of hair transplants and enhance other cosmetic
