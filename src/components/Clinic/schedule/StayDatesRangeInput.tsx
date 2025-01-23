@@ -43,8 +43,8 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 					<DatePicker
 						selected={startDate}
 						onChange={onChangeDate}
-						startDate={startDate}
-						endDate={endDate}
+						// startDate={startDate}
+						// endDate={endDate}
 						selectsRange
 						monthsShown={1}
 						showPopperArrow={false}

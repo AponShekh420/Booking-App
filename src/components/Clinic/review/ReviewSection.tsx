@@ -4,7 +4,7 @@ import ThinkToKnow from './ThinkToKnow'
 
 export default function ReviewSection() {
 	return (
-		<div className="mt-[79px]">
+		<div className="mt-[79px]" id="reviews">
 			<Reviews />
 			<ThinkToKnow />
 			<Amenities />
