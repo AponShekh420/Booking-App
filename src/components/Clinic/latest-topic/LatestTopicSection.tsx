@@ -8,6 +8,7 @@ import TopicCard from './TopicCard'
 import Image from 'next/image'
 import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import ClinicHeadingText from '../ClinicHeadingText'
 
 const topics = [
 	{
@@ -39,9 +40,10 @@ export default function LatestTopicSection() {
 	return (
 		<section className="mt-[79px]">
 			<Wrapper>
-				<h1 className="text-[34.72px] font-[700] uppercase leading-[52.08px] text-custom-red sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
+				{/* <h1 className="text-[34.72px] font-[700] uppercase leading-[52.08px] text-custom-red sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
 					LATEST TOPICS:
-				</h1>
+				</h1> */}
+				<ClinicHeadingText title='LATEST TOPICS:'/>
 				<div className="w-full">
 					<Swiper
 						modules={[Navigation]}
