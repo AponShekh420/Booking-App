@@ -4,7 +4,13 @@ import {
 	FacebookColorIcon,
 	GoogleColorIcon,
 } from '@/components/common/Icons'
+import {
+	AccountDetailsSchema,
+	AccountDetailsType,
+} from '@/zod-schema/my-profile/account'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 import ProfileHeading from '../ProfileHeading'
 import RedButton from '../RedButton'
 import TextInput from '../TextInput'
@@ -12,42 +18,86 @@ import IconButton from './IconButton'
 
 export default function AccountSection() {
 	const [toggler, setToggler] = useState(true)
+	const {
+		register,
+		handleSubmit,
+		watch,
+		formState: { errors },
+	} = useForm<AccountDetailsType>({
+		resolver: zodResolver(AccountDetailsSchema),
+	})
+	const onSubmit = (data: AccountDetailsType) => console.log(data)
+
 	return (
 		<div className="">
-			<div className="mt-[54px]">
-				<ProfileHeading title="Account Details" />
-				<form className="ml-4 mt-[50px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] lg:grid-cols-2">
-					<TextInput label="First and Last Name" />
-					<TextInput label="Email" />
-					<TextInput label="Phone Number" />
-					<TextInput label="Birthday" type="date" />
-				</form>
-				<div className="ml-4 mt-[100px] grid gap-x-[44px] gap-y-[41px] lg:grid-cols-2">
-					<IconButton Icon={FacebookColorIcon} title="Connect with Facebook" />
-					<IconButton Icon={AppleIcon} title="Connect with Apple" />
-					<IconButton Icon={GoogleColorIcon} title="Connect with Google" />
+			<form onSubmit={handleSubmit(onSubmit)}>
+				<div className="mt-[54px]">
+					<ProfileHeading title="Account Details" />
+					<div className="2md:grid-cols-2 mt-[50px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] sm:ml-4">
+						<TextInput
+							{...register('fullname')}
+							label="First and Last Name"
+							error={errors.fullname}
+						/>
+						<TextInput
+							{...register('email')}
+							label="Email"
+							error={errors.email}
+						/>
+						<TextInput
+							{...register('phoneNumber')}
+							label="Phone Number"
+							error={errors.phoneNumber}
+						/>
+						<TextInput
+							{...register('birthDay')}
+							label="Birthday"
+							type="date"
+							error={errors.birthDay}
+						/>
+					</div>
+					<div className="2md:grid-cols-2 mt-[100px] grid gap-x-[44px] gap-y-[41px] sm:ml-4">
+						<IconButton
+							Icon={FacebookColorIcon}
+							title="Connect with Facebook"
+						/>
+						<IconButton Icon={AppleIcon} title="Connect with Apple" />
+						<IconButton Icon={GoogleColorIcon} title="Connect with Google" />
+					</div>
 				</div>
-			</div>
-			<div className="mt-[54px]">
-				<ProfileHeading title="Address" />
-				<form className="ml-4 mt-[54px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] lg:grid-cols-2">
-					<TextInput label="Street & Number" />
-					<TextInput label="Road & Street" />
-					<TextInput label="City" />
-					<TextInput label="Zip Code" />
-				</form>
-				<div className="ml-4 mt-[54px] flex flex-col-reverse items-center gap-[46px] lg:flex-row">
-					<RedButton title="Update" />
-					<p>
-						Your address is collected for booking purposes only and will remain
-						confidential. It will not be shared publicly or with third parties
-						without your consent.
-					</p>
+				<div className="mt-[54px]">
+					<ProfileHeading title="Address" />
+					<form className="2md:grid-cols-2 mt-[54px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] sm:ml-4">
+						<TextInput
+							{...register('streetNumber')}
+							label="Street & Number"
+							error={errors.streetNumber}
+						/>
+						<TextInput
+							{...register('roadAndStreet')}
+							label="Road & Street"
+							error={errors.roadAndStreet}
+						/>
+						<TextInput {...register('city')} label="City" error={errors.city} />
+						<TextInput
+							{...register('zipCode')}
+							label="Zip Code"
+							error={errors.zipCode}
+						/>
+					</form>
+					<div className="2md:flex-row mt-[54px] flex flex-col-reverse items-center gap-[46px] sm:ml-4">
+						<RedButton title="Update" />
+						<p>
+							Your address is collected for booking purposes only and will
+							remain confidential. It will not be shared publicly or with third
+							parties without your consent.
+						</p>
+					</div>
 				</div>
-			</div>
+			</form>
 			<div className="my-[54px]">
 				<ProfileHeading title="Notifications" />
-				<div className="ml-4 mt-[54px] space-y-4">
+				<div className="mt-[54px] space-y-4 sm:ml-4">
 					<p className="text-[20px] font-bold">
 						Notify me if there are any changes to my appointment status via
 					</p>
