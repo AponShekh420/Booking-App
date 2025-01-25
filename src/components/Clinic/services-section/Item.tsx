@@ -33,7 +33,7 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 							<DownArrowIcon />
 						</p>
 					</div>
-					<button className="rounded-[94.05px] bg-black px-6 py-2 text-[23.22px] font-semibold text-white transition-all duration-300 hover:bg-custom-red md:px-4 md:py-2 md:text-[18px] lg:px-6 lg:py-2 lg:text-[23.22px]">
+					<button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
 						Book
 					</button>
 				</div>
