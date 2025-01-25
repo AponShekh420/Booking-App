@@ -180,13 +180,13 @@ const ServicesSection = () => {
 					{/* title */}
 					<div className="flex items-center justify-between">
 						<ClinicHeadingText title="Services" />
-						<div className="md:hidden">
+						<div>
 							<ServicesTabFilter />
 						</div>
 					</div>
 
 					{/* buttons list */}
-					<div className="flex flex-wrap gap-3">
+					<div className="flex flex-wrap gap-3 mt-5">
 						<button
 							onClick={handleTab}
 							className="rounded-[80.12px] bg-custom-red px-4 py-1 text-[13.07px] capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]"
@@ -249,7 +249,7 @@ const ServicesSection = () => {
 								Treat yourself or a friend
 							</p>
 						</div>
-						<button className="rounded-[94.05px] bg-black px-6 py-2 text-[23.22px] font-semibold text-white transition-all duration-300 hover:bg-custom-red md:px-4 md:py-2 md:text-[18px] lg:px-6 lg:py-2 lg:text-[23.22px]">
+						<button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
 							Book
 						</button>
 					</div>
@@ -262,7 +262,7 @@ const ServicesSection = () => {
 								Treat yourself or a friend
 							</p>
 						</div>
-						<button className="rounded-[94.05px] bg-black px-6 py-2 text-[23.22px] font-semibold text-white transition-all duration-300 hover:bg-custom-red md:px-4 md:py-2 md:text-[18px] lg:px-6 lg:py-2 lg:text-[23.22px]">
+						<button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
 							Book
 						</button>
 					</div>

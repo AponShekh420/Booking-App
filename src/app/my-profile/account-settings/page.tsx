@@ -2,7 +2,7 @@ import AccountSection from '@/components/my-profile/account-settings/AccountSect
 
 export default function page() {
 	return (
-		<div>
+		<div className="h-[500vh]">
 			<AccountSection />
 		</div>
 	)
