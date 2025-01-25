@@ -4,6 +4,7 @@ import ClinicHeadingText from '../ClinicHeadingText'
 import Item from './Item'
 import CheckOutBox from '../CheckoutBox'
 import { useState } from 'react'
+import ServicesTabFilter from './ServicesTabFilter'
 
 
 const Services_DEMO = {
@@ -180,10 +181,15 @@ const BookingSection = () => {
       <div className="flex gap-x-8 justify-between md:flex-row flex-col-reverse">
         <div className="md:w-7/12 w-full">
           {/* title */}
-          <ClinicHeadingText title="Services"/>
+          <div className="flex items-center justify-between">
+						<ClinicHeadingText title="Services" />
+						<div>
+							<ServicesTabFilter />
+						</div>
+					</div>
 
           {/* buttons list */}
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 mt-5">
             <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize"
 						  onClick={handleTab}
             >Skin</button>
@@ -239,14 +245,18 @@ const BookingSection = () => {
               <p className="lg:text-[24px] md:text-[18px] text-[24px] font-bold">Gift Vouchers</p>
               <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
             </div>
-            <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Add</button>
+            <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
+							Add
+						</button>
           </div>
           <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
             <div>
               <p className="lg:text-[24px] md:text-[18px] text-[24px] font-bold">Memberships</p>
               <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
             </div>
-            <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Add</button>
+            <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
+							Add
+						</button>
           </div>
         </div>
       </div>

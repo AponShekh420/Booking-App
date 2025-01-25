@@ -27,7 +27,9 @@ const Item:FC<ServiceItemProps> = ({title, price, time}) => {
               <DownArrowIcon/>
             </p>
           </div>
-          <button className="lg:text-[23.22px] text-[23.22px] md:text-[18px] md:py-2 md:px-4 lg:py-2 lg:px-6 py-2 px-6 font-semibold bg-black hover:bg-custom-red transition-all duration-300 text-white rounded-[94.05px]">Add</button>
+          <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
+						Add
+					</button>
         </div>
 
         <div className={`transition-[max-height] duration-300 delay-0 ease-in-out overflow-hidden ${toggle ? "max-h-[9999px]" : "max-h-[0px]"}`}>
