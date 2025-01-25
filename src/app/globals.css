@@ -132,7 +132,7 @@ h2 {
 	background-color: #e9082a;
 	font-size: 20.52px;
 	height: 29px;
-  width: 29px;
+	width: 29px;
 }
 
 .react-datepicker__day_span:hover {
@@ -140,7 +140,7 @@ h2 {
 	color: white !important;
 	font-size: 20.52px;
 	height: 29px;
-  width: 29px;
+	width: 29px;
 }
 
 .react-datepicker__day--range-end .react-datepicker__day_span {
@@ -148,7 +148,7 @@ h2 {
 	color: white !important;
 	font-size: 20.52px;
 	height: 29px;
-  width: 29px;
+	width: 29px;
 }
 
 .react-datepicker__day--keyboard-selected .react-datepicker__day_span,
@@ -158,7 +158,7 @@ h2 {
 	color: white !important;
 	font-size: 20.52px;
 	height: 29px;
-  width: 29px;
+	width: 29px;
 }
 
 /* custom scrollbar for search drowpdown menu */
