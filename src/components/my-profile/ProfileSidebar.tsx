@@ -20,7 +20,7 @@ const sidebar_links = [
 		title: 'Gift Wallet',
 		href: '/my-profile/gift-wallet',
 	},
-	{ id: 4, title: 'Favorites', href: '/my-profile/favorites' },
+	{ id: 4, title: 'Favorites', href: '/my-profile/favourites' },
 	{ id: 5, title: 'Account Settings', href: '/my-profile/account-settings' },
 	{ id: 6, title: 'Reviews', href: '/my-profile/reviews' },
 	{ id: 7, title: 'Payment', href: '/my-profile/payment' },
