@@ -38,7 +38,7 @@ export default function ProfileSidebar({
 
 	return (
 		<div className="relative my-8 flex min-h-screen">
-			<div className="fixed left-0 top-0 z-[999] hidden h-full w-[280px] flex-shrink-0 overflow-y-auto bg-[#EBEBEB] p-8 sm:sticky sm:block sm:min-h-[calc(100vh)] lg:w-[350px] xl:w-[400px] 2xl:w-[450px]">
+			<div className="fixed left-0 top-0 z-[999] hidden h-full w-[280px] flex-shrink-0 overflow-y-auto bg-[#EBEBEB] p-8 md:sticky md:block sm:min-h-[calc(100vh)] lg:w-[350px] xl:w-[400px] 2xl:w-[450px]">
 				<div className="mb-8 flex items-center space-x-4">
 					<Image
 						className="h-auto w-[50px] rounded-full object-cover lg:w-[60px]"
