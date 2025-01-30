@@ -50,8 +50,8 @@ const CategoriesSection = () => {
 					}}
 					// virtual
 					navigation={{
-						nextEl: '.custom-next',
-						prevEl: '.custom-prev',
+						nextEl: '.custom-next-category',
+						prevEl: '.custom-prev-category',
 					}}
 					loopAddBlankSlides={true}
 					breakpoints={{
@@ -92,7 +92,7 @@ const CategoriesSection = () => {
 
 				{/* add button and custom arrow for slide*/}
 				<div className="mt-[15.79px] flex w-full items-center justify-center gap-[14.7px]">
-					<button className="custom-prev flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
+					<button className="custom-prev-category flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 						<Image
 							src={'/assets/icons/categories/Arrows/left-arrow.svg'}
 							alt="right arrow"
@@ -103,7 +103,7 @@ const CategoriesSection = () => {
 					<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white hover:text-white hover:bg-black">
 						View more
 					</button>
-					<button className="custom-next flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
+					<button className="custom-next-category flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 						<Image
 							src={'/assets/icons/categories/Arrows/right-arrow.svg'}
 							alt="right arrow"
