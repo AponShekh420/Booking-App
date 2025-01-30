@@ -249,3 +249,9 @@ h2 {
 .categoriesSlideHeader .swiper.swiper-initialized {
 	margin: 0px 10px;
 }
+
+
+.authPopup input:-webkit-autofill {
+	background-color: transparent !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
+}

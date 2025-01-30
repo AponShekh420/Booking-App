@@ -242,7 +242,7 @@ const ServicesSection = () => {
 					{/* outline box below of the booking card */}
 					<div className="mt-3 hidden w-full items-center justify-between rounded-[10px] border border-[#9B9B9B] p-4 md:flex">
 						<div>
-							<p className="text-[24px] font-bold md:text-[18px] lg:text-[24px]">
+							<p className="text-[24px] font-bold md:text-[18px] lg:text-xl">
 								Gift Vouchers
 							</p>
 							<p className="md:text-[14px] lg:text-[16px]">
@@ -255,7 +255,7 @@ const ServicesSection = () => {
 					</div>
 					<div className="mt-3 hidden w-full items-center justify-between rounded-[10px] border border-[#9B9B9B] p-4 md:flex">
 						<div>
-							<p className="text-[24px] font-bold md:text-[18px] lg:text-[24px]">
+							<p className="text-[24px] font-bold md:text-[18px] lg:text-xl">
 								Memberships
 							</p>
 							<p className="md:text-[14px] lg:text-[16px]">
