@@ -242,7 +242,7 @@ const BookingSection = () => {
           {/* outline box below of the booking card */}
           <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
             <div>
-              <p className="lg:text-[24px] md:text-[18px] text-[24px] font-bold">Gift Vouchers</p>
+              <p className="lg:text-xl md:text-[18px] text-[24px] font-bold">Gift Vouchers</p>
               <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
             </div>
             <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
@@ -251,7 +251,7 @@ const BookingSection = () => {
           </div>
           <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
             <div>
-              <p className="lg:text-[24px] md:text-[18px] text-[24px] font-bold">Memberships</p>
+              <p className="lg:text-xl md:text-[18px] text-[24px] font-bold">Memberships</p>
               <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
             </div>
             <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">

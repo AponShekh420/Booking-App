@@ -6,6 +6,7 @@ import { Metadata } from 'next'
 import 'rc-slider/assets/index.css'
 import ClientCommons from './ClientCommons'
 import ThemeProvider from './theme-provider'
+import AuthContainer from '@/components/common/auth-popup/AuthContainer'
 
 export const metadata: Metadata = {
 	title: 'Chisfis - Booking online React Next Template',
@@ -26,6 +27,10 @@ export default function RootLayout({
 		<html lang="en" className="font-body">
 			<ThemeProvider>
 				<body className="bg-white text-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
+
+					{/* popup */}
+					{/* <AuthContainer/> */}
+
 					<div>
 						{/* <SiteHeader /> */}
 						{children}
