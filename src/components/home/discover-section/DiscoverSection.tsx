@@ -129,6 +129,25 @@ export default function DiscoverSection() {
                   <div className="w-full h-full">
                     <div className="relative w-full h-[329.17px] xxs:h-[460px] sm:h-[520px] rounded-[5.37px] overflow-hidden">
                       <Image 
+                        src={imageOne} 
+                        alt="slideone" 
+                        className="object-cover object-top" 
+                        fill
+                      />
+                    </div>
+                    <div className='mt-2 title'>
+                      <p className='text-center text-[17.99px]'>
+                        <span className='font-bold'>Dental Teeth Augmentation</span><br/>
+                        Invisalign Consultation <br/>
+                        <span className='leading-[40.5px]'>Cosmetic Dental - London </span>
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="w-full h-full">
+                    <div className="relative w-full h-[329.17px] xxs:h-[460px] sm:h-[520px] rounded-[5.37px] overflow-hidden">
+                      <Image 
                         src={imageThree} 
                         alt="slideone" 
                         className="object-cover object-top" 

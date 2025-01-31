@@ -42,8 +42,8 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 					className={`overflow-hidden transition-[max-height] delay-0 duration-300 ease-in-out ${toggle ? 'max-h-[9999px]' : 'max-h-[0px]'}`}
 				>
 					{/* video column*/}
-					<div className="mt-3 flex flex-col justify-between gap-x-8 md:mt-[31px] lg:flex-row">
-						<p className="mb-2 mt-1 whitespace-normal leading-8 lg:mb-0 lg:mt-2 text-[16px] md:text-[12px] lg:text-[16px]">
+					<div className="flex flex-col justify-between gap-x-8 lg:mt-3 mt-2 lg:flex-row">
+						<p className="mb-2 whitespace-normal lg:leading-8 leading-6 xs:leading-7 md:leading-6 lg:mb-0 text-[16px] md:text-[12px] lg:text-[16px]">
 							PRP treatment can help support wound healing in trauma and joint
 							injury. The technique can address male pattern baldness, stimulate
 							the growth of hair transplants and enhance other cosmetic
@@ -65,7 +65,7 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 
 					{/* service review */}
 					<div>
-						<p className="mt-10 text-[16.74px] font-semibold md:mt-8 md:text-[18px] lg:text-[24px]">
+						<p className="mt-6 text-[16.74px] font-semibold md:mt-8 md:text-[18px] lg:text-[24px]">
 							Service Review
 						</p>
 

@@ -10,7 +10,7 @@ const RedButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
 	({ className = '', title, ...props }, ref) => {
 		return (
 			<button
-				className={`h-[47px] text-nowrap rounded-3xl bg-custom-red px-24 text-[23px] capitalize text-white transition-colors duration-300 hover:bg-black ${className}`}
+				className={`rounded-[80.12px] hover:bg-black px-4 py-1 text-[13.07px] capitalize text-white transition-all duration-300 bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] ${className}`}
 				ref={ref}
 				{...props}
 			>
