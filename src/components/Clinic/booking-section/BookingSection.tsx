@@ -1,11 +1,10 @@
-"use client"
+'use client'
 import Wrapper from '@/components/common/Wrapper'
+import { useState } from 'react'
+import CheckOutBox from '../CheckoutBox'
 import ClinicHeadingText from '../ClinicHeadingText'
 import Item from './Item'
-import CheckOutBox from '../CheckoutBox'
-import { useState } from 'react'
 import ServicesTabFilter from './ServicesTabFilter'
-
 
 const Services_DEMO = {
 	skin: [
@@ -145,64 +144,75 @@ interface Service {
 	time: string
 }
 
-
 const BookingSection = () => {
-  const [cardListData, setCardListData] = useState<Service[]>(
-      Services_DEMO.skin,
-    )
-  const handleTab = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const currentElement = event.target as HTMLButtonElement
-    const currentElementText = currentElement.innerText.toLowerCase()
-    currentElement.parentElement?.querySelectorAll('button').forEach((el) => {
-      el.classList.add('bg-black')
-      el.classList.remove('bg-custom-red')
-    })
-    currentElement.classList.remove('bg-black')
-    currentElement.classList.add('bg-custom-red')
-    switch (currentElementText) {
-      case 'skin':
-        setCardListData(Services_DEMO.skin)
-        break
-      case 'hair':
-        setCardListData(Services_DEMO.hair)
-        break
-      case 'health':
-        setCardListData(Services_DEMO.health)
-        break
-      case 'rejuvenation':
-        setCardListData(Services_DEMO.rejuvenation)
-        break
-      default:
-        break
-    }
-  }
-  return (
-    <Wrapper className="md:my-[40px] lg:my-[79px] md:min-h-screen my-5">
-      <div className="flex gap-x-8 justify-between md:flex-row flex-col-reverse">
-        <div className="md:w-7/12 w-full">
-          {/* title */}
-          <div className="flex items-center justify-between">
-						<ClinicHeadingText title="Services" />
+	const [cardListData, setCardListData] = useState<Service[]>(
+		Services_DEMO.skin,
+	)
+	const handleTab = (event: React.MouseEvent<HTMLButtonElement>) => {
+		const currentElement = event.target as HTMLButtonElement
+		const currentElementText = currentElement.innerText.toLowerCase()
+		currentElement.parentElement?.querySelectorAll('button').forEach((el) => {
+			el.classList.add('bg-black')
+			el.classList.remove('bg-custom-red')
+		})
+		currentElement.classList.remove('bg-black')
+		currentElement.classList.add('bg-custom-red')
+		switch (currentElementText) {
+			case 'skin':
+				setCardListData(Services_DEMO.skin)
+				break
+			case 'hair':
+				setCardListData(Services_DEMO.hair)
+				break
+			case 'health':
+				setCardListData(Services_DEMO.health)
+				break
+			case 'rejuvenation':
+				setCardListData(Services_DEMO.rejuvenation)
+				break
+			default:
+				break
+		}
+	}
+	return (
+		<Wrapper className="my-5 md:my-[40px] md:min-h-screen lg:my-[79px]">
+			<div className="flex flex-col-reverse justify-between gap-x-8 md:flex-row">
+				<div className="w-full md:w-7/12">
+					{/* title */}
+					<div className="flex items-center justify-between">
+						<ClinicHeadingText tag="h1" title="Services" />
 						<div>
 							<ServicesTabFilter />
 						</div>
 					</div>
 
-          {/* buttons list */}
-          <div className="flex flex-wrap gap-3 mt-5">
-            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize"
-						  onClick={handleTab}
-            >Skin</button>
-            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize"
-						  onClick={handleTab}
-            >Hair</button>
-            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize"
-						  onClick={handleTab}
-            >Health</button>
-            <button className="text-[13.07px] px-4 py-1 lg:py-2 lg:px-7 md:px-5 md:py-1 lg:text-[18.03px] md:text-[14px] bg-black rounded-[80.12px] text-white hover:bg-custom-red transition-all duration-300 capitalize"
-						  onClick={handleTab}
-            >Rejuvenation</button>
-          </div>
+					{/* buttons list */}
+					<div className="mt-5 flex flex-wrap gap-3">
+						<button
+							className="rounded-[80.12px] bg-black px-4 py-1 text-[13.07px] capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]"
+							onClick={handleTab}
+						>
+							Skin
+						</button>
+						<button
+							className="rounded-[80.12px] bg-black px-4 py-1 text-[13.07px] capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]"
+							onClick={handleTab}
+						>
+							Hair
+						</button>
+						<button
+							className="rounded-[80.12px] bg-black px-4 py-1 text-[13.07px] capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]"
+							onClick={handleTab}
+						>
+							Health
+						</button>
+						<button
+							className="rounded-[80.12px] bg-black px-4 py-1 text-[13.07px] capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]"
+							onClick={handleTab}
+						>
+							Rejuvenation
+						</button>
+					</div>
 
 					{cardListData.map((item) => (
 						<Item
@@ -220,48 +230,56 @@ const BookingSection = () => {
 						</button>
 					</div>
 
-          {/* cart for mobile */}
-          <div className="md:hidden block mt-7">
-            <hr />
-            <div className="flex items-center justify-between">
-              <div className="mt-4 text-[15.56px] font-semibold sm:text-[19px]">
-                <h5 className="leading-[20.1px]">£200 </h5>
-                <p>PRP Hair Loss Treatment</p>
-                <span>1hr</span>
-              </div>
-              <button className="flex h-[41.21px] items-center justify-center rounded-[68.01px] bg-custom-red px-8 text-[16.79px] text-white transition-colors duration-300 hover:bg-black">
-                Confirm
-              </button>
-            </div>
-          </div>
+					{/* cart for mobile */}
+					<div className="mt-7 block md:hidden">
+						<hr />
+						<div className="flex items-center justify-between">
+							<div className="mt-4 text-[15.56px] font-semibold sm:text-[19px]">
+								<h5 className="leading-[20.1px]">£200 </h5>
+								<p>PRP Hair Loss Treatment</p>
+								<span>1hr</span>
+							</div>
+							<button className="flex h-[41.21px] items-center justify-center rounded-[68.01px] bg-custom-red px-8 text-[16.79px] text-white transition-colors duration-300 hover:bg-black">
+								Confirm
+							</button>
+						</div>
+					</div>
 				</div>
 
-        <div className="md:w-5/12 w-full mb-0 md:block hidden">
-          <CheckOutBox path={"/clinic/team"}/>
-          
-          {/* outline box below of the booking card */}
-          <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
-            <div>
-              <p className="lg:text-xl md:text-[18px] text-[24px] font-bold">Gift Vouchers</p>
-              <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
-            </div>
-            <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
+				<div className="mb-0 hidden w-full md:block md:w-5/12">
+					<CheckOutBox path={'/clinic/team'} />
+
+					{/* outline box below of the booking card */}
+					<div className="mt-3 hidden w-full items-center justify-between rounded-[10px] border border-[#9B9B9B] p-4 md:flex">
+						<div>
+							<p className="text-[24px] font-bold md:text-[18px] lg:text-xl">
+								Gift Vouchers
+							</p>
+							<p className="md:text-[14px] lg:text-[16px]">
+								Treat yourself or a friend
+							</p>
+						</div>
+						<button className="rounded-[80.12px] bg-black px-4 py-1 text-[13.07px] font-semibold capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]">
 							Add
 						</button>
-          </div>
-          <div className="w-full border rounded-[10px] border-[#9B9B9B] p-4 justify-between mt-3 items-center hidden md:flex">
-            <div>
-              <p className="lg:text-xl md:text-[18px] text-[24px] font-bold">Memberships</p>
-              <p className="lg:text-[16px] md:text-[14px]">Treat yourself or a friend</p>
-            </div>
-            <button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
+					</div>
+					<div className="mt-3 hidden w-full items-center justify-between rounded-[10px] border border-[#9B9B9B] p-4 md:flex">
+						<div>
+							<p className="text-[24px] font-bold md:text-[18px] lg:text-xl">
+								Memberships
+							</p>
+							<p className="md:text-[14px] lg:text-[16px]">
+								Treat yourself or a friend
+							</p>
+						</div>
+						<button className="rounded-[80.12px] bg-black px-4 py-1 text-[13.07px] font-semibold capitalize text-white transition-all duration-300 hover:bg-custom-red md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px]">
 							Add
 						</button>
-          </div>
-        </div>
-      </div>
-    </Wrapper>
-  );
+					</div>
+				</div>
+			</div>
+		</Wrapper>
+	)
 }
 
 export default BookingSection
