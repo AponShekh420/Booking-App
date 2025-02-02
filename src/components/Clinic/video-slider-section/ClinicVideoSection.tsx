@@ -10,7 +10,7 @@ export default function ClinicVideoSection() {
 	return (
 		<Wrapper className="mt-[27px]">
 			<div className="flex justify-between">
-				<ClinicHeadingText title="Dermamina" />
+				<ClinicHeadingText tag="h1" title="Dermamina" />
 				<div className="flex items-center gap-x-4 sm:hidden">
 					<button>
 						<HeartIcon className="h-auto w-[22.45px] text-xl text-black" />

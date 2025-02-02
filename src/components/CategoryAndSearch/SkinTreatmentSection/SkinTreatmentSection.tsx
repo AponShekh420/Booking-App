@@ -1,6 +1,6 @@
 'use client'
 import Wrapper from '@/components/common/Wrapper'
-import { DEMO_STAY_LISTINGS } from '@/data/listings'
+import { DEMO_CATEGORY_LISTINGS } from '@/data/listings'
 import T from '@/utils/getT'
 import { MapIcon } from '@heroicons/react/24/outline'
 import { CSSProperties, FC, useState } from 'react'
@@ -16,7 +16,7 @@ const override: CSSProperties = {
 	borderColor: 'black',
 }
 
-const DEMO_STAYS = DEMO_STAY_LISTINGS.filter((_, i) => i < 12)
+const DEMO_STAYS = DEMO_CATEGORY_LISTINGS.filter((_, i) => i < 12)
 export interface SectionGridHasMapProps {}
 
 const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
@@ -36,10 +36,10 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 						<TabFilters />
 					</div>
 					<div className="mb-4 flex gap-x-2 md:gap-x-3">
-						<h1 className="font-heading text-[21px] uppercase sm:text-[25px] md:text-[21px] lg:text-[29px]">
+						<h4 className="font-heading text-[21px] uppercase sm:text-[25px] md:text-[21px] lg:text-[29px]">
 							for men in{' '}
 							<span className="text-custom-red">BATTERSEA LONDON</span>
-						</h1>
+						</h4>
 						<p className="block font-body text-[10.52px] font-semibold text-neutral-500 xs:text-[13.52px] sm:text-[16.85px] md:text-[14.85px] lg:text-[16.85px]">
 							268 Clinics Within map area
 						</p>

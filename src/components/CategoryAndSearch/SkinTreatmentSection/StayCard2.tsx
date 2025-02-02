@@ -1,5 +1,5 @@
 import { StarIconFull } from '@/components/common/Icons'
-import { DEMO_STAY_LISTINGS } from '@/data/listings'
+import { DEMO_CATEGORY_LISTINGS } from '@/data/listings'
 import { StayDataType } from '@/data/types'
 import { FC } from 'react'
 import BtnLikeIcon from './BtnLikeIcon'
@@ -14,7 +14,7 @@ export interface StayCard2Props {
 	size?: 'default' | 'small'
 }
 
-const DEMO_DATA = DEMO_STAY_LISTINGS[0]
+const DEMO_DATA = DEMO_CATEGORY_LISTINGS[0]
 
 const StayCard2: FC<StayCard2Props> = ({
 	size = 'default',

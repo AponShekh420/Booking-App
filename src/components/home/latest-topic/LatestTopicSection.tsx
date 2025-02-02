@@ -1,14 +1,13 @@
-"use client"
+'use client'
 import Wrapper from '@/components/common/Wrapper'
 import topic1 from '@/images/home/topic-1.png'
 import topic2 from '@/images/home/topic-2.png'
 import topic3 from '@/images/home/topic-3.png'
 import TopicCard from './TopicCard'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Grid, Navigation } from "swiper/modules";
 import Image from 'next/image'
-
+import { Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 const topics = [
 	{
@@ -40,9 +39,9 @@ export default function LatestTopicSection() {
 	return (
 		<section className="mt-[79px]">
 			<Wrapper>
-				<h1 className="font-[700] xl:text-[64.288px] xl:leading-[80.43px] text-[34.72px] leading-[52.08px] sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] text-custom-red uppercase">
+				<h5 className="font-heading text-[34.72px] font-[700] uppercase leading-[52.08px] text-custom-red sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
 					LATEST TOPICS:
-				</h1>
+				</h5>
 				<div className="w-full">
 					<Swiper
 						modules={[Navigation]}
@@ -73,10 +72,15 @@ export default function LatestTopicSection() {
 								<div className="relative flow-root">
 									<div className="hiddenScrollbar relative -mx-2 flex snap-x snap-mandatory overflow-x-auto lg:-mx-3.5">
 										<div
-											className={`w-[17rem] shrink-0 snap-start px-2 lg:w-[25%] lg:px-3.5 xl:w-[20%] min-h-[340px] rounded-[15px] overflow-hidden`}
+											className={`min-h-[340px] w-[17rem] shrink-0 snap-start overflow-hidden rounded-[15px] px-2 lg:w-[25%] lg:px-3.5 xl:w-[20%]`}
 										>
 											<SwiperSlide virtualIndex={index}>
-												<TopicCard key={id} title={title} image={image} desc={desc} />
+												<TopicCard
+													key={id}
+													title={title}
+													image={image}
+													desc={desc}
+												/>
 											</SwiperSlide>
 										</div>
 									</div>
@@ -85,29 +89,29 @@ export default function LatestTopicSection() {
 						))}
 
 						{/* add button and custom arrow for slide*/}
-							<div className="mt-[58.53px] flex w-full items-center justify-center gap-[14.7px]">
-								<button className="custom-prev-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
-									<Image
-										src={'/assets/icons/categories/Arrows/left-arrow.svg'}
-										alt="right arrow"
-										width={8.13}
-										height={13.71}
-									/>
-								</button>
-								<button className="hover:text-white hover:bg-black h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white">
-									View more
-								</button>
-								<button className="custom-next-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
-									<Image
-										src={'/assets/icons/categories/Arrows/right-arrow.svg'}
-										alt="right arrow"
-										width={8.13}
-										height={13.71}
-									/>
-								</button>
-							</div>
-						</Swiper>
-					</div>
+						<div className="mt-[58.53px] flex w-full items-center justify-center gap-[14.7px]">
+							<button className="custom-prev-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
+								<Image
+									src={'/assets/icons/categories/Arrows/left-arrow.svg'}
+									alt="right arrow"
+									width={8.13}
+									height={13.71}
+								/>
+							</button>
+							<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white hover:bg-black hover:text-white">
+								View more
+							</button>
+							<button className="custom-next-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
+								<Image
+									src={'/assets/icons/categories/Arrows/right-arrow.svg'}
+									alt="right arrow"
+									width={8.13}
+									height={13.71}
+								/>
+							</button>
+						</div>
+					</Swiper>
+				</div>
 			</Wrapper>
 		</section>
 	)

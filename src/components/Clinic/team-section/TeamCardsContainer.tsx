@@ -1,7 +1,4 @@
-import { StarIconFull, TeamUserIcon } from '@/components/common/Icons'
-import ClinicHeadingText from '../ClinicHeadingText'
 import TeamCard from './TeamCard'
-import Image from 'next/image'
 const teamApi = [
 	{
 		id: 1,
@@ -34,6 +31,12 @@ const teamApi = [
 		name: 'Olga',
 		rating: 5.0,
 	},
+	{
+		id: 6,
+		image: '/assets/clinic/team/teamusericon.png',
+		name: 'any member',
+		rating: 5.0,
+	},
 ]
 export default function TeamCardsContainer() {
 	return (
@@ -43,25 +46,6 @@ export default function TeamCardsContainer() {
 					<TeamCard key={item.id} team={item} />
 				))}
 				{/* new number add fun */}
-				<div className="text-[11.89px] xs:text-[17.89px] lg:text-[24px] flex flex-col items-center justify-center">
-					<div>
-						<Image
-							className="rounded-lg object-cover" // Ensures proper scaling
-							src={"/assets/clinic/team/teamusericon.png"}
-							alt="team"
-							width={70} // Larger width
-							height={70} // Larger height
-							sizes="(max-width: 768px) 50px, (max-width: 1200px) 100px, 400px" // Responsive sizes
-							quality={100} // Maximum image quality
-						/>
-					</div>
-					<div className="mx-auto mt-2 w-fit">
-						<h5 className="text-center font-semibold">Any member</h5>
-						<div className="flex items-center gap-x-1.5 invisible">
-							<StarIconFull /> <span className="font-bold">{5}.0</span>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	)

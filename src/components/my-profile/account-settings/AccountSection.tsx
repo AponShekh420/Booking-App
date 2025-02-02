@@ -32,8 +32,8 @@ export default function AccountSection() {
 		<div className="">
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div className="mt-[54px]">
-					<ProfileHeading title="Account Details" />
-					<div className="2md:grid-cols-2 mt-[50px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] sm:ml-4">
+					<ProfileHeading title="Account Details" tag="h1" />
+					<div className="mt-[50px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] sm:ml-4 2md:grid-cols-2">
 						<TextInput
 							{...register('fullname')}
 							label="First and Last Name"
@@ -56,7 +56,7 @@ export default function AccountSection() {
 							error={errors.birthDay}
 						/>
 					</div>
-					<div className="2md:grid-cols-2 mt-[100px] grid gap-x-[44px] gap-y-[41px] sm:ml-4">
+					<div className="mt-[100px] grid gap-x-[44px] gap-y-[41px] sm:ml-4 2md:grid-cols-2">
 						<IconButton
 							Icon={FacebookColorIcon}
 							title="Connect with Facebook"
@@ -67,7 +67,7 @@ export default function AccountSection() {
 				</div>
 				<div className="mt-[54px]">
 					<ProfileHeading title="Address" />
-					<form className="2md:grid-cols-2 mt-[54px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] sm:ml-4">
+					<div className="mt-[54px] grid grid-cols-1 gap-x-[44px] gap-y-[41px] sm:ml-4 2md:grid-cols-2">
 						<TextInput
 							{...register('streetNumber')}
 							label="Street & Number"
@@ -84,8 +84,8 @@ export default function AccountSection() {
 							label="Zip Code"
 							error={errors.zipCode}
 						/>
-					</form>
-					<div className="2md:flex-row mt-[54px] flex flex-col-reverse items-center gap-[46px] sm:ml-4">
+					</div>
+					<div className="mt-[54px] flex flex-col-reverse items-center gap-[46px] sm:ml-4 2md:flex-row">
 						<RedButton title="Update" />
 						<p>
 							Your address is collected for booking purposes only and will

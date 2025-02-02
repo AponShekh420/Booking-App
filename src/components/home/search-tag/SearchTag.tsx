@@ -6,10 +6,10 @@ const SearchTag = () => {
 		<Wrapper>
 			<div className="mt-[70px] grid font-body sm:grid-cols-[200px_1fr] sm:gap-x-[20px] md:grid-cols-[220px_1fr] md:gap-x-[30px] lg:grid-cols-[300px_1fr] lg:gap-x-[45px] xl:grid-cols-[350px_1fr] xl:gap-x-[70px] 2xl:grid-cols-[400px_1fr] 2xl:gap-x-[120px]">
 				<div className="border-b-[0.6px] border-black pb-[14px] sm:border-b-0 sm:border-r-[0.6px] lg:pb-[30px]">
-					<h1 className="w-fit text-[34.72px] leading-[40.08px] text-custom-red sm:mx-auto sm:px-2 sm:text-[50px] sm:leading-[60px] md:px-4 md:text-[55px] md:leading-[60px] lg:text-[75px] lg:leading-[80px] xl:mr-[52px] xl:text-[94.61px] xl:leading-[100px] font-heading">
+					<h5 className="w-fit font-heading text-[34.72px] leading-[40.08px] text-custom-red sm:mx-auto sm:px-2 sm:text-[50px] sm:leading-[60px] md:px-4 md:text-[55px] md:leading-[60px] lg:text-[75px] lg:leading-[80px] xl:mr-[52px] xl:text-[94.61px] xl:leading-[100px]">
 						MOST POPULAR SEARCHES
-					</h1>
-					<h5 className="font-body xs:text-[24.23px] text-[17.65px] sm:hidden font-medium">
+					</h5>
+					<h5 className="font-body text-[17.65px] font-medium xs:text-[24.23px] sm:hidden">
 						Explore Freely, Learn Confidently!
 					</h5>
 					<button className="mx-auto mt-[40px] hidden h-[35px] rounded-[64.28px] bg-custom-red px-8 text-white transition-colors duration-300 hover:bg-black sm:block md:text-[18px] lg:mt-[50px] lg:h-[45px] lg:text-[20px] xl:mt-[57px] xl:h-[49px] xl:text-[21.96px]">
@@ -17,7 +17,7 @@ const SearchTag = () => {
 					</button>
 				</div>
 				<div>
-					<h5 className="hidden font-body text-[22px] leading-[40px] sm:block sm:text-[27.23px] md:text-[27px] xl:text-[31.23px] font-medium">
+					<h5 className="hidden font-body text-[22px] font-medium leading-[40px] sm:block sm:text-[27.23px] md:text-[27px] xl:text-[31.23px]">
 						Explore Freely, Learn Confidently!
 					</h5>
 					<div className="mb-[40px] mt-[26px] grid grid-cols-2 gap-[16px] xs:grid-cols-3 sm:mt-[40px] lg:mt-[50px] lg:gap-[20px] xl:mt-[55px] xl:gap-[24px]">
