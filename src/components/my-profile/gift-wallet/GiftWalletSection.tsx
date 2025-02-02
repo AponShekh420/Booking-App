@@ -1,20 +1,24 @@
-import RedButton from "../RedButton";
-import Card from "./Card";
-
+import RedButton from '../RedButton'
+import Card from './Card'
 
 const GiftWalletSection = () => {
-  return (
-    <div>
-    <div className="mt-[54px]">
-      <Card/>
-      <div className="w-11/12 m-auto lg:mt-16 mt-10">
-        <h3 className="lg:text-[32px] font-bold text-2xl">Give the Gift of Self-Care</h3>
-        <p className="lg:text-[23.2px] text-md lg:leading-9 lg:mt-3 mt-1 leading-6">Surprise someone with a Gentlemend gift card—redeemable at any of our partner clinics!</p>
-        <RedButton title="Send gift card" className="mt-7"/>
-      </div>
-    </div>
-  </div>
-  );
+	return (
+		<div>
+			<div className="mt-[54px]">
+				<Card />
+				<div className="m-auto mt-10 w-11/12 lg:mt-16">
+					<h3 className="text-2xl font-bold lg:text-[28px]">
+						Give the Gift of Self-Care
+					</h3>
+					<p className="text-md mt-1 leading-6 lg:mt-3 lg:text-[19.2px] lg:leading-9">
+						Surprise someone with a Gentlemend gift card—redeemable at any of
+						our partner clinics!
+					</p>
+					<RedButton title="Send gift card" className="mt-7" />
+				</div>
+			</div>
+		</div>
+	)
 }
 
-export default GiftWalletSection;
+export default GiftWalletSection
