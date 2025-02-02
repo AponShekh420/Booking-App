@@ -6,6 +6,8 @@ import {
 	RatingGroup,
 	WatchIcon,
 } from '@/components/common/Icons'
+import { signinActive } from '@/redux-toolkit/features/clinic/authPopupSlice'
+import { useAppDispatch } from '@/redux-toolkit/hooks'
 import Link from 'next/link'
 import { FC, useState } from 'react'
 
@@ -18,6 +20,7 @@ const CheckOutBox: FC<CheckOutBoxProps> = ({ className, path }) => {
 	const [aboutToggle, setAboutToggle] = useState<boolean>(false)
 	const [timeToggle, setTimeToggle] = useState<boolean>(false)
 	const [locationToggle, setLocationToggle] = useState<boolean>(false)
+	const dispatch = useAppDispatch()
 
 	return (
 		<div
@@ -30,7 +33,7 @@ const CheckOutBox: FC<CheckOutBoxProps> = ({ className, path }) => {
 						<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[50px]">
 							Dermamina
 						</h3>
-						<div className="flex cursor-pointer items-center gap-x-1 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:text-[15px] xl:text-md">
+						<div className="xl:text-md flex cursor-pointer items-center gap-x-1 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:text-[15px]">
 							<WatchIcon className="md:h-3 md:w-3 lg:h-4 lg:w-4" />
 							<span className="text-custom-red">Open Today</span>
 						</div>
@@ -49,18 +52,18 @@ const CheckOutBox: FC<CheckOutBoxProps> = ({ className, path }) => {
 					</div>
 				</div>
 
-				<div className="lg:my-6 my-3 flex justify-between text-[14.7px] md:text-[14px] lg:text-[16px] xl:text-md">
+				<div className="xl:text-md my-3 flex justify-between text-[14.7px] md:text-[14px] lg:my-6 lg:text-[16px]">
 					<div>
 						<h5 className="font-semibold">PRP Hair Loss Treatment</h5>
 						<span>1hr - With Olga</span>
 					</div>
 					<h5 className="font-bold">£200</h5>
 				</div>
-				<div className="flex w-auto cursor-pointer items-center gap-x-2 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:hidden lg:text-[16px] xl:text-md">
+				<div className="xl:text-md flex w-auto cursor-pointer items-center gap-x-2 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:hidden lg:text-[16px]">
 					<WatchIcon className="h-4 w-4" />
 					<p>Thursday 28th November - 11:00-12:00pm</p>
 				</div>
-				<div className="mt-2 flex w-auto cursor-pointer items-center gap-x-2 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:hidden lg:text-[16px] xl:text-md">
+				<div className="xl:text-md mt-2 flex w-auto cursor-pointer items-center gap-x-2 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:hidden lg:text-[16px]">
 					<LocationIconTwo className="h-4 w-4" />
 					<p>114 New Cavendish St, London W1W 6XT</p>
 				</div>
@@ -72,12 +75,21 @@ const CheckOutBox: FC<CheckOutBoxProps> = ({ className, path }) => {
 			</div>
 
 			{/* continue btn */}
-			<Link
-				href={path}
-				className="hidden w-full items-center justify-center rounded-[94.05px] bg-custom-red font-semibold text-white transition-all duration-300 hover:bg-black md:mt-[30px] md:flex md:h-[40px] md:text-[20.22px] xl:mt-[36px] xl:h-[44px] xl:text-md"
-			>
-				Continue
-			</Link>
+			{path === '/clinic/checkout' ? (
+				<button
+					onClick={() => dispatch(signinActive())}
+					className="xl:text-md hidden w-full items-center justify-center rounded-[94.05px] bg-custom-red font-semibold text-white transition-all duration-300 hover:bg-black md:mt-[30px] md:flex md:h-[40px] md:text-[20.22px] xl:mt-[36px] xl:h-[44px]"
+				>
+					Continue
+				</button>
+			) : (
+				<Link
+					href={path}
+					className="xl:text-md hidden w-full items-center justify-center rounded-[94.05px] bg-custom-red font-semibold text-white transition-all duration-300 hover:bg-black md:mt-[30px] md:flex md:h-[40px] md:text-[20.22px] xl:mt-[36px] xl:h-[44px]"
+				>
+					Continue
+				</Link>
+			)}
 		</div>
 	)
 }

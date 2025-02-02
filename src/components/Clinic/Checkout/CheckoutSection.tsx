@@ -4,18 +4,17 @@ import Wrapper from '@/components/common/Wrapper'
 import Image from 'next/image'
 import { useState } from 'react'
 import CheckOutBox from '../CheckoutBox'
+import ClinicHeadingText from '../ClinicHeadingText'
 import Input from './Input'
 import Textarea from './TextArea'
-import ClinicHeadingText from '../ClinicHeadingText'
 
 export default function CheckoutSection() {
 	const [paymentToggle, setpaymentToggle] = useState(false)
 	return (
-		<Wrapper className="md:my-[40px] lg:my-[79px] min-h-screen">
-			<div className="flex gap-x-8 justify-between md:flex-row flex-col-reverse">
-				<div className="md:w-7/12 w-full">
-					<ClinicHeadingText title='Review and confirm'/>
-
+		<Wrapper className="min-h-screen md:my-[40px] lg:my-[79px]">
+			<div className="flex flex-col-reverse justify-between gap-x-8 md:flex-row">
+				<div className="w-full md:w-7/12">
+					<ClinicHeadingText title="Review and confirm" />
 
 					{/* mobile checkout box start section */}
 					<div className="mt-4 md:hidden">
@@ -52,7 +51,6 @@ export default function CheckoutSection() {
 						</div>
 					</div>
 					{/* mobile checkout box end section */}
-
 
 					<div className="flex items-center justify-between">
 						<h3 className="mb-[12px] mt-[20px] text-[25.11px] font-semibold leading-[74.7px] sm:text-[36px] md:text-[32px] xl:text-[36px]">
@@ -140,8 +138,8 @@ export default function CheckoutSection() {
 						</div>
 					</form>
 				</div>
-				<div className="md:w-5/12 w-full mb-7 md:mb-0">
-					<CheckOutBox path={"/clinic/checkout"} className="hidden md:block" />
+				<div className="mb-7 w-full md:mb-0 md:w-5/12">
+					<CheckOutBox path={'/clinic/checkouts'} className="hidden md:block" />
 				</div>
 			</div>
 		</Wrapper>

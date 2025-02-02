@@ -5,7 +5,6 @@ import {
 	PaymentType,
 } from '@/zod-schema/my-profile/profile-payment'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import ProfileHeading from '../ProfileHeading'
 import RedButton from '../RedButton'
@@ -21,13 +20,11 @@ export default function PaymentSection() {
 		resolver: zodResolver(PaymentSchema),
 	})
 	const onSubmit = (data: PaymentType) => console.log(data)
-	useEffect(() => {
-		console.log(errors)
-	}, [errors])
+
 	return (
 		<div>
 			<div className="mt-[54px]">
-				<ProfileHeading title="Payments" />
+				<ProfileHeading title="Payments" tag="h1" />
 				<div className="sm:ml-4">
 					<div className="my-6">
 						<h5 className="mb-2 text-[20.39px] font-semibold">
@@ -39,7 +36,7 @@ export default function PaymentSection() {
 						</p>
 					</div>
 					<form onSubmit={handleSubmit(onSubmit)} className="space-y-[41px]">
-						<div className="2md:grid-cols-2 grid gap-x-[44px] gap-y-[41px]">
+						<div className="grid gap-x-[44px] gap-y-[41px] 2md:grid-cols-2">
 							<TextInput
 								{...register('cardHolder')}
 								label="Cardholder Name"
@@ -82,7 +79,7 @@ export default function PaymentSection() {
 						</div>
 						<RedButton
 							title="Add Card"
-							className="2md:mx-0 mx-auto block sm:w-fit"
+							className="mx-auto block sm:w-fit 2md:mx-0"
 						/>
 					</form>
 				</div>
