@@ -35,8 +35,8 @@ export default function PaymentSection() {
 							Payments - fast, convenient and secure.
 						</p>
 					</div>
-					<form onSubmit={handleSubmit(onSubmit)} className="space-y-[41px]">
-						<div className="grid gap-x-[44px] gap-y-[41px] 2md:grid-cols-2">
+					<form onSubmit={handleSubmit(onSubmit)} className="space-y-[30px]">
+						<div className="grid gap-x-[44px] gap-y-[30px] 2md:grid-cols-2">
 							<TextInput
 								{...register('cardHolder')}
 								label="Cardholder Name"
@@ -57,7 +57,7 @@ export default function PaymentSection() {
 								error={errors.cvv}
 							/>
 						</div>
-						<div className="grid gap-x-[44px] gap-y-[41px] lg:grid-cols-2">
+						<div className="grid gap-x-[44px] gap-y-[30px] lg:grid-cols-2">
 							<TextInput
 								label="Postcode"
 								{...register('postCode')}
@@ -79,14 +79,14 @@ export default function PaymentSection() {
 						</div>
 						<RedButton
 							title="Add Card"
-							className="mx-auto block sm:w-fit 2md:mx-0"
+							className="lg2:!mt-[-15px] relative mx-auto !mt-5 block sm:w-fit 2md:mx-0 lg:!mt-[-40px] xl:!mt-0"
 						/>
 					</form>
 				</div>
 			</div>
 			<div className="mt-[54px]">
 				<ProfileHeading title="Payment History" />
-				<ul className="mt-[54px] space-y-[30px] sm:ml-4">
+				<ul className="mt-[30px] space-y-[30px] sm:ml-4">
 					<li className="border-b pb-5">
 						<HistoryList />
 					</li>

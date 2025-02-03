@@ -2,17 +2,17 @@ import { PaymentHistoryIcon } from '@/components/common/Icons'
 
 export default function HistoryList() {
 	return (
-		<div className="2md:grid-cols-[70px_1fr_100px] grid grid-cols-[70px_1fr_100px] items-center sm:grid-cols-[50px_1fr_80px]">
-			<PaymentHistoryIcon className="2md:w-[57px] h-auto w-[45px]" />
-			<div className="2md:ml-[40px] ml-[10px]">
-				<h5 className="2md:text-[20px] text-[15px] font-bold leading-[28px]">
+		<div className="grid grid-cols-[45px_1fr_100px] items-center sm:grid-cols-[50px_1fr_80px] 2md:grid-cols-[35px_1fr_100px]">
+			<PaymentHistoryIcon className="h-auto w-[40px] 2md:w-[45px]" />
+			<div className="ml-[10px] 2md:ml-[40px]">
+				<h5 className="text-[15px] font-bold leading-[28px] 2md:text-[20px]">
 					10:31 am 23/12/24
 				</h5>
-				<p className="2md:text-[23.2px] mt-2 text-[18px]">
+				<p className="mt-1 text-[18px] 2md:text-[22.2px]">
 					Booked online - Dermamina
 				</p>
 			</div>
-			<button className="2md:text-[16px] self-end font-bold">
+			<button className="self-end font-bold 2md:text-[16px]">
 				See receipt
 			</button>
 		</div>
