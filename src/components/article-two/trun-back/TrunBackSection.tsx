@@ -19,7 +19,7 @@ const TrunBackSection = () => {
           </div>
         </div>
 
-        <h4 className="text-[17.65px] font-medium leading-8 xs:text-[24.23px] sm:text-[27.23px] md:text-[31.23px]">
+        <h4 className="font-medium leading-8">
           30th January - Facial Treatments - 2 minute read
 				</h4>
       </div>
@@ -34,8 +34,8 @@ const TrunBackSection = () => {
             <Image src={TreatmentsImageOne} alt="Treatments" className="w-full h-auto" />
           </div>
           <div className="md:w-6/12 w-full">
-            <h4 className="font-bold text-xl xl:text-4xl lg:text-2xl mt-3 md:mt-0">What is Facial Rejuvenation?</h4>
-            <p className="font-medium mt-3 xl:mt-7 lg:mt-4 xl:text-2xl lg:text-xl">Aging is a natural part of life, but it doesn’t mean you can’t look and feel your best at every stage. With modern advancements in aesthetic treatments, facial rejuvenation has become a go-to solution for men looking to restore their youthful appearance and boost their confidence. Here’s everything you need to know about these transformative options and how they can help you turn back time.</p>
+            <h4 className="font-bold text-lg xl:text-3xl lg:text-xl mt-3 md:mt-0">What is Facial Rejuvenation?</h4>
+            <p className="font-medium mt-2 xl:mt-5 lg:mt-3">Aging is a natural part of life, but it doesn’t mean you can’t look and feel your best at every stage. With modern advancements in aesthetic treatments, facial rejuvenation has become a go-to solution for men looking to restore their youthful appearance and boost their confidence. Here’s everything you need to know about these transformative options and how they can help you turn back time.</p>
           </div>
         </div>
         {/* box 1 end */}
@@ -47,8 +47,8 @@ const TrunBackSection = () => {
             <Image src={TreatmentsImageTwo} alt="Treatments" className="w-full h-auto" />
           </div>
           <div className="md:w-6/12 w-full">
-            <h4 className="font-bold text-xl xl:text-4xl lg:text-2xl mt-3 md:mt-0">How choose to the best treatment for you?</h4>
-            <p className="font-medium mt-3 xl:mt-7 lg:mt-4 xl:text-2xl lg:text-xl">Facial rejuvenation treatments are designed to reduce signs of aging, such as wrinkles, fine lines, sagging skin, and uneven texture. They can help refresh your appearance, giving your skin a smoother, firmer, and more youthful look. These treatments range from non-invasive procedures to more advanced options, depending on your goals and needs.</p>
+            <h4 className="font-bold text-lg xl:text-3xl lg:text-xl mt-3 md:mt-0">How choose to the best treatment for you?</h4>
+            <p className="font-medium mt-2 xl:mt-5 lg:mt-3">Facial rejuvenation treatments are designed to reduce signs of aging, such as wrinkles, fine lines, sagging skin, and uneven texture. They can help refresh your appearance, giving your skin a smoother, firmer, and more youthful look. These treatments range from non-invasive procedures to more advanced options, depending on your goals and needs.</p>
           </div>
         </div>
         {/* box 2 end */}
