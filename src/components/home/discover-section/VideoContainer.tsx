@@ -39,16 +39,18 @@ const Video = ({ video, isChange }: { video: string; isChange: boolean }) => {
 				<source src={video} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
-			<button
-				onClick={() => toggleMute()}
-				className="absolute bottom-48 right-1/2 z-10 translate-x-[-4%] rounded-full bg-white p-2.5 shadow-sm shadow-black"
-			>
-				{isMuted ? (
-					<MuteSoundIcon className="size-[16px]" />
-				) : (
-					<SoundIcon className="size-[16px]" />
-				)}
-			</button>
+			<div className='flex w-full justify-center absolute bottom-48 z-10'>
+				<button
+					onClick={() => toggleMute()}
+					className="rounded-full bg-white p-2.5 shadow-sm shadow-black"
+				>
+					{isMuted ? (
+						<MuteSoundIcon className="size-[16px]" />
+					) : (
+						<SoundIcon className="size-[16px]" />
+					)}
+				</button>
+			</div>
 		</div>
 	)
 }
