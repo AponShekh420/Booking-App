@@ -51,33 +51,48 @@ export default function DiscoverSection() {
 						</div>
 
 						<div className="home-video-slider w-full max-w-[1200px]">
-							<Swiper
-								effect={'coverflow'}
+						<Swiper
+								effect={"coverflow"}
+								grabCursor={true}
 								centeredSlides={true}
-								slidesPerView={3} // Set to 3 slides per view
+								slidesPerView={"auto"}
 								loop={true}
-								spaceBetween={30}
-								// Detect center slide on movement
 								coverflowEffect={{
 									rotate: 0,
 									stretch: -100, // Reduce stretch to avoid slides overlapping
 									depth: 350,
 									modifier: 1,
-									slideShadows: true, // Add shadow effect for depth
+									slideShadows: false, // Add shadow effect for depth
 								}}
 								navigation={{
 									nextEl: '.custom-next-video',
 									prevEl: '.custom-prev-video',
 								}}
+								modules={[EffectCoverflow, Navigation]}
+								className="mySwiper"
+								onSetTransition={() => {
+									setIsChange(!isChange)
+								}}
+								onInit={(swiper) => {
+									swiper.slideToLoop(1) // Ensure the active slide is centered
+								}}
+								onSlideChange={(swiper: any) => {
+									if (swiper.isEnd) {
+										setTimeout(() => {
+											if (swiper.loopFix) swiper.loopFix(); // 🔥 Ensures the next slides are visible before looping
+										}, 10);
+									}
+								}}
 								breakpoints={{
 									0: {
+										slidesPerView: "auto", // Mobile: 1 slide
 										spaceBetween: 10,
 										coverflowEffect: {
 											stretch: -50, // Adjust stretch for smaller screens
 											depth: 200,
 										},
 									},
-									640: {
+									641: {
 										slidesPerView: 3, // Mobile: 1 slide
 										spaceBetween: 10, // Reduced space between slides
 									},
@@ -89,14 +104,6 @@ export default function DiscoverSection() {
 										slidesPerView: 3, // Desktop: 3 slides
 										spaceBetween: 30,
 									},
-								}}
-								modules={[EffectCoverflow, Navigation, Pagination]}
-								className="mySwiper"
-								onSetTransition={() => {
-									setIsChange(!isChange)
-								}}
-								onInit={(swiper) => {
-									swiper.slideToLoop(1) // Ensure the active slide is centered
 								}}
 							>
 								{videosApi.map((item, index) => (
