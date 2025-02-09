@@ -34,12 +34,12 @@ const Video = ({ video, isChange }: { video: string; isChange: boolean }) => {
 	}, [videoRef, isChange])
 
 	return (
-		<div className="relative mx-auto w-full">
+		<div className="relative mx-auto w-full h-full">
 			<video className="w-full" ref={videoRef} loop>
 				<source src={video} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
-			<div className='flex w-full justify-center absolute bottom-48 z-10'>
+			<div className='flex w-full justify-center absolute bottom-10 z-10'>
 				<button
 					onClick={() => toggleMute()}
 					className="rounded-full bg-white p-2.5 shadow-sm shadow-black"
