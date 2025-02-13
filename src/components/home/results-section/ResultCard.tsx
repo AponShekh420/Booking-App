@@ -35,7 +35,7 @@ const ResultCard: FC<ResultCardProps> = ({item}) => {
 					</div>
 					<div className="2xl:mt-[22px] xl:mt-[14px] lg:mt-[10px] sm:mt-[6px] mt-[15.71px] flex flex-col items-start">
 						<p className="xl:text-[20px] text-[14.28px] xl:leading-[22px] lg:leading-[17px] leading-[22px] sm:leading-[15px] lg:text-[13px] md:text-[13px] xs:text-[19px] sm:text-[14px] font-bold">PRP Treatment</p>
-						<small>Dermamina</small>
+						<small>Hanley Laser Clinic</small>
 						<div className="flex xl:gap-x-4 lg:gap-x-2 gap-x-2 sm:gap-x-1 lg:mt-[10.37px] 2xl:mt-[17.37px] xl:mt-[10.37px] mt-[6.84px] sm:mt-[2px] md:mt-[1px]">
 							<div className="flex items-center">
 								<StarIconFull />

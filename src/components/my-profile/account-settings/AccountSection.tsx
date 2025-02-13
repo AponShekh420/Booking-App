@@ -98,11 +98,11 @@ export default function AccountSection() {
 			<div className="my-[54px]">
 				<ProfileHeading title="Notifications" />
 				<div className="mt-[25px] space-y-4 sm:ml-4">
-					<p className="text-[20px] font-bold">
+					<p className="text-md font-bold">
 						Notify me if there are any changes to my appointment status via
 					</p>
 					<label className="me-5 inline-flex cursor-pointer items-center">
-						<span className="mr-10 inline-block text-[23.2px]">Email</span>
+						<span className="mr-5 inline-block text-lg">Email</span>
 						<input
 							type="checkbox"
 							value=""

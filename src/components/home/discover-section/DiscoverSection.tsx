@@ -92,12 +92,15 @@ export default function DiscoverSection() {
 								 }
 							 }}
 							 modules={[EffectCoverflow, Navigation]}
-							 className="mySwiper"
+							 className="mySwiper discoverSection"
 							 onSetTransition={() => {
 								 setIsChange(!isChange)
 							 }}
 							 onInit={(swiper) => {
 								 swiper.slideToLoop(1) // Ensure the active slide is centered
+							 }}
+							 onSlideChange={() => {
+								document.querySelectorAll("video").forEach((vid) => vid.play());
 							 }}
 							>
 								{videosApi.map((item, index) => (

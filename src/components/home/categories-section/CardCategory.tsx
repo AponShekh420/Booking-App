@@ -66,7 +66,7 @@ const CardCategory: FC<CardCategory5Props> = ({
 					<span className={"hover:text-custom-red transition-all duration-300"}>Hair Regrowth Treatment</span>
 					<br/>
 					<span className='font-body font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px]'>PRP - platelet-rich plasma therapy</span>
-					<p className='font-body font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px] sm:mt-[10px] xs:mt-[8px] mt-[5px]'>Dermamina - London</p>
+					<p className='font-body font-[400] text-[11.99px] sm:text-[15.99px] xs:text-[13.99px] lg:text-[16.2px] sm:mt-[10px] xs:mt-[8px] mt-[5px]'>Hanley Laser Clinic - London</p>
 					<div className='flex justify-between items-center sm:mt-[10px] xs:mt-[8px] mt-[5px]'>
 						<div className='font-[700] text-[13.99px] xs:text-[16.99px] lg:text-[17.99px] lg:leading-[29.28px] md:mt-[2.8px] mt-[2.5px]'>
 							<span className='text-[10.03px] xs:text-[14.03px] font-[700] md:text-[16.99px] lg:text-[17.99px]'>From</span> £150

@@ -55,12 +55,6 @@ export const Amenities_demos: {
 	{ name: 'Sound system', icon: Speaker01Icon },
 	{ name: 'Shampoo', icon: ShampooIcon },
 	{ name: 'Body soap', icon: BodySoapIcon },
-	{ name: 'Water Energy ', icon: WaterEnergyIcon },
-	{ name: 'Water Polo', icon: WaterPoloIcon },
-	{ name: 'Cable Car', icon: CableCarIcon },
-	{ name: 'Tv Smart', icon: TvSmartIcon },
-	{ name: 'Cctv Camera', icon: CctvCameraIcon },
-	{ name: 'Virtual Reality Vr', icon: VirtualRealityVr01Icon },
 ]
 
 export const imageGallery: ListingGalleryImage[] = [...PHOTOS].map(

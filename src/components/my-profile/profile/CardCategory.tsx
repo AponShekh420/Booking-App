@@ -68,7 +68,7 @@ const CardCategory: FC<CardCategory5Props> = ({
 				<p className='sm:text-[15.27px] xs:text-[14px] font-bold text-left text-[15.27px] mt-2 leading-3'> 
 					<span className='text-[13.03px] font-bold'>From</span> £150
 					<br/>
-					<span className='font-body font-[400] text-[11.99px]'>Dermamina - London</span>
+					<span className='font-body font-[400] text-[11.99px]'>Hanley Laser Clinic - London</span>
 				</p> 
 			</div>
 		</Link>

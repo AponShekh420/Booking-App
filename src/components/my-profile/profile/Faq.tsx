@@ -7,7 +7,7 @@ const Faq = ({ title, desc }: { title: string; desc: string }) => {
 	const [toggle, setToggle] = useState<boolean>(false)
 
 	return (
-		<div className="text-md mb-2 sm:mb-3 sm:text-lg md:text-xl lg:mb-4 lg:text-[22px]">
+		<div className="text-md mb-2 lg:mb-3">
 			<p
 				className="cursor-pointer font-bold duration-300 hover:text-custom-red"
 				onClick={() => setToggle((pre) => !pre)}

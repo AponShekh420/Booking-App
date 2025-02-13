@@ -7,10 +7,10 @@ const GiftWalletSection = () => {
 			<div className="mt-[54px]">
 				<Card />
 				<div className="m-auto mt-10 w-11/12 lg:mt-16">
-					<h3 className="text-2xl font-bold lg:text-[28px]">
+					<h3 className="text-xl font-bold lg:text-lg">
 						Give the Gift of Self-Care
 					</h3>
-					<p className="text-md mt-1 leading-6 lg:mt-3 lg:text-[19.2px] lg:leading-9">
+					<p className="text-md mt-1 leading-6 lg:mt-3 lg:leading-9">
 						Surprise someone with a Gentlemend gift card—redeemable at any of
 						our partner clinics!
 					</p>

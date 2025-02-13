@@ -63,7 +63,7 @@ const StayCard2: FC<StayCard2Props> = ({
 				<div className={`flex items-end justify-between ${childclass}`}>
 					<h3 className="mt-0.5 text-[16px]">
 						<span className="block text-[16.27px] font-semibold">
-							Dermamina
+							Hanley Laser Clinic
 						</span>
 						<span className="text-sm">Battersea, London</span>
 					</h3>
@@ -77,7 +77,7 @@ const StayCard2: FC<StayCard2Props> = ({
 					<div className="space-y-1.5">
 						<div className="flex justify-between">
 							<h3 className="text-[16px] font-semibold leading-[16px] md:text-[12px] lg:text-[16px]">
-								Dermamina <br />
+								Hanley Laser Clinic <br />
 								Battersea, London
 							</h3>
 							<div className="flex items-center gap-x-1 text-[17px] font-bold leading-[40.5px] md:text-[12px] lg:text-[17px]">

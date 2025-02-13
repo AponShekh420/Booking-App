@@ -46,7 +46,7 @@ const DEMO_CATS: TaxonomyType[] = [
 		taxonomy: 'category',
 		count: 22288,
 		thumbnail:
-			'https://images.pexels.com/photos/3613236/pexels-photo-3613236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+			'/assets/home/category-5.png',
 	},
 	{
 		id: '6',
@@ -55,7 +55,7 @@ const DEMO_CATS: TaxonomyType[] = [
 		taxonomy: 'category',
 		count: 188288,
 		thumbnail:
-			'https://images.pexels.com/photos/14534337/pexels-photo-14534337.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
+			'/assets/home/category-6.png',
 	},
 	{
 		id: '7',
@@ -64,7 +64,7 @@ const DEMO_CATS: TaxonomyType[] = [
 		taxonomy: 'category',
 		count: 2118,
 		thumbnail:
-			'https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+			'/assets/home/category-7.png',
 	},
 	{
 		id: '8',
@@ -73,7 +73,7 @@ const DEMO_CATS: TaxonomyType[] = [
 		taxonomy: 'category',
 		count: 515,
 		thumbnail:
-			'https://images.pexels.com/photos/9039238/pexels-photo-9039238.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
+			'/assets/home/category-8.png',
 	},
 ]
 
