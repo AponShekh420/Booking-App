@@ -24,7 +24,7 @@ const BookingCard = () => {
 			<div className="hidden md:block">
 				<div className="flex items-center justify-between">
 					<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[50px]">
-						Dermamina
+						Hanley Laser Clinic
 					</h3>
 					<div className="flex items-center gap-x-4">
 						<OutlineHeartIcon className="cursor-pointer transition-all duration-300 hover:text-custom-red md:h-4 md:w-4 lg:h-6 lg:w-6 xl:h-7 xl:w-7" />
@@ -128,7 +128,7 @@ const BookingCard = () => {
 					className={`w-full overflow-hidden px-4 transition-[max-height] ease-in-out ${aboutToggle ? 'max-h-[999px]' : 'max-h-[0px]'}`}
 				>
 					<p className="mt-2 leading-6">
-						Dermamina are committed in providing clinically advanced aesthetic
+						Hanley Laser Clinic are committed in providing clinically advanced aesthetic
 						treatments and is renowned for delivering natural looking results.
 						We make sure you are provided with advanced clinical expertise.
 					</p>

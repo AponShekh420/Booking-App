@@ -249,3 +249,17 @@ h2 {
 	background-color: transparent !important;
 	box-shadow: 0 0 0px 1000px white inset !important;
 }
+
+
+
+
+/* discover */
+.discoverVideo video {
+  pointer-events: none; /* Prevents iOS from taking over the video */
+}
+
+
+.discoverSection {
+  touch-action: pan-y !important;
+  -webkit-overflow-scrolling: touch;
+}

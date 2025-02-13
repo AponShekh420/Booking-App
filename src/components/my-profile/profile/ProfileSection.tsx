@@ -7,10 +7,10 @@ const ProfileSection = () => {
 		<div>
 			<div className="mt-[54px]">
 				<ProfileHeading tag="h1" title="Welcome, jeff" />
-				<div className="text-md xs:text-lg sm:text-xl lg:text-[23.89px]">
+				<div>
 					<p className="mb-3 mt-4 md:mb-3 md:mt-7 lg:mb-5 lg:mt-8">
 						Congratulations on your 2nd visit for your PRP treatment at
-						Dermamina
+						Hanley Laser Clinic
 					</p>
 					<div className="flex gap-x-10 font-semibold text-custom-red">
 						<p>Leave a review</p>

@@ -31,9 +31,9 @@ const CheckOutBox: FC<CheckOutBoxProps> = ({ className, path }) => {
 				<div className="hidden md:block">
 					<div className="flex items-center justify-between">
 						<h3 className="font-heading font-bold md:text-[27px] lg:text-[35px] xl:text-[50px]">
-							Dermamina
+							Hanley Laser Clinic
 						</h3>
-						<div className="xl:text-md flex cursor-pointer items-center gap-x-1 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[14px] lg:text-[15px]">
+						<div className="xl:text-md flex cursor-pointer items-center gap-x-1 text-[14.7px] font-semibold transition-all duration-300 hover:text-custom-red md:text-[12px] lg:text-[15px]">
 							<WatchIcon className="md:h-3 md:w-3 lg:h-4 lg:w-4" />
 							<span className="text-custom-red">Open Today</span>
 						</div>

@@ -5,6 +5,9 @@ import { useEffect, useRef, useState } from "react";
 import StayLocation from "./StayLocation";
 import StaySearchDropdown from "./StaySearchDropdown";
 import HeroSearchFormMobile from "./HeroSearchFormMobile";
+import { addSearchValue } from "@/redux-toolkit/common/headerSlice";
+import { useAppDispatch, useAppSelector } from "@/redux-toolkit/hooks";
+import Link from "next/link";
 
 
 const SearchBar = () => {
@@ -13,6 +16,12 @@ const SearchBar = () => {
   const [tabMobile, setTabMobile] = useState<boolean>(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const dispatch = useAppDispatch();
+  const {searchValue} = useAppSelector(state => state.headerReducer);
+
+
+
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -44,6 +53,8 @@ const SearchBar = () => {
         {/* for desktop */}
         <div className="w-full items-center hidden md:flex" onClick={() => setTab("searchDropdown")}>
             <input 
+            onChange={(e)=> dispatch(addSearchValue(e.target.value))}
+            value={searchValue}
             type="text" 
             placeholder="Type, speak, book & search treatments" 
             className="w-full h-full outline-none border-none placeholder-black placeholder-font-normal lg:placeholder:text-[16.35px] placeholder:text-[9.11px] sm:placeholder:text-[12.11px] lg:placeholder:leading-[27.88px] placeholder:leading-[15.54px] border-gray-300 focus:outline-none focus:ring-0 focus:border-transparent py-0 lg:text-[18.35px] text-[9.11px] sm:text-[12.11px] md:text-[16.35px]"
@@ -52,7 +63,9 @@ const SearchBar = () => {
 
         {/* for mobile */}
         <div className="w-full items-center flex md:hidden" onClick={() => setTabMobile(true)}>
-            <input 
+            <input
+            onChange={(e)=> dispatch(addSearchValue(e.target.value))}
+            value={searchValue}
             type="text" 
             placeholder="Type, speak, book & search treatments" 
             className="w-full h-full outline-none border-none placeholder-black placeholder-font-normal lg:placeholder:text-[16.35px] placeholder:text-[9.11px] sm:placeholder:text-[12.11px] lg:placeholder:leading-[27.88px] placeholder:leading-[15.54px] border-gray-300 focus:outline-none focus:ring-0 focus:border-transparent py-0 lg:text-[18.35px] text-[9.11px] sm:text-[12.11px] md:text-[16.35px]"
@@ -104,7 +117,7 @@ const SearchBar = () => {
         </div>
 
         <div className="lg:pl-[16px] pl-[7.8px]">
-          <button className="hover:text-white h-[25.29px] hover:bg-black transition-all duration-300 leading-[30.32px] text-white lg:w-[119px] lg:h-[40px] w-[66.32px] sm:w-[85.32px] sm:h-[30.29px] lg:rounded-[79px] rounded-[44.03px] bg-[#E9082A] flex items-center justify-center lg:gap-x-[7px] gap-x-[4px] sm:gap-x-[5px]">
+          <Link href={"/category"} className="hover:text-white h-[25.29px] hover:bg-black transition-all duration-300 leading-[30.32px] text-white lg:w-[119px] lg:h-[40px] w-[66.32px] sm:w-[85.32px] sm:h-[30.29px] lg:rounded-[79px] rounded-[44.03px] bg-[#E9082A] flex items-center justify-center lg:gap-x-[7px] gap-x-[4px] sm:gap-x-[5px]">
             <Image 
               src={"assets/icons/searchbar/magnifier-one.svg"} alt="AI" 
               width={20} 
@@ -112,7 +125,7 @@ const SearchBar = () => {
               className="lg:w-[20px] lg:h-[20px] w-[13.38px] h-[13.38px] sm:w-[15.38px] sm:h-[15.38px]"
             />
             <span className="text-[9.91px] lg:text-[17.78px] sm:text-[12.91px]">Search</span>
-          </button>
+          </Link>
         </div>
 
         {/* container of the dropdown content */}

@@ -26,7 +26,7 @@ const UpcomingAppointment = () => {
             </p>
             <p className="mt-1 md:mt-[2px] lg:mt-1 flex cursor-pointer items-center gap-x-3 font-bold transition-all duration-300 hover:text-custom-red text-[18px] md:text-[14px] lg:text-[16px] xl:text-[18px]">£200</p>
 
-            <p className="mt-1 md:mt-0 lg:mt-1 flex cursor-pointer items-center gap-x-3 font-bold transition-all duration-300 hover:text-custom-red text-[18px] md:text-[14px] lg:text-[16px] xl:text-[18px]">Dermamina</p>
+            <p className="mt-1 md:mt-0 lg:mt-1 flex cursor-pointer items-center gap-x-3 font-bold transition-all duration-300 hover:text-custom-red text-[18px] md:text-[14px] lg:text-[16px] xl:text-[18px]">Hanley Laser Clinic</p>
 
             <p className="lg:leading-5 leading-5 md:leading-3 text-[16px] md:text-[12px] lg:text-[14px] xl:text-[16px] font-semibold">114 New Cavendish St, London </p>
 
