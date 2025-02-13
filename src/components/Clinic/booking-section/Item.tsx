@@ -58,7 +58,7 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 							/>
 							<VideoIndicatorIcon className="absolute left-1/2 top-1/2 !z-[10] h-20 w-20 -translate-x-1/2 -translate-y-1/2 cursor-pointer text-white hover:text-custom-red lg:h-10 lg:w-10 xl:h-20 xl:w-20" />
 							<p className="absolute bottom-2 left-3 z-30 text-[17.65px] leading-[25px] text-white lg:text-[15px] xl:text-[17.65px]">
-								Dr. Van Der Press - Dermamina
+								Dr. Van Der Press - Hanley Laser Clinic
 							</p>
 						</div>
 					</div>

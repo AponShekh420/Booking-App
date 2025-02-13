@@ -1,32 +1,52 @@
-"use client"
-import React, { useRef, useState } from 'react';
-import { Virtual, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import categoriesList from '@/data/categorieslist';
-import { Swiper as SwiperType } from 'swiper';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import React, { useRef, useEffect, useState } from "react";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import CategoryItem from './CategoryItem';
+import "swiper/css";
+import "swiper/css/navigation";
+import categoriesList from "@/data/categorieslist";
+import CategoryItem from "./CategoryItem";
 
 interface CategorySlideProps {
-  slideTo: (index: number) => void
+  slideTo: (index: number) => void;
 }
 
-
-const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
+const CategorySlide: React.FC<CategorySlideProps> = ({ slideTo }) => {
   const [active, setActive] = useState<string>("Trending");
-    
+  const swiperRef = useRef<any>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      const swiperInstance = swiperRef.current.swiper;
+
+      const updateNavButtons = () => {
+        setIsBeginning(swiperInstance.isBeginning);
+        setIsEnd(swiperInstance.isEnd);
+      };
+
+      swiperInstance.on("slideChange", updateNavButtons);
+      swiperInstance.on("reachBeginning", updateNavButtons);
+      swiperInstance.on("reachEnd", updateNavButtons);
+      swiperInstance.on("fromEdge", updateNavButtons);
+
+      updateNavButtons(); // Set initial state
+    }
+  }, []);
+
   return (
     <div className="w-full mx-auto categoriesSlide">
       <div className="flex items-center">
+        {/* Custom Prev Button */}
         <div className="z-40 pr-3 md:block hidden">
-          <button className="custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center swiper-button-disabled">
+          <button
+            className={`custom-prev-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center ${
+              isBeginning ? "swiper-button-disabled" : ""
+            }`}
+          >
             <Image
-              src={"/assets/icons/categories/Arrows/left-arrow.svg"}
+              src="/assets/icons/categories/Arrows/left-arrow.svg"
               alt="left arrow"
               width={8.13}
               height={13.71}
@@ -35,24 +55,15 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
         </div>
 
         <Swiper
+          ref={swiperRef}
           modules={[Navigation]}
-          slidesPerView="auto" // Dynamic width calculation
-          spaceBetween={48} // Gap between slides
-          centeredSlides={false} // Prevent centering when all slides fit
-          centerInsufficientSlides={true} // Center slides if they are fewer than the available space
+          slidesPerView="auto"
+          spaceBetween={48}
+          centeredSlides={false}
+          centerInsufficientSlides={true}
           navigation={{
             nextEl: ".custom-next-category",
             prevEl: ".custom-prev-category",
-          }}
-          onReachBeginning={() => {
-            document?.querySelector(".custom-prev-category")?.classList.add("swiper-button-disabled");
-          }}
-          onReachEnd={() => {
-            document?.querySelector(".custom-next-category")?.classList.add("swiper-button-disabled");
-          }}
-          onFromEdge={() => {
-            document?.querySelector(".custom-prev-category")?.classList.remove("swiper-button-disabled");
-            document?.querySelector(".custom-next-category")?.classList.remove("swiper-button-disabled");
           }}
           breakpoints={{
             0: { spaceBetween: 24 },
@@ -65,30 +76,36 @@ const CategorySlide: React.FC<CategorySlideProps> = ({slideTo}) => {
           }}
         >
           {categoriesList.map((category, index) => (
-            <SwiperSlide
-              key={index}
-              className="!w-auto" // Allows dynamic width calculation
-            >
-              <CategoryItem category={category} active={active} setActive={setActive} slideTo={slideTo} index={index}/>
+            <SwiperSlide key={index} className="!w-auto">
+              <CategoryItem
+                category={category}
+                active={active}
+                setActive={setActive}
+                slideTo={slideTo}
+                index={index}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Custom Navigation Buttons */}
+        {/* Custom Next Button */}
         <div className="z-40 pl-3 md:block hidden">
-          <button className="custom-next-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center">
+          <button
+            className={`custom-next-category w-[40.42px] h-[40.42px] border-[0.92px] border-[#9B9B9B] rounded-full flex items-center justify-center ${
+              isEnd ? "swiper-button-disabled" : ""
+            }`}
+          >
             <Image
-              src={"/assets/icons/categories/Arrows/right-arrow.svg"}
+              src="/assets/icons/categories/Arrows/right-arrow.svg"
               alt="right arrow"
               width={8.13}
               height={13.71}
             />
           </button>
         </div>
-
       </div>
     </div>
   );
-}
+};
 
 export default CategorySlide;

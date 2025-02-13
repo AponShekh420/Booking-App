@@ -14,7 +14,7 @@ const StaySearchDropdown = () => {
         </ul>
       </div>
       <div>
-        <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Categories</p>
+        <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Article</p>
         <ul className="font-[400] text-[17.12px] capitalize">
           <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Skin</li>
           <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Face & Jawline</li>
@@ -30,14 +30,14 @@ const StaySearchDropdown = () => {
 
         {/* box one */}
         <div className="flex gap-x-[14px] items-center mb-[11.9px]">
-          <div className="w-[50px] h-[54.1px] rounded-[10px] overflow-hidden">
-            <Image src={img} alt="Dermamina Image" 
+          <div className="min-w-[50px] min-h-[54.1px] max-w-[50px] max-h-[54.1px] rounded-[5px] overflow-hidden">
+            <Image src={img} alt="Hanley Laser Clinic Image" 
               width={100} 
               height={100}
             />
           </div>
           <div>
-            <p className="font-[700] text-[15.27px] leading-[29.97px]">Dermamina</p>
+            <p className="font-[700] text-[15.27px] leading-[29.97px]">Hanley Laser Clinic</p>
             <p className="font-[400] text-[11.03px] capitalize leading-[14px]">Aesthetics Clinic<br/>
             114 New Cavendish St, London W1W 6XT</p>
           </div>
@@ -46,14 +46,14 @@ const StaySearchDropdown = () => {
         {/* box 2 */}
         {/* box one */}
         <div className="flex gap-x-[14px] items-center">
-          <div className="w-[50px] h-[54.1px] rounded-[10px] overflow-hidden">
-            <Image src={img} alt="Dermamina Image" 
+          <div className="min-w-[50px] min-h-[54.1px] max-w-[50px] max-h-[54.1px] rounded-[5px] overflow-hidden">
+            <Image src={img} alt="Hanley Laser Clinic Image" 
               width={100} 
               height={100}
             />
           </div>
           <div>
-            <p className="font-[700] text-[15.27px] leading-[29.97px]">Dermamina</p>
+            <p className="font-[700] text-[15.27px] leading-[29.97px]">Hanley Laser Clinic</p>
             <p className="font-[400] text-[11.03px] capitalize leading-[14px]">Aesthetics Clinic<br/>
             114 New Cavendish St, London W1W 6XT</p>
           </div>

@@ -34,8 +34,16 @@ const Video = ({ video, isChange }: { video: string; isChange: boolean }) => {
 	}, [videoRef, isChange])
 
 	return (
-		<div className="relative mx-auto w-full h-full">
-			<video className="w-full" ref={videoRef} loop>
+		<div className="relative mx-auto w-full h-full discoverVideo">
+			<video 
+			  playsInline
+				className="w-full" 
+				muted
+				ref={videoRef} 
+				loop
+				preload="auto"
+				onLoadedMetadata={(e) => e.currentTarget.play()}
+				>
 				<source src={video} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>

@@ -28,7 +28,7 @@ export default function CheckoutSection() {
 							/>
 							<div>
 								<h5 className="text-[23px] font-bold xs:text-[27.47px]">
-									Dermamina
+									Hanley Laser Clinic
 								</h5>
 								<p className="mt-1 text-[17.64px] xs:text-[18.64px]">
 									114 New Cavendish St, London{' '}

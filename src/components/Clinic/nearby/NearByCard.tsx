@@ -27,7 +27,7 @@ export default function NearByCard({ nearby, className }: NearbyT) {
 			<div
 				className={`mt-[15px] flex items-center justify-between text-[13.28px] xs:text-[15.28px] md:text-[17.28px] lg:text-[18.28px] xl:text-[20px]`}
 			>
-				<h3 className="leading-[30px]">Dermamina - London</h3>
+				<h3 className="leading-[30px]">Hanley Laser Clinic - London</h3>
 
 				{/* <div className="flex items-center gap-x-1 font-semibold">
 					<StarIconFull className="h-auto w-[15px] text-custom-red sm:w-[19px]" />

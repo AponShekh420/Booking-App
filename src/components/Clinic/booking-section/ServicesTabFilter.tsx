@@ -188,7 +188,7 @@ const ServicesTabFilter = () => {
 										</div>
 									</div>
 
-									<div className="pb-5 pt-7">
+									{/* <div className="pb-5 pt-7">
 										<h3 className="text-md font-semibold">Amenities</h3>
 										<div className="relative mt-3">
 											{renderMoreFilterItem(moreFilter1)}
@@ -211,7 +211,7 @@ const ServicesTabFilter = () => {
 										<div className="relative mt-3">
 											{renderMoreFilterItem(moreFilter4)}
 										</div>
-									</div>
+									</div> */}
 								</div>
 							</div>
 
