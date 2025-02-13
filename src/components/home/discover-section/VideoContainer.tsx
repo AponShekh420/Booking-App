@@ -34,10 +34,10 @@ const Video = ({ video, isChange }: { video: string; isChange: boolean }) => {
 	}, [videoRef, isChange])
 
 	return (
-		<div className="relative mx-auto w-full h-full discoverVideo">
+		<div className="relative mx-auto w-full h-full discoverVideo overflow-hidden rounded-[5.37px]">
 			<video 
 			  playsInline
-				className="w-full" 
+				className="w-full h-full object-cover" 
 				muted
 				ref={videoRef} 
 				loop
