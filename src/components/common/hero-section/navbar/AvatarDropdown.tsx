@@ -18,6 +18,7 @@ import {
 } from '@/components/Icons'
 import T from '@/utils/getT'
 import { AccountIcon, NavIcon } from '@/components/common/Icons'
+import DropdownContent from './DropdownContent'
 interface Props {
 	className?: string
 }
@@ -48,117 +49,10 @@ export default function AvatarDropdown({ className = '' }: Props) {
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 translate-y-1"
 						>
-							<PopoverPanel className="absolute -end-10 top-full z-10 w-screen max-w-[260px] px-4 sm:end-0 sm:px-0">
-								<div className="overflow-hidden rounded-3xl shadow-lg ring-1 ring-black ring-opacity-5">
-									<div className="relative grid grid-cols-1 gap-6 bg-white px-6 py-7 dark:bg-neutral-800">
-										<div className="flex items-center gap-x-3">
-											<Avatar sizeClass="w-12 h-12" />
-
-											<div className="flex-grow">
-												<h4 className="font-semibold">Eden Smith</h4>
-												<p className="mt-0.5 text-xs">Los Angeles, CA</p>
-											</div>
-										</div>
-
-										<div className="w-full border-b border-neutral-200 dark:border-neutral-700" />
-
-										{/* ------------------ 1 --------------------- */}
-										<Link
-											href={'/account'}
-											className="-m-3 flex items-center rounded-lg p-2 hover:bg-neutral-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:hover:bg-neutral-700"
-											onClick={() => close()}
-										>
-											<div className="flex flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-300">
-												<UserSharingIcon />
-											</div>
-											<div className="ms-4">
-												<p className="text-sm font-medium">
-													{T['Header']['AvatarDropDown']['My Account']}
-												</p>
-											</div>
-										</Link>
-
-										{/* ------------------ 2 --------------------- */}
-										<Link
-											href={'/author'}
-											className="-m-3 flex items-center rounded-lg p-2 hover:bg-neutral-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:hover:bg-neutral-700"
-											onClick={() => close()}
-										>
-											<div className="flex flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-300">
-												<Task01Icon />
-											</div>
-											<div className="ms-4">
-												<p className="text-sm font-medium">
-													{T['Header']['AvatarDropDown']['My bookings']}
-												</p>
-											</div>
-										</Link>
-
-										{/* ------------------ 2 --------------------- */}
-										<Link
-											href={'/account-savelists'}
-											className="-m-3 flex items-center rounded-lg p-2 hover:bg-neutral-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:hover:bg-neutral-700"
-											onClick={() => close()}
-										>
-											<div className="flex flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-300">
-												<FavouriteIcon />
-											</div>
-											<div className="ms-4">
-												<p className="text-sm font-medium">
-													{T['Header']['AvatarDropDown']['Wishlist']}
-												</p>
-											</div>
-										</Link>
-
-										<div className="w-full border-b border-neutral-200 dark:border-neutral-700" />
-
-										{/* ------------------ 2 --------------------- */}
-										<div className="-m-3 flex items-center justify-between rounded-lg p-2 hover:bg-neutral-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:hover:bg-neutral-700">
-											<div className="flex items-center">
-												<div className="flex flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-300">
-													<Idea01Icon />
-												</div>
-												<div className="ms-4">
-													<p className="text-sm font-medium">
-														{T['Header']['AvatarDropDown']['Dark theme']}
-													</p>
-												</div>
-											</div>
-											<SwitchDarkMode2 />
-										</div>
-
-										{/* ------------------ 2 --------------------- */}
-										<Link
-											href={'/#'}
-											className="-m-3 flex items-center rounded-lg p-2 hover:bg-neutral-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:hover:bg-neutral-700"
-											onClick={() => close()}
-										>
-											<div className="flex flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-300">
-												<HelpSquareIcon />
-											</div>
-											<div className="ms-4">
-												<p className="text-sm font-medium">
-													{T['Header']['AvatarDropDown']['Help']}
-												</p>
-											</div>
-										</Link>
-
-										{/* ------------------ 2 --------------------- */}
-										<Link
-											href={'/#'}
-											className="-m-3 flex items-center rounded-lg p-2 hover:bg-neutral-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:hover:bg-neutral-700"
-											onClick={() => close()}
-										>
-											<div className="flex flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-300">
-												<Logout03Icon />
-											</div>
-											<div className="ms-4">
-												<p className="text-sm font-medium">
-													{T['Header']['AvatarDropDown']['Logout']}
-												</p>
-											</div>
-										</Link>
-									</div>
+							<PopoverPanel className="absolute -end-10 top-full w-screen max-w-[260px] px-4 sm:end-0 sm:px-0 z-50">
+								<div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-white ring-opacity-5 bg-white py-7">
+									<DropdownContent/>
+									{/* <SwitchDarkMode2 /> */}
 								</div>
 							</PopoverPanel>
 						</Transition>
