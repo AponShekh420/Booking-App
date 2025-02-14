@@ -27,14 +27,14 @@ const DropdownContent = () => {
 					></div>
 
 					<button
-						className={`px-7 py-1 w-6/12 text-md capitalize ${userRole === 'user' ? 'text-white' : 'text-[#787878]'} relative z-10 bg-transparent transition-all duration-300 ease-in-out`}
+						className={`px-7 py-1 w-6/12 capitalize ${userRole === 'user' ? 'text-white' : 'text-[#787878]'} relative z-10 bg-transparent transition-all duration-300 ease-in-out`}
 						onClick={() => setUserRole('user')}
 					>
 						user
 					</button>
 
 					<button
-						className={`px-7 py-1 w-6/12 text-md capitalize ${userRole === 'clinic' ? 'text-white' : 'text-[#787878]'} relative z-10 bg-transparent transition-all duration-300 ease-in-out`}
+						className={`px-7 py-1 w-6/12 capitalize ${userRole === 'clinic' ? 'text-white' : 'text-[#787878]'} relative z-10 bg-transparent transition-all duration-300 ease-in-out`}
 						onClick={() => setUserRole('clinic')}
 					>
 						clinic
@@ -44,7 +44,7 @@ const DropdownContent = () => {
 
 
 			{/* divider */}
-			<div className="mt-4 text-black w-[80%] gap-x-3 text-lg mx-auto">
+			<div className="mt-4 text-black w-[80%] gap-x-3 mx-auto">
 				<ul>
 					<li className='font-bold text-black hover:text-custom-red transition-all duration-300 cursor-pointer'>Sign Up</li>
 					<li className='text-black hover:text-custom-red mt-1 transition-all duration-300 cursor-pointer'>login</li>
