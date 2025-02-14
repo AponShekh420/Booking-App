@@ -1,6 +1,5 @@
 import CategoriesSection from '@/components/home/categories-section/CategoriesSection'
 import GalleryLayout from '@/components/home/gallery-layout/GalleryLayout'
-import HeroSection from '@/components/home/hero-section/HeroSection'
 
 import LatestTopicSection from '@/components/home/latest-topic/LatestTopicSection'
 import ResultSection from '@/components/home/results-section/ResultSection'
@@ -11,6 +10,7 @@ import SearchTag from '@/components/home/search-tag/SearchTag'
 import { TaxonomyType } from '@/data/types'
 import FollowSection from '@/components/home/follow-section/FollowSection'
 import DiscoverSection from '@/components/home/discover-section/DiscoverSection'
+import HeroSection from '@/components/common/hero-section/HeroSection'
 
 const DEMO_CATS: TaxonomyType[] = [
 	{
