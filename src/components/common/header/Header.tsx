@@ -48,7 +48,7 @@ const Header = () => {
 								/>
 							</div> */}
 
-							<aside
+							{/* <aside
 								className={` ${mobileSidebarOpen ? 'z-50 translate-x-0 opacity-100' : 'z-[-1] translate-x-[200px] opacity-0'} boxShadow absolute right-0 top-[65px] w-full rounded-md bg-white p-4 text-center transition-all duration-300 sm:hidden`}
 							>
 								<ul className="flex flex-col items-center gap-[20px] text-[1rem] text-gray-600">
@@ -65,7 +65,7 @@ const Header = () => {
 										Shop
 									</li>
 								</ul>
-							</aside>
+							</aside> */}
 						</div>
 					</div>
 				</Wrapper>

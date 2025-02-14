@@ -7,6 +7,7 @@ import 'rc-slider/assets/index.css'
 import ClientCommons from './ClientCommons'
 import ThemeProvider from './theme-provider'
 import AuthContainer from '@/components/common/auth-popup/AuthContainer'
+import ChatBar from '@/components/common/ChatBar'
 
 export const metadata: Metadata = {
 	title: 'Chisfis - Booking online React Next Template',
@@ -26,7 +27,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="font-body">
 			<ThemeProvider>
-				<body className="bg-white text-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
+				<body className="bg-white text-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200 min-h-screen min-w-screen relative">
 
 					{/* popup */}
 					{/* <AuthContainer/> */}
@@ -41,6 +42,7 @@ export default function RootLayout({
 						<Footer />
 						{/* <Footer3 /> */}
 						{/* <Footer4 /> */}
+						<ChatBar/>
 					</div>
 
 					<ClientCommons />
