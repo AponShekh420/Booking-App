@@ -90,7 +90,7 @@ const Amenities = () => {
 					className="rounded-3xl bg-black px-8 py-2 text-white transition-colors duration-300 hover:bg-custom-red"
 					onClick={openModalAmenities}
 				>
-					View more 20 amenities
+					View more 6 amenities
 				</button>
 			</div>
 			{renderModalAmenities()}

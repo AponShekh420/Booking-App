@@ -187,31 +187,6 @@ const ServicesTabFilter = () => {
 											<PriceRange />
 										</div>
 									</div>
-
-									{/* <div className="pb-5 pt-7">
-										<h3 className="text-md font-semibold">Amenities</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter1)}
-										</div>
-									</div>
-									<div className="py-5">
-										<h3 className="text-md font-semibold">Facilities</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter2)}
-										</div>
-									</div>
-									<div className="py-5">
-										<h3 className="text-md font-semibold">Property type</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter3)}
-										</div>
-									</div>
-									<div className="py-5">
-										<h3 className="text-md font-semibold">House rules</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter4)}
-										</div>
-									</div> */}
 								</div>
 							</div>
 

@@ -27,7 +27,7 @@ const PriceRange = () => {
           transform: `translateX(-${(price / 1500) * 100}%)`,
         }}
       >
-        ${price}
+        £{price}
       </div>
 
       {/* Custom Range Circle */}

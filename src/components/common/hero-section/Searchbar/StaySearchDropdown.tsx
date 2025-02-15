@@ -14,7 +14,7 @@ const StaySearchDropdown = () => {
         </ul>
       </div>
       <div>
-        <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Article</p>
+        <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Articles</p>
         <ul className="font-[400] text-[17.12px] capitalize">
           <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Skin</li>
           <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Face & Jawline</li>

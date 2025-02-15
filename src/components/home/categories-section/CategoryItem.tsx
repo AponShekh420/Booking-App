@@ -27,7 +27,7 @@ const CategoryItem: React.FC<CategoryProps> = ({category, active, setActive, sli
       onMouseLeave={() => setAction(false)} 
       onClick={()=> {
         setActive(category?.text)
-        slideTo(index * 4)
+        slideTo(index)
       }
     }>
 
