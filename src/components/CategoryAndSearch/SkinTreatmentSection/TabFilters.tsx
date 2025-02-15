@@ -118,17 +118,6 @@ const TabFilters = () => {
 	return (
 		<div className="flex lg:gap-x-4">
 			<div>
-				{/* <div
-					className="flex cursor-pointer items-center justify-center rounded-full border border-primary-500 bg-primary-50 px-4 py-2 text-sm text-primary-700 focus:outline-none"
-					onClick={openModalMoreFilter}
-				>
-					<FunnelIcon className="me-2 h-5 w-5" />
-					<span>
-						{T['common']['Filters']}
-						{`  `}
-						(3)
-					</span>
-				</div> */}
 				<div
 					className="flex lg:h-[35.89px] h-[32px] cursor-pointer items-center justify-center gap-x-1.5 rounded-[65.12px] bg-custom-red px-4 capitalize text-white"
 					onClick={openModalMoreFilter}
@@ -178,31 +167,6 @@ const TabFilters = () => {
 										<p className="font-semibold text-md">Maximum Price</p>
 										<div className="relative mt-2">
 											<PriceRange/>
-										</div>
-									</div>
-									
-									<div className="pt-7 pb-5">
-										<h3 className="font-semibold text-md">Amenities</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter1)}
-										</div>
-									</div>
-									<div className="py-5">
-										<h3 className="font-semibold text-md">Facilities</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter2)}
-										</div>
-									</div>
-									<div className="py-5">
-										<h3 className="font-semibold text-md">Property type</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter3)}
-										</div>
-									</div>
-									<div className="py-5">
-										<h3 className="font-semibold text-md">House rules</h3>
-										<div className="relative mt-3">
-											{renderMoreFilterItem(moreFilter4)}
 										</div>
 									</div>
 								</div>

@@ -15,11 +15,13 @@ import cardDemo from '@/data/cardDemo'
 import Image from 'next/image'
 import CardCategory from './CardCategory'
 import CategorySlide from './CategorySlide'
+import CategoryCardDemo from '@/data/categoryCardDemo'
 
 // import './styles.css';
 
 const CategoriesSection = () => {
-	const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null)
+	const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
+	const [slideIndex, setSlideIndex] = useState<number>(0);
 
 	const [slides, setSlides] = useState<string[]>(
 		cardDemo.map((_, index) => `Slide ${index}`),
@@ -27,8 +29,10 @@ const CategoriesSection = () => {
 
 	const slideTo = (index: number) => {
 		if (swiperRef) {
-			swiperRef.slideTo(index, 0)
+			setSlideIndex(index);
+			swiperRef.slideTo(0, 0)
 		}
+
 	}
 
 	return (
@@ -73,7 +77,8 @@ const CategoriesSection = () => {
 						},
 					}}
 				>
-					{cardDemo.map((item, index) => (
+					{/* have to be remove condition and keep only (slideIndex) for real data*/}
+					{CategoryCardDemo[(slideIndex >= CategoryCardDemo.length) ? 0 : slideIndex]?.map((item: any, index: number) => (
 						<div className={`nc-SectionSliderNewCategories`} key={index}>
 							<div className="relative flow-root">
 								<div className="hiddenScrollbar relative -mx-2 flex snap-x snap-mandatory overflow-x-auto lg:-mx-3.5">
