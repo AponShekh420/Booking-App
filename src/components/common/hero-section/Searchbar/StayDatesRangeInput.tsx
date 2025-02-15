@@ -37,14 +37,14 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
   )
 
   return (
-		<div className='w-full p-6'>
-			<div className='w-full h-[250px] overflow-y-auto flex md:gap-x-[30px] lg:gap-x-[40px] justify-between flex-col lg:flex-row'>
+		<div className='w-full p-2'>
+			<div className='w-full h-auto flex md:gap-x-[30px] lg:gap-x-[40px] justify-between flex-col lg:flex-row'>
 				<div className="w-full">
 					<DatePicker
 						selected={startDate}
 						onChange={onChangeDate}
-						startDate={startDate}
-						endDate={endDate}
+						// startDate={startDate}
+						// endDate={endDate}
 						selectsRange
 						monthsShown={1}
 						showPopperArrow={false}
@@ -58,9 +58,10 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 						)}
 					/>
 				</div>
+				{/* button grp */}
 				<div className="w-full md:w-auto">
 					<p className='text-[20.52px] font-bold leading-[33.63px] text-center mb-[2px] lg:mb-6 mt-5 xs:mt-8 md:mt-5 lg:mt-0'>Time</p>
-					<div className='flex md:flex-row lg:flex-col flex-col gap-y-[8px] lg:gap-x-[0px] md:gap-x-[2%] gap-x-[8px] flex-wrap justify-center md:justify-between lg:justify-center'>
+					<div className='datePickerScrollbar flex md:flex-row lg:pr-3 lg:flex-col flex-col gap-y-[8px] lg:gap-x-[0px] md:gap-x-[2%] gap-x-[8px] lg:flex-nowrap flex-wrap justify-center md:justify-between lg:justify-start lg:max-h-[200px] lg:overflow-x-auto'>
 						{renderButtonList()}
 					</div>
 				</div>

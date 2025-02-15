@@ -46,7 +46,7 @@ const DropdownContent = () => {
 			<div className="mt-4 text-black w-[80%] gap-x-3 mx-auto">
 				<ul>
 					<li className='font-bold text-black hover:text-custom-red transition-all duration-300 cursor-pointer'>Sign Up</li>
-					<li className='text-black hover:text-custom-red mt-1 transition-all duration-300 cursor-pointer'>login</li>
+					<li className='text-black hover:text-custom-red mt-1 transition-all duration-300 cursor-pointer'>Log in</li>
 					<li className='text-black hover:text-custom-red mt-1 transition-all duration-300 cursor-pointer'>Download the app</li>
 					<li className='text-black hover:text-custom-red mt-1 transition-all duration-300 cursor-pointer'>Customer support</li>
 				</ul>
