@@ -12,8 +12,8 @@ export interface StayCard2Props {
 	data?: {
 		galleryImgs: any,
 		href: any,
-		like: boolean,
-		id: string,
+		like: any,
+		id: any,
 	}
 	childclass?: string
 	hiddenExtra?: boolean
