@@ -8,7 +8,12 @@ import GallerySlider from './GallerySlider'
 
 export interface StayCard2Props {
 	className?: string
-	data?: StayDataType
+	data?: {
+		galleryImgs: string[],
+		href: any,
+		like: boolean,
+		id: string,
+	}
 	childclass?: string
 	hiddenExtra?: boolean
 	size?: 'default' | 'small'
@@ -25,17 +30,8 @@ const StayCard2: FC<StayCard2Props> = ({
 }) => {
 	const {
 		galleryImgs,
-		listingCategory,
-		address,
-		title,
-		bedrooms,
 		href,
 		like,
-		saleOff,
-		isAds,
-		price,
-		reviewStart,
-		reviewCount,
 		id,
 	} = data
 

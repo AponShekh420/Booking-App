@@ -1,6 +1,7 @@
 'use client'
 import Wrapper from '@/components/common/Wrapper'
 import { DEMO_CATEGORY_LISTINGS } from '@/data/listings'
+import categoryListData from '@/data/categoryPageData'
 import T from '@/utils/getT'
 import { MapIcon } from '@heroicons/react/24/outline'
 import { CSSProperties, FC, useState } from 'react'
@@ -45,7 +46,7 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 						</p>
 					</div>
 					<div className="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 2xl:grid-cols-3 2xl:gap-x-6">
-						{DEMO_STAYS.map((item) => (
+						{categoryListData?.map((item) => (
 							<div
 								key={item.id}
 								onMouseEnter={() => setCurrentHoverID((_) => item.id)}
