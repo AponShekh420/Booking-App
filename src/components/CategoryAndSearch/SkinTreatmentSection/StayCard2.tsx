@@ -6,10 +6,11 @@ import BtnLikeIcon from './BtnLikeIcon'
 import DownloadBtn from './DownloadBtn'
 import GallerySlider from './GallerySlider'
 
+
 export interface StayCard2Props {
 	className?: string
 	data?: {
-		galleryImgs: string[],
+		galleryImgs: any,
 		href: any,
 		like: boolean,
 		id: string,
