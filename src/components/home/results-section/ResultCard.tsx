@@ -63,7 +63,7 @@ const ResultCard: FC<ResultCardProps> = ({item}) => {
 					/>
 					<div className='flex flex-col items-start'>
 						<p className='2xl:text-[18px] text-[12.85px] sm:text-[16px] lg:text-[13px] xl:text-[17px] xs:text-[16px] lg:leading-3'>Daniel L.</p>
-						<small className='font-body font-[400] text-[12px] xxs:text-[13px] sm:text-md leading-3 xs:text-sm md:text-sm lg:text-[12px] xl:text-[15px]'>PRP Treatment - Dermamina</small>
+						<small className='font-body font-[400] text-[12px] xxs:text-[13px] sm:text-md leading-3 xs:text-sm md:text-[11.7px] lg:text-[12px] xl:text-[15px]'>PRP Treatment - Dermamina</small>
 					</div>
 				</div>
 
