@@ -68,13 +68,13 @@ const Amenities = () => {
 		<div className="mt-8 space-y-8">
 			<div>
 				<h3 className="text-2xl font-semibold">Amenities </h3>
-				<span className="mt-2 block text-neutral-500 dark:text-neutral-400">
+				<span className="mt-2 block text-black">
 					{`About the property's amenities and services`}
 				</span>
 			</div>
 			<div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
 			{/* 6 */}
-			<div className="grid grid-cols-1 gap-6 text-sm text-neutral-700 dark:text-neutral-300 xl:grid-cols-3">
+			<div className="grid grid-cols-1 gap-6 text-sm text-black xl:grid-cols-3">
 				{Amenities_demos.filter((_, i) => i < 12).map((item) => (
 					<div key={item.name} className="flex items-center gap-x-3">
 						<item.icon className="h-6 w-6" />

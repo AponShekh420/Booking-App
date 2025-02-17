@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const PriceRange = () => {
-  const [price, setPrice] = useState(1500); // Default price value
+  const [price, setPrice] = useState(0); // Default price value
 
   const handleChange = (e: any) => {
     setPrice(e.target.value);

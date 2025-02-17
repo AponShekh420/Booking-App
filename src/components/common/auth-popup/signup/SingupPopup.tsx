@@ -159,13 +159,11 @@ const SingupPopup = () => {
 					)}
 				</div>
 				<p className="mt-1 pl-5">
-					Password must at 8 characters long
-					<br />
-					and must contain at least one number and one letter
+					Password must be at least 8 characters long
+					and must contain at least one number and one letter.
 				</p>
 			</div>
 			{/* input end */}
-			signinActive,
 			<button
 				onClick={() => dispatch(contsentsActive())}
 				className="xs-h-[50px] mt-10 h-[45px] w-full rounded-[52.33px] bg-custom-red text-xl capitalize text-white transition-all duration-300 hover:bg-black"

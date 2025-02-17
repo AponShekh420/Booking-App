@@ -37,10 +37,10 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 						<TabFilters />
 					</div>
 					<div className="mb-4 flex gap-x-2 md:gap-x-3">
-						<h4 className="font-heading text-[21px] uppercase sm:text-[25px] md:text-[21px] lg:text-[29px]">
+						<h2 className="font-heading text-[21px] uppercase sm:text-[25px] md:text-[21px] lg:text-[29px]">
 							for men in{' '}
 							<span className="text-custom-red">BATTERSEA LONDON</span>
-						</h4>
+						</h2>
 						<p className="block font-body text-[10.52px] font-semibold text-neutral-500 xs:text-[13.52px] sm:text-[16.85px] md:text-[14.85px] lg:text-[16.85px]">
 							268 Clinics Within map area
 						</p>
