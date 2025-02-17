@@ -43,7 +43,7 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 				>
 					{/* video column*/}
 					<div className="flex flex-col justify-between gap-x-8 lg:mt-3 mt-2 lg:flex-row">
-						<p className="mb-2 whitespace-normal lg:leading-8 leading-6 xs:leading-7 md:leading-6 lg:mb-0 text-[16px] md:text-[12px] lg:text-[16px]">
+						<p className="mb-2 whitespace-normal lg:mb-0 text-[16px] md:text-[12px] lg:text-[16px]">
 							PRP treatment can help support wound healing in trauma and joint
 							injury. The technique can address male pattern baldness, stimulate
 							the growth of hair transplants and enhance other cosmetic

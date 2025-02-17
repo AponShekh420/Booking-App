@@ -10,14 +10,45 @@ import { useState } from 'react'
 import ClinicHeadingText from '../ClinicHeadingText'
 import ButtonClose from './ButtonClose'
 import CommentListing from './CommentListing'
-const DEMO_DATA_REVIEWS = Array.from({ length: 5 }, (_, i) => ({
-	id: i,
-	name: 'Cody Fisher',
-	date: 'May 20, 2021',
-	comment:
-		'There’s no stopping the tech giant. Apple now opens its 100th store in China.There’s no stopping the tech giant.',
-	starPoint: 5,
-}))
+
+
+
+interface demoDataReviewsType {
+	id: number,
+	name: string,
+	date: string,
+	comment: string,
+	starPoint: number,
+}
+
+
+const DEMO_DATA_REVIEWS: demoDataReviewsType[] = [
+	{
+		id: 1,
+		name: 'Cody Fisher',
+		date: 'May 20, 2021',
+		comment:
+			'I had a great experience at this clinic. They put me at ease and explained everything very well. Highly recommend them.',
+		starPoint: 5,
+	},
+	{
+		id: 1,
+		name: 'Cody Fisher',
+		date: 'May 20, 2021',
+		comment:
+			"Many thanks to all the team at Hanley Laser Clinic. I wasn't sure what to expect but the entire process was very smooth from booking to going to the clinic itself.",
+		starPoint: 5,
+	},
+	{
+		id: 1,
+		name: 'Cody Fisher',
+		date: 'May 20, 2021',
+		comment:
+			`Very impressed by this clinic. I have suffered for years with poor skin so thanks to them I've regained by confidence and feel younger and healthier too.`,
+		starPoint: 5,
+	},
+]
+
 
 const Reviews = () => {
 	const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)

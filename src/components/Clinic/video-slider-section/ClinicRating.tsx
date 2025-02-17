@@ -9,7 +9,7 @@ import {
 
 export default function ClinicRating() {
 	return (
-		<div className="flex gap-4 text-[13.84] sm:text-[12.84px] md:text-[15.84px] lg:text-[18.64px]">
+		<div className="flex gap-4">
 			<button
 				onClick={() => {
 					const reviewsElement = document.getElementById('reviews')
@@ -26,7 +26,7 @@ export default function ClinicRating() {
 					<StarIconFull className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
 					<StarIconHalf className="h-auto w-[14.13px] md:w-[17px] lg:w-[21.42px]" />
 				</span>
-				<span className="lg:text-[20.97px]">4.9 (292)</span>
+				<span>4.9 (292)</span>
 			</button>
 			<div className="hidden items-center gap-2 sm:flex">
 				<LocationIcon className="h-auto w-[18px] md:w-[20px] lg:w-[27px]" />
