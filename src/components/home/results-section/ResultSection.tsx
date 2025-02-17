@@ -5,6 +5,63 @@ import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ResultCard from './ResultCard'
 
+
+
+interface testimonialsType {
+	authName: string,
+	authImg: string,
+	clinicName: string,
+	clinicType: string,
+	title: string,
+	desc: string,
+	img: string,
+}
+
+
+
+const testimonials: testimonialsType[] = [
+	{
+		authName: "Daniel L.",
+		authImg: "/assets/home/testimonials-auth-1.png",
+		clinicName: "Hanley Laser Clinic",
+		clinicType: "PRP Treatment",
+		title: "I’m lost for words why didn’t know this existed!",
+		desc: "The PRP hair treatment has been a game-changer. I didn’t think regrowth was possible, but the results speak for themselves. I only wish I’d started sooner!",
+		img: "/assets/home/testimonials-1.png",
+	},
+	{
+		authName: "Jeff L.",
+		authImg: "/assets/home/testimonials-auth-2.png",
+		clinicName: "Chelsea Clinic",
+		clinicType: "Laser Removel",
+		title: "Laser hair removal – why didn’t I do this sooner?",
+		desc: "Shaving was a nightmare, and I was tired of razor bumps. I found a top-rated clinic through Gentlemend, and after a few sessions, I’m seeing a huge difference.",
+		img: "/assets/home/testimonials-2.png",
+	},
+	{
+		authName: "Bac T. ",
+		authImg: "/assets/home/testimonials-auth-3.png",
+		clinicName: "Derma Health Uk",
+		clinicType: "Hydrafacial",
+		title: "Hydrafacial left my skin feeling the best it ever has.",
+		desc: "I never thought about facials before, but after seeing how many guys were doing it, I gave it a go. My skin has never looked clearer or felt better.",
+		img: "/assets/home/testimonials-3.png",
+	},
+	{
+		authName: "Zak E.",
+		authImg: "/assets/home/testimonials-auth-4.png",
+		clinicName: "The Skin Company",
+		clinicType: "Micro Needling",
+		title: "Micro-needling faded my acne scars.",
+		desc: "I thought I’d have to live with acne scars forever, but Gentlemend helped me find the right treatment. A few sessions in, and my skin is smoother than I ever imagined.",
+		img: "/assets/home/testimonials-4.png",
+	}
+]
+
+
+
+
+
 export default function ResultSection() {
 	return (
 		<section className="mt-[101px]">
@@ -43,7 +100,7 @@ export default function ResultSection() {
 							},
 						}}
 					>
-						{[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
+						{testimonials?.map((item, index) => (
 							<div className={`nc-SectionSliderNewCategories`} key={index}>
 								<div className="relative flow-root">
 									<div className="hiddenScrollbar relative -mx-2 flex snap-x snap-mandatory overflow-x-auto lg:-mx-3.5">
