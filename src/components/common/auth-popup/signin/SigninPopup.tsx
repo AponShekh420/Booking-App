@@ -85,7 +85,7 @@ const SigninPopup = () => {
 			{/* social login btn */}
 			<button className="mt-8 flex h-[45px] w-full items-center justify-center gap-x-3 overflow-hidden rounded-[52.33px] border border-black p-2 text-lg transition-all duration-300 hover:bg-black hover:text-white xs:h-[50px] xs:text-xl">
 				<FacebookColorIcon className="w-6 xs:w-7" />
-				<p>Continue with facebook</p>
+				<p>Continue with Facebook</p>
 			</button>
 			<button className="mt-3 flex h-[45px] w-full items-center justify-center gap-x-3 overflow-hidden rounded-[52.33px] border border-black p-2 text-lg transition-all duration-300 hover:bg-black hover:text-white xs:h-[50px] xs:text-xl">
 				<AppleIcon className="w-6 xs:w-7" />
