@@ -13,10 +13,13 @@ import {
 	RightCircleIcon,
 } from '../../Icons'
 import Title from '../Title'
+import CheckMark from './CheckMark.'
 
 const Consents = () => {
 	const [userRole, setUserRole] = useState<string>('user')
-	const dispatch = useAppDispatch()
+	const dispatch = useAppDispatch();
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+
 
 	return (
 		<div className="flex min-h-screen w-full flex-col items-center bg-white px-8 py-4 shadow-lg sm:min-h-fit sm:w-[605.65px] sm:rounded-[33.83px] sm:p-8">
@@ -36,43 +39,35 @@ const Consents = () => {
 			{/* content */}
 			<div className="mt-6 w-full xs:mt-7">
 				<div className="flex items-center justify-between gap-x-2 xs:gap-x-7">
-					<div className="flex gap-x-4">
-						<RightCircleIcon className="min-w-5 max-w-5 xs:min-w-7 xs:max-w-7" />
-						<p className="text-md xs:text-lg sm:text-xl">Select All</p>
+					<div className="flex gap-x-3 items-center">
+						<label className="flex flex-col items-center justify-center cursor-pointer relative">
+							{/* Hidden Checkbox */}
+							<input
+									type="checkbox"
+									className="hidden"
+									checked={isChecked}
+									onChange={() => setIsChecked(!isChecked)}
+							/>
+
+							{/* Circle */}
+							<div className="w-5 h-5 xs:w-[27px] xs:h-[27px] xs:border-[3px] border-2 border-black rounded-full flex items-center justify-center"></div>
+
+							{/* Checkmark */}
+							{isChecked && (
+									<span className="text-black xs:text-[15px] text-xs font-bold absolute mt-[0.1rem] select-none">✔</span>
+							)}
+						</label>
+						<p className="text-md xs:text-lg sm:text-xl mt-1">Select All</p>
 					</div>
 				</div>
 
-				<div className="mt-6 flex items-center justify-between gap-x-2 xs:gap-x-7">
-					<div className="flex gap-x-2 xs:gap-x-4">
-						<RightCircleIcon className="min-w-5 max-w-5 xs:min-w-7 xs:max-w-7" />
-						<p className="text-md xs:text-lg sm:text-xl">
-							Acceptance of the Terms of Service and confirmation of having read
-							the privacy Policy{' '}
-							<span className="font-extrabold text-custom-red">Required</span>
-						</p>
-					</div>
-					<RightArrowIcon className="max-h-3 min-h-3 min-w-3 max-w-3 xs:max-h-5 xs:min-h-5 xs:min-w-5 xs:max-w-5" />
-				</div>
+				<CheckMark text="Acceptance of the Terms of Service and confirmation of having read
+          the privacy Policy" defaultSelect={isChecked} highLightText="Required"/>
 
-				<div className="mt-6 flex items-center justify-between gap-x-2 xs:gap-x-7">
-					<div className="flex gap-x-2 xs:gap-x-4">
-						<RightCircleIcon className="min-w-5 max-w-5 xs:min-w-7 xs:max-w-7" />
-						<p className="text-md xs:text-lg sm:text-xl">
-							Consent to receiving Gentlemend offers{' '}
-						</p>
-					</div>
-					<RightArrowIcon className="max-h-3 min-h-3 min-w-3 max-w-3 xs:max-h-5 xs:min-h-5 xs:min-w-5 xs:max-w-5" />
-				</div>
+				<CheckMark text="Consent to receiving Gentlemend offers" defaultSelect={isChecked} highLightText=""/>
 
-				<div className="mt-6 flex items-center justify-between gap-x-2 xs:gap-x-7">
-					<div className="flex gap-x-2 xs:gap-x-4">
-						<RightCircleIcon className="min-w-5 max-w-5 xs:min-w-7 xs:max-w-7" />
-						<p className="text-md xs:text-lg sm:text-xl">
-							Consent to receiving offers of parties cooperating with Gentlemend
-						</p>
-					</div>
-					<RightArrowIcon className="max-h-3 min-h-3 min-w-3 max-w-3 xs:max-h-5 xs:min-h-5 xs:min-w-5 xs:max-w-5" />
-				</div>
+				<CheckMark text="Consent to receiving offers of parties cooperating with Gentlemend" defaultSelect={isChecked} highLightText=""/>
+
 			</div>
 
 			{/* content end */}

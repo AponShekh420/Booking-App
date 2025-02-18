@@ -5,6 +5,7 @@ import { FC } from 'react'
 import BtnLikeIcon from './BtnLikeIcon'
 import DownloadBtn from './DownloadBtn'
 import GallerySlider from './GallerySlider'
+import Link from 'next/link'
 
 
 export interface StayCard2Props {
@@ -48,7 +49,7 @@ const StayCard2: FC<StayCard2Props> = ({
 				/>
 				<BtnLikeIcon isLiked={like} className="absolute start-3 top-3" />
 				<DownloadBtn className="absolute end-3 top-3 z-[1]" />
-				<span className="absolute inset-0 rounded-xl bg-black bg-opacity-10 opacity-0 transition-opacity group-hover:opacity-100"></span>
+				<Link href={"/clinic"} className="absolute inset-0 rounded-xl bg-black bg-opacity-10 opacity-0 transition-opacity group-hover:opacity-100"></Link>
 			</div>
 		)
 	}
@@ -99,9 +100,9 @@ const StayCard2: FC<StayCard2Props> = ({
 						</div>
 					</div>
 
-					<button className="mt-[5px] text-[18.09px] font-bold capitalize text-custom-red transition-all duration-300 hover:text-black md:text-[15.09px] lg:text-[17.09px] xl:text-[18.09px]">
+					<Link href={"/clinic"} className="mt-[1rem] leading-8 text-[16px] md:text-[12px] lg:text-[16px] font-bold capitalize text-custom-red transition-all duration-300 hover:text-black">
 						see more
-					</button>
+					</Link>
 				</div>
 			)}
 		</div>
