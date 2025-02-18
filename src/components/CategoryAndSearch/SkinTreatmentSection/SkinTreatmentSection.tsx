@@ -92,7 +92,7 @@ const SkinTreatmentSection: FC<SectionGridHasMapProps> = () => {
 
 				{!showFullMapFixed && (
 					<div
-						className="fixed bottom-16 left-1/2 z-30 flex -translate-x-1/2 cursor-pointer items-center justify-center gap-x-3 rounded-full bg-neutral-900 px-6 py-2 text-sm text-white shadow-2xl md:bottom-8 xl:hidden"
+						className="z-50 fixed bottom-16 left-1/2 flex -translate-x-1/2 cursor-pointer items-center justify-center gap-x-3 rounded-full bg-neutral-900 px-6 py-2 text-sm text-white shadow-2xl md:bottom-8 md:hidden"
 						onClick={() => setShowFullMapFixed(true)}
 					>
 						<MapIcon className="h-5 w-5" />
