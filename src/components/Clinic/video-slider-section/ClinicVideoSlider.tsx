@@ -134,8 +134,11 @@ const ClinicVideoSlider = () => {
 						setIsChange(!isChange)
 					}}
 					onSlideChange={() => {
-						document.querySelectorAll(".clinicSlideVideo video").forEach((vid: any) => vid?.play());
-					 }}
+						document.querySelectorAll(".clinicSlideVideo video").forEach((vid: any) => {
+							vid.muted = true; // Mute before playing to prevent sound blip
+							vid.play();
+						});
+					}}
 				>
 					{clinicApi.map((item, index) => (
 						<SwiperSlide

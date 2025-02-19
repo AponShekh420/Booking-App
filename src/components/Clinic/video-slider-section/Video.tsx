@@ -15,16 +15,20 @@ const Video = ({video, isChange}: {video: string, isChange: boolean}) => {
   useEffect(()=> {
 		const videotag = videoRef.current
 
-    if(playPause) {
-      videotag?.play();
-      setPlayBtn(false);
-      clearTimeout(pauseEvent);
-    } else {
-			videotag?.pause();
-      setPlayBtn(true);
-      clearTimeout(pauseEvent);
-    };
-
+    if (videotag) { // Check if videoRef is not null
+      if (playPause) {
+        videotag.play();
+        videotag.muted = false;
+        setPlayBtn(false);
+        clearTimeout(pauseEvent);
+      } else {
+        videotag.pause();
+        videotag.muted = true;
+        setPlayBtn(true);
+        clearTimeout(pauseEvent);
+      }
+    }
+    
     // slider change
     if (videoRef.current) {
 			const videotag = videoRef.current
