@@ -64,7 +64,7 @@ const Video = ({video, isChange}: {video: string, isChange: boolean}) => {
       >
         <video 
           playsInline
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-cover pointer-events-none" 
           muted={false}
           ref={videoRef} 
           loop
@@ -77,7 +77,7 @@ const Video = ({video, isChange}: {video: string, isChange: boolean}) => {
       </div>
         
       {playBtn && (
-        <button className="absolute left-1/2 top-1/2 !z-[10] -translate-x-1/2 -translate-y-1/2 text-white transition-colors duration-300 hover:text-custom-red" onClick={()=> setPlayPause((pre)=> !pre)}>
+        <button className="absolute left-1/2 top-1/2 !z-[1000] -translate-x-1/2 -translate-y-1/2 text-white transition-colors duration-300 hover:text-custom-red" onClick={()=> setPlayPause((pre)=> !pre)}>
           <VideoIndicatorIcon className="w-16 sm:w-20 lg:w-28 h-auto"/>
         </button>
       )}
