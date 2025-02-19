@@ -63,10 +63,16 @@ const CategoriesSection = () => {
 						1024: {
 							slidesPerView: 4,
 							slidesPerGroup: 4,
+							grid: {
+								rows: 1
+							}
 						},
 						768: {
 							slidesPerView: 3,
 							slidesPerGroup: 3,
+							grid: {
+								rows: 1
+							}
 						},
 						240: {
 							slidesPerView: 2,
