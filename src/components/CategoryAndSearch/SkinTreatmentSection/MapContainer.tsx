@@ -31,7 +31,7 @@ const MapContainer: FC<MapContainerProps> = ({
 				defaultZoom={12}
 				defaultCenter={DEMO_DATA[0].map}
 				gestureHandling={'greedy'}
-				mapId={'AIzaSyDsNB2_vc03vM08DpfXy8_w1x66jyJ6YmM'}
+				mapId={'AIzaSyDoD_EENg9vuu47TDQtu1xSBxxSegUxGvM'}
 			>
 				<MapControl position={ControlPosition.TOP_CENTER}>
 					<div className="z-10 mt-5 min-w-max rounded-2xl bg-neutral-100 px-4 py-2 shadow-xl dark:bg-neutral-900">
