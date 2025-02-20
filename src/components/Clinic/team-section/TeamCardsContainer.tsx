@@ -41,7 +41,7 @@ const teamApi = [
 export default function TeamCardsContainer() {
 	return (
 		<div className="mt-[20px]">
-			<div className="mt-6 grid grid-cols-3 gap-[37px]">
+			<div className="mt-6 grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-2 gap-y-6 sm:gap-x-4">
 				{teamApi.map((item) => (
 					<TeamCard key={item.id} team={item} />
 				))}
