@@ -19,14 +19,14 @@ const Item: FC<ServiceItemProps> = ({ title, price, time }) => {
 			<div className="mt-3 rounded-[10px] border border-[#9B9B9B] p-4 md:mt-[32px]">
 				<div className="flex items-center justify-between">
 					<div>
-						<p className="font-semibold leading-7 text-[16px] md:text-[12px] lg:text-[16px]">
+						<p className="font-semibold leading-7 md:leading-6 lg:leading-7 text-[16px] md:text-[12px] lg:text-[16px]">
 							{title}
 							<br />
 							<span className="font-bold">£{price}</span> -{' '}
 							<span className="font-body font-[400]">{time}</span>
 						</p>
 						<p
-							className="mt-1 flex cursor-pointer items-center gap-x-3 font-bold transition-all duration-300 hover:text-custom-red text-[16px] md:text-[12px] lg:text-[16px]"
+							className="mt-1 lg:mt-1 md:mt-0 flex cursor-pointer items-center gap-x-3 font-bold transition-all duration-300 hover:text-custom-red text-[16px] md:text-[12px] lg:text-[16px]"
 							onClick={() => setToggle((pre) => !pre)}
 						>
 							Show details

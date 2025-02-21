@@ -800,4 +800,27 @@ export const ChatBarLogoIcon = ({className}: classNameT) => (
 <path d="M16.7314 148.94L18.5609 148.792L18.5609 147.729L16.7314 147.581L16.7314 145.564L27.4928 146.882L27.4928 149.64L16.7314 150.958L16.7314 148.94ZM20.5786 147.891L20.5786 148.631L25.354 148.268L20.5786 147.891ZM25.8786 152.234C25.8786 151.683 26.2687 151.226 26.7395 151.226C27.2372 151.226 27.6273 151.683 27.6273 152.234C27.6273 152.786 27.2372 153.243 26.7395 153.243C26.2687 153.243 25.8786 152.786 25.8786 152.234ZM25.475 151.226L25.475 153.243L16.7314 153.243L16.7314 151.226L25.475 151.226Z" fill="currentColor"/>
 </svg>
 
+);
+
+
+
+export const MobileMenuIcon = ({ className }: classNameT) => (
+	<svg width="40" height="28" viewBox="0 0 40 28" fill="none" className={className} xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_69_1216)">
+<path d="M12 8.26451C11.04 8.26451 10.4 9.01253 10.4 10.1345C10.4 11.2566 11.04 12.0046 12 12.0046H28C28.96 12.0046 29.6 11.2566 29.6 10.1345C29.6 9.01253 28.96 8.26451 28 8.26451H12ZM5.6 4.52444H34.4C35.36 4.52444 36 3.77642 36 2.6544C36 1.53238 35.36 0.784363 34.4 0.784363H5.6C4.64 0.784363 4 1.53238 4 2.6544C4 3.77642 4.64 4.52444 5.6 4.52444ZM34.4 15.7447H5.6C4.64 15.7447 4 16.4927 4 17.6147C4 18.7367 4.64 19.4847 5.6 19.4847H34.4C35.36 19.4847 36 18.7367 36 17.6147C36 16.4927 35.36 15.7447 34.4 15.7447Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_69_1216" x="0" y="0.784363" width="40" height="26.7004" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_69_1216"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_69_1216" result="shape"/>
+</filter>
+</defs>
+</svg>
+
 )

@@ -2,7 +2,7 @@ import Image from "next/image";
 import img from "@/images/search-dropdown/search-dropdown.png"
 const StaySearchDropdown = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 md:gap-3 gap-5 justify-between w-full overflow-y-auto h-[217px]">
+    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-3 gap-5 justify-between w-full overflow-y-auto h-[217px]">
       <div>
         <p className="font-[700] text-[17.12px] leading-[33.63px]">Top Treatments</p>
         <ul className="font-[400] text-[17.12px] capitalize">
@@ -23,7 +23,7 @@ const StaySearchDropdown = () => {
           <li className="leading-[26px] cursor-pointer hover:text-[#E9082A] text-black">Body Lift</li>
         </ul>
       </div>
-      <div>
+      <div className="col-span-2 md:col-span-1">
 
         {/* title */}
         <p className="font-[700] text-[17.12px] leading-[33.63px]">Clinics</p>

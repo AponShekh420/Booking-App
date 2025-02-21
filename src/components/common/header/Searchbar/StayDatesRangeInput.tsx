@@ -29,7 +29,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 		Array.from({ length: 6 }).map((_, index) => (
 			<button
 				key={index}
-				className="xl:w-[150px] 2xl:w-[200px] md:w-[48%] w-full h-[35px] flex items-center justify-center rounded-[44px] bg-[#F3F3F3] hover:bg-[#E9082A] text-[15px] leading-[33.63px] font-[700] text-black hover:text-white"
+				className="md:w-[150px] 2xl:w-[200px] sm:w-[48%] w-full h-[35px] flex items-center justify-center rounded-[44px] bg-[#F3F3F3] hover:bg-[#E9082A] text-[15px] leading-[33.63px] font-[700] text-black hover:text-white"
 			>
 				1{index + 1}: 00 AM
 			</button>
@@ -38,7 +38,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 
   return (
 		<div className='w-full p-6 md:p-0'>
-			<div className='w-full h-auto flex md:gap-x-[30px] lg:gap-x-[40px] justify-between flex-col xl:flex-row'>
+			<div className='w-full h-auto flex md:gap-x-[30px] lg:gap-x-[40px] justify-between flex-col md:flex-row'>
 				<div className="w-full">
 					<DatePicker
 						selected={startDate}
@@ -60,7 +60,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 				</div>
 				<div className="w-full md:w-auto">
 					<p className='text-[20.52px] font-bold leading-[33.63px] text-center mb-[2px] lg:mb-6 mt-5 xs:mt-8 md:mt-5 lg:mt-0'>Time</p>
-					<div className='datePickerScrollbar flex md:flex-row xl:pr-3 xl:flex-col flex-col gap-y-[8px] lg:gap-x-[0px] md:gap-x-[2%] gap-x-[8px] xl:flex-nowrap flex-wrap justify-center md:justify-between xl:justify-start xl:max-h-[200px] xl:overflow-x-auto'>
+					<div className='datePickerScrollbar flex flex-col md:pr-3 gap-y-[8px] lg:gap-x-[0px] md:gap-x-[2%] gap-x-[8px] md:flex-nowrap flex-wrap justify-center md:justify-start md:max-h-[200px] md:overflow-x-auto'>
 						{renderButtonList()}
 					</div>
 				</div>

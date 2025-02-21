@@ -34,7 +34,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 			<div
 				className={`relative z-10 flex flex-shrink-0 justify-center py-5 ${className} `}
 			>
-				<DatePicker
+				{/* <DatePicker
 					selected={startDate}
 					onChange={onChangeDate}
 					startDate={startDate}
@@ -44,6 +44,23 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 					showPopperArrow={false}
 					inline
 					renderCustomHeader={(p) => <DatePickerCustomHeaderTwoMonth {...p} />}
+					renderDayContents={(day, date) => (
+						<DatePickerCustomDay dayOfMonth={day} date={date} />
+					)}
+				/> */}
+				<DatePicker
+					selected={startDate}
+					onChange={onChangeDate}
+					// startDate={startDate}
+					// endDate={endDate}
+					selectsRange
+					monthsShown={1}
+					showPopperArrow={false}
+					inline
+					className='!w-full'
+					renderCustomHeader={(p) => (
+						<DatePickerCustomHeaderTwoMonth {...p} />
+					)}
 					renderDayContents={(day, date) => (
 						<DatePickerCustomDay dayOfMonth={day} date={date} />
 					)}
