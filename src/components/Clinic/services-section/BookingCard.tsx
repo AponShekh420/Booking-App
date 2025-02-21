@@ -40,7 +40,7 @@ const BookingCard = () => {
 			{/* booking btn */}
 			<Link
 				href={'/clinic/booking'}
-				className="hidden w-full items-center justify-center rounded-[94.05px] bg-custom-red font-semibold text-white transition-all duration-300 hover:bg-black md:mt-[30px] md:flex md:h-[40px] md:text-[20.22px] xl:mt-[36px] xl:h-[44px] xl:text-md"
+				className="w-full items-center justify-center rounded-[94.05px] bg-custom-red font-semibold text-white transition-all duration-300 hover:bg-black md:mt-[30px] flex sm:h-[40px] md:text-[20.22px] xl:mt-[36px] xl:h-[44px] xl:text-md mb-4 h-[35px]"
 			>
 				Book now
 			</Link>

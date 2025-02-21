@@ -5,6 +5,7 @@ import ClinicHeadingText from '../ClinicHeadingText'
 import BookingCard from './BookingCard'
 import Item from './Item'
 import ServicesTabFilter from './ServicesTabFilter'
+import MembershipList from '../MembershipList'
 const Services_DEMO = {
 	skin: [
 		{
@@ -223,9 +224,14 @@ const ServicesSection = () => {
 
 					{/* LAST BUTTON TO SEE MORE */}
 					<div className="flex justify-center">
-						<button className="mt-10 rounded-[80.12px] bg-black px-7 py-2 text-[18.03px] text-white transition-all duration-300 hover:bg-custom-red">
+						<button className="lg:mt-10 mt-6 rounded-[80.12px] bg-black px-7 py-2 text-[18.03px] text-white transition-all duration-300 hover:bg-custom-red">
 							See all
 						</button>
+					</div>
+
+
+					<div className='mt-9 sm:mt-12 block md:hidden'>
+						<MembershipList/>
 					</div>
 				</div>
 				{/* <div className="w-5/12">
@@ -240,31 +246,8 @@ const ServicesSection = () => {
 					<BookingCard />
 
 					{/* outline box below of the booking card */}
-					<div className="mt-3 hidden w-full items-center justify-between rounded-[10px] border border-[#9B9B9B] p-4 md:flex">
-						<div>
-							<p className="text-[24px] font-bold md:text-[18px] lg:text-xl">
-								Gift Vouchers
-							</p>
-							<p className="md:text-[14px] lg:text-[16px]">
-								Treat yourself or a friend
-							</p>
-						</div>
-						<button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
-							Book
-						</button>
-					</div>
-					<div className="mt-3 hidden w-full items-center justify-between rounded-[10px] border border-[#9B9B9B] p-4 md:flex">
-						<div>
-							<p className="text-[24px] font-bold md:text-[18px] lg:text-xl">
-								Memberships
-							</p>
-							<p className="md:text-[14px] lg:text-[16px]">
-								Treat yourself or a friend
-							</p>
-						</div>
-						<button className="rounded-[80.12px] px-4 py-1 text-[13.07px] md:px-5 md:py-1 md:text-[14px] lg:px-7 lg:py-2 lg:text-[18.03px] capitalize bg-black font-semibold text-white transition-all duration-300 hover:bg-custom-red">
-							Book
-						</button>
+					<div className='hidden md:block w-full'>
+						<MembershipList/>
 					</div>
 				</div>
 			</div>

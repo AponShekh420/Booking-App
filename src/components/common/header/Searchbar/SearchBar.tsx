@@ -9,9 +9,10 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { addSearchValue } from "@/redux-toolkit/common/headerSlice";
 import { useAppDispatch, useAppSelector } from "@/redux-toolkit/hooks";
+import { useRouter } from "next/navigation";
 
 const SearchBar = () => {
-
+  const router = useRouter();
   const [tab, setTab] = useState<string>("");
   const [tabMobile, setTabMobile] = useState<boolean>(false);
 
@@ -38,7 +39,7 @@ const SearchBar = () => {
       className="w-full xl:h-[60px] h-[40px] xs:h-[43px] sm:h-[40px] md:h-[47px] lg:h-[50px] rounded-[76px] bg-white py-2 border-[1px] border-black px-2 xl:px-5 lg:px-3"
       ref={containerRef}
     >
-      <div className="w-full h-full m-auto flex items-center relative">
+      <div className="w-full h-full m-auto flex items-center relative justify-center">
         <div className="xl:pr-[36px] sm:flex hidden pr-[9.16px] xs:pr-[11.16px] pl-2 xs:pl-0 lg:h-[37px] h-[20.62px] items-center border-r-[1px] border-[#D8D8D8]">
           <Image src={"/assets/icons/searchbar/aiicon.svg"} alt="AI" 
             width={100} 
@@ -47,7 +48,7 @@ const SearchBar = () => {
            />
         </div>
 
-        <div className="lg:min-h-[37px] lg:min-w-[37px] min-h-[20.62px] min-w-[20.62px]  items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B] sm:hidden flex">
+        <div onClick={()=> router.back()} className="lg:min-h-[37px] lg:min-w-[37px] min-h-[20.62px] min-w-[20.62px]  items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B] sm:hidden flex">
           <Image
             src={'/assets/icons/categories/Arrows/left-arrow.svg'}
             alt="right arrow"
@@ -136,7 +137,7 @@ const SearchBar = () => {
 
         {/* container of the dropdown content */}
         {tab && (
-          <div className="rounded-[10px] dark:bg-neutral-800 absolute w-full h-auto bg-white z-40 search-dropdown-custom-scrollbar top-11 sm:top-12 md:top-14 lg:top-20 p-[30px] shadow-md hidden md:flex">
+          <div className="rounded-[10px] !z-50 dark:bg-neutral-800 absolute w-full md:min-w-[700px] md:justify-center h-auto bg-white search-dropdown-custom-scrollbar top-11 sm:top-12 md:top-14 lg:top-20 p-[30px] shadow-md hidden md:flex">
             {tab == "clock" && (<StayDatesRangeInput/>)}
             {tab == "location" && (<StayLocation/>)}
             {tab == "searchDropdown" && (<StaySearchDropdown/>)}

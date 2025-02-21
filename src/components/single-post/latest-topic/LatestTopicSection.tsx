@@ -8,6 +8,7 @@ import TopicCard from './TopicCard'
 import Image from 'next/image'
 import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Link from 'next/link'
 
 const topics = [
 	{
@@ -37,12 +38,12 @@ const topics = [
 ]
 export default function LatestTopicSection() {
 	return (
-		<section className="mt-[79px]">
+		<section className="lg:mt-[79px] mt-10 xs:mt-12 sm:mt-14 md:mt-16">
 			<>
 				<h5 className="font-heading text-[34.72px] font-[700] uppercase leading-[52.08px] text-custom-red sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
 					LATEST TOPICS:
 				</h5>
-				<div className="w-full">
+				<div className="w-full mt-0">
 					<Swiper
 						modules={[Navigation]}
 						// onSwiper={setSwiperRef}
@@ -66,6 +67,7 @@ export default function LatestTopicSection() {
 								slidesPerGroup: 4,
 							},
 						}}
+						className='!mt-0 !mb-0'
 					>
 						{topics.map(({ id, title, image, desc }, index) => (
 							<div className={`nc-SectionSliderNewCategories`} key={index}>
@@ -89,7 +91,7 @@ export default function LatestTopicSection() {
 						))}
 
 						{/* add button and custom arrow for slide*/}
-						<div className="mt-[58.53px] flex w-full items-center justify-center gap-[14.7px]">
+						<div className="md:mt-[58.53px] xs:mt-10 mt-8 flex w-full items-center justify-center gap-[14.7px]">
 							<button className="custom-prev-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 								<Image
 									src={'/assets/icons/categories/Arrows/left-arrow.svg'}
@@ -98,9 +100,11 @@ export default function LatestTopicSection() {
 									height={13.71}
 								/>
 							</button>
-							<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white hover:bg-black hover:text-white">
-								View more
-							</button>
+							<Link href={"/blog"}>
+								<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white hover:bg-black hover:text-white">
+									View more
+								</button>
+							</Link>
 							<button className="custom-next-topic flex h-[40.42px] w-[40.42px] items-center justify-center rounded-full border-[0.92px] border-[#9B9B9B]">
 								<Image
 									src={'/assets/icons/categories/Arrows/right-arrow.svg'}

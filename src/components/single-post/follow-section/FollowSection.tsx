@@ -17,7 +17,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 const FollowSection = () => {
 	return (
 		<>
-			<div className="follow-section-home mb-[50px] mt-[103px] xs:mb-[70px] sm:mb-[120px]">
+			<div className="follow-section-home lg:mt-[79px] mt-10 xs:mt-12 sm:mt-14 md:mt-16">
 				<div className="flex items-center gap-x-[23px] md:gap-x-[33px] lg:gap-x-[43px]">
 					<h4 className="font-heading text-[34.72px] font-[700] uppercase leading-[52.08px] text-custom-red sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
 						Follow us
@@ -65,6 +65,7 @@ const FollowSection = () => {
 								slidesPerGroup: 4,
 							},
 						}}
+						className='!mt-1 xs:!mt-3'
 					>
 						{[followImgOne, followImgThree, followImgTwo, followImgfour].map(
 							(item, index) => (

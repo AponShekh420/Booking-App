@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 type TopicType = {
 	image: any
@@ -11,7 +12,7 @@ export default function TopicCard({ image, title, desc }: TopicType) {
 
 
 	return (
-		<div>
+		<Link href={"/post"}>
 			<div className='cursor-pointer relative' onMouseOver={()=> setEffect(true)} onMouseOut={()=> setEffect(false)}>
 				<Image src={image} alt="topic" className='w-full h-full'/>
 				<span className={`absolute inset-0 bg-black transition-opacity duration-300 rounded-[10px] ${effect ? "opacity-50": "opacity-0 bg-opacity-10"}`}></span>
@@ -23,6 +24,6 @@ export default function TopicCard({ image, title, desc }: TopicType) {
 					Learn more
 				</button>
 			</div>
-		</div>
+		</Link>
 	)
 }

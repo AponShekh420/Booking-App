@@ -3,7 +3,7 @@ import brandImg from "@/images/article-two/star.svg"
 
 const SubscribeSection = () => {
   return (
-    <div className="lg:min-h-[600px] xl:min-h-[691px] sm:min-h-[500px] min-h-[400px] bg-black rounded-lg bg-[url('/assets/subscribe-banner.svg')] bg-cover bg-center flex flex-col justify-between mt-[79px] overflow-hidden relative">
+    <div className="lg:min-h-[600px] xl:min-h-[691px] sm:min-h-[500px] min-h-[400px] bg-black rounded-lg bg-[url('/assets/subscribe-banner.svg')] bg-cover bg-center flex flex-col justify-between lg:mt-[79px] mt-10 xs:mt-12 sm:mt-14 md:mt-16 overflow-hidden relative">
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div className="flex items-center w-full flex-col justify-center md:translate-y-full translate-y-2/4">
         <h4 className="font-heading text-white uppercase xl:text-8xl md:text-6xl sm:text-5xl xs:text-4xl text-3xl">Action Creates <span className="text-custom-red">Confidence</span></h4>
