@@ -12,7 +12,7 @@ const StaySearchForm = () => {
 	//
 	const [fieldNameShow, setFieldNameShow] = useState<
 		'location' | 'dates' | 'Search'
-	>('location')
+	>('Search')
 	//
 	const [locationInputTo, setLocationInputTo] = useState('');
 	const [searchInputTo, setSearchInputTo] = useState('');
