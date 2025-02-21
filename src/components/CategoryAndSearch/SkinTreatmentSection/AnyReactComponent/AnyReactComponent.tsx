@@ -26,7 +26,7 @@ const AnyReactComponent: FC<AnyReactComponentProps> = ({
 			onMouseLeave={() => setIsOpen(false)}
 		>
 			<div
-				className={`relative z-[99] font-semibold text-sm shadow-lg transition-colors ${
+				className={`relative z-[99] font-semibold text-sm shadow-none transition-colors cursor-pointer ${
 					isSelected ? '' : ''
 				}`}
 			>
