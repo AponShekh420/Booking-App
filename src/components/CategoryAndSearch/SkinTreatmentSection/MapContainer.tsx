@@ -15,21 +15,28 @@ interface MapContainerProps {
 	listingType: 'car' | 'experiences' | 'stay'
 }
 
+const getRandomOffset = (min: number, max: number) => Math.random() * (max - min) + min;
+
 const MapContainer: FC<MapContainerProps> = ({
 	currentHoverID = -1,
 	DEMO_DATA,
 	listingType,
 }) => {
+	// Generate random locations within a small radius in London
+	const updatedData = DEMO_DATA.map((item) => ({
+		...item,
+		map: {
+			lat: 51.5074 + getRandomOffset(-0.05, 0.05), // Adjust for slight variation
+			lng: -0.1278 + getRandomOffset(-0.05, 0.05), // Adjust for slight variation
+		},
+	}));
+
 	return (
 		<>
-			{/* BELLOW IS MY GOOGLE API KEY -- PLEASE DELETE AND TYPE YOUR API KEY */}
 			<Map
-				style={{
-					width: '100%',
-					height: '100%',
-				}}
+				style={{ width: '100%', height: '100%' }}
 				defaultZoom={12}
-				defaultCenter={DEMO_DATA[0].map}
+				defaultCenter={{ lat: 51.5074, lng: -0.1278 }}
 				gestureHandling={'greedy'}
 				mapId={'AIzaSyDoD_EENg9vuu47TDQtu1xSBxxSegUxGvM'}
 			>
@@ -42,16 +49,11 @@ const MapContainer: FC<MapContainerProps> = ({
 						/>
 					</div>
 				</MapControl>
-				{DEMO_DATA.map((item) => (
-					<AdvancedMarker
-						key={item.id}
-						position={item.map}
-						clickable
-						onClick={() => console.log('clicked')}
-					>
+
+				{updatedData.map((item) => (
+					<AdvancedMarker key={item.id} position={item.map} clickable>
 						<AnyReactComponent
 							isSelected={currentHoverID === item.id}
-							key={item.id}
 							lat={item.map.lat}
 							lng={item.map.lng}
 							listing={item as StayDataType}
@@ -60,7 +62,8 @@ const MapContainer: FC<MapContainerProps> = ({
 				))}
 			</Map>
 		</>
-	)
-}
+	);
+};
 
-export default MapContainer
+export default MapContainer;
+

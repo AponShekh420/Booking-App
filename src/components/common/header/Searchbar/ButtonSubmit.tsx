@@ -20,7 +20,7 @@ const ButtonSubmit: FC<Props> = ({
 				e.preventDefault()
 				onClick()
 			}}
-			className={`flex flex-shrink-0 cursor-pointer items-center justify-center rounded-lg bg-primary-600 px-4 py-2.5 text-sm text-neutral-50 focus:outline-none ${className} relative z-20`}
+			className={`flex flex-shrink-0 cursor-pointer items-center justify-center rounded-lg text-white bg-custom-red hover:bg-black transition-all duration-300 px-4 py-2.5 text-sm focus:outline-none ${className} relative z-20`}
 		>
 			<Search01Icon className="h-5 w-5" />
 			<span className="ms-2">{T['HeroSearchForm']['search']}</span>

@@ -49,12 +49,12 @@ const topics = [
 ]
 export default function LatestTopicSection() {
 	return (
-		<section className="mb-[79px] mt-[79px]">
+		<section className="lg:mb-12 mb-7 lg:mt-[79px] mt-7 xs:mt-9 sm:mt-12 md:mt-14">
 			<Wrapper>
 				<h5 className="font-heading text-[34.72px] font-[700] uppercase leading-[52.08px] text-custom-red sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
 					LATEST TOPICS:
 				</h5>
-				<div className="w-full grid-cols-2 grid gap-x-2 lg:grid-cols-3 sm:gap-y-20 sm:gap-x-4 gap-y-14 xs:gap-x-3">
+				<div className="w-full grid-cols-2 grid gap-x-2 lg:grid-cols-3 sm:gap-y-12 sm:gap-x-4 gap-y-10 xs:gap-x-3 lg:gap-y-14">
 					
 						{topics.map(({ id, title, image, desc }, index) => (
 							<TopicCard
@@ -66,7 +66,7 @@ export default function LatestTopicSection() {
 						))}
 				</div>
 				{/* add button and custom arrow for slide*/}
-				<div className="mt-[58.53px] flex w-full items-center justify-center gap-[14.7px]">
+				<div className="lg:mt-[58.53px] mt-10 sm:mt-12 flex w-full items-center justify-center gap-[14.7px]">
 					<button className="h-[45.4px] w-[135.05px] rounded-[89.66px] bg-[#E9082A] text-[20.18px] font-[400] leading-[34.41px] text-white hover:bg-black hover:text-white">
 						View more
 					</button>

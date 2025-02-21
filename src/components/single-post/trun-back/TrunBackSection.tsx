@@ -6,11 +6,11 @@ import TreatmentsImageTwo from "@/images/article-two/treatments2.png"
 
 const TrunBackSection = () => {
   return (
-    <div className="w-full mt-10">
+    <div className="w-full md:mt-10 mt-7 sm:mt-8">
       {/* title */}
       <div>
         <div className="w-full flex justify-between items-center gap-x-4">
-          <h1 className="font-heading text-[34.72px] capitalize font-[700] leading-[40.08px] text-black sm:text-[42.72px] sm:leading-[62.08px] md:text-[50.72px] md:leading-[72.08px] lg:text-[58.72px] lg:leading-[82.08px] xl:text-[64.288px] xl:leading-[80.43px]">
+          <h1 className="font-heading text-[34.72px] capitalize font-[700] leading-[40.08px] text-black sm:text-[42.72px] sm:leading-[52.08px] md:text-[50.72px] md:leading-[60.08px] lg:text-[58.72px] lg:leading-[70.08px] xl:text-[64.288px] xl:leading-[80.43px]">
           Turn Back Time - <span className="text-custom-red">Facial Rejuvenation Treatments</span>
           </h1>
           <div className="flex gap-x-5 items-start">
@@ -19,7 +19,7 @@ const TrunBackSection = () => {
           </div>
         </div>
 
-        <h4 className="font-medium leading-8">
+        <h4 className="font-medium lg:leading-8 leading-6 mt-1 sm:mt-2 md:mt-1">
           30th January - Facial Treatments - 2 minute read
 				</h4>
       </div>
@@ -27,7 +27,7 @@ const TrunBackSection = () => {
 
 
       {/* article box container */}
-      <div className="w-full mt-14">
+      <div className="w-full mt-5 lg:mt-8">
         {/* box 1 */}
         <div className="flex md:justify-between lg:gap-x-12 md:gap-x-6 flex-col md:flex-row">
           <div className="md:w-6/12 w-full">
@@ -42,7 +42,7 @@ const TrunBackSection = () => {
 
 
         {/* box 2 */}
-        <div className="flex md:justify-between lg:gap-x-12 md:gap-x-6 flex-col md:flex-row mt-20">
+        <div className="flex md:justify-between lg:gap-x-12 md:gap-x-6 flex-col md:flex-row lg:mt-16 mt-12 xs:mt-14 sm:mt-16">
           <div className="md:w-6/12 w-full">
             <Image src={TreatmentsImageTwo} alt="Treatments" className="w-full h-auto" />
           </div>
