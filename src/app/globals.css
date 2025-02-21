@@ -311,3 +311,9 @@ h2 {
 .datePickerScrollbar::-webkit-scrollbar-thumb:horizontal:hover {
   background: transparent !important; /* Darker on hover */
 }
+
+
+
+.yNHHyP-marker-view:hover {
+	z-index: 99999 !important;
+}
