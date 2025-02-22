@@ -19,7 +19,7 @@ const AuthContainer = () => {
 		)
 	} else if (signup.active) {
 		return (
-			<div className="authPopup fixed z-50 flex min-h-screen w-screen items-center justify-center bg-black bg-opacity-35">
+			<div className="authPopup fixed z-50 flex min-h-screen w-screen items-start sm:items-center justify-center bg-black bg-opacity-35">
 				<SingupPopup />
 			</div>
 		)

@@ -60,7 +60,7 @@ const HeroSearchFormMobile:FC<HeroFromProps> = ({tabMobile, setTabMobile}) => {
 											</button>
 										</div>
 
-										<div className="flex flex-1 overflow-hidden px-1.5 pt-3 sm:px-4">
+										<div className="flex flex-1 max-h-full overflow-y-auto px-1.5 pt-3 sm:px-4">
 											<div className="animate-[myblur_0.4s_ease-in-out] transition-opacity w-full">
 												<StaySearchForm />
 											</div>
