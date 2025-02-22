@@ -17,7 +17,7 @@ const LocationInput: FC<Props> = ({
 	onChange = () => {},
 	className = '',
 	defaultValue = 'United States',
-	headingText = T['HeroSearchForm']['Where to?'],
+	headingText = 'Your Location',
 }) => {
 	const [value, setValue] = useState('')
 	const containerRef = useRef(null)
@@ -45,7 +45,7 @@ const LocationInput: FC<Props> = ({
 		return (
 			<>
 				<p className="block text-base font-semibold">
-					{heading || T['HeroSearchForm']['Destinations']}
+					Popular locations
 				</p>
 				<div className="mt-3">
 					{items.map((item) => {
@@ -74,7 +74,7 @@ const LocationInput: FC<Props> = ({
 				<div className="relative mt-5">
 					<input
 						className="block w-full truncate rounded-xl border border-neutral-800 bg-transparent px-4 py-3 pe-12 text-base font-medium leading-none placeholder-neutral-500 placeholder:truncate focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:placeholder-neutral-300 dark:focus:ring-primary-600 dark:focus:ring-opacity-25"
-						placeholder={T['HeroSearchForm']['Search destinations']}
+						placeholder={'Search locations'}
 						value={value}
 						onChange={(e) => setValue(e.currentTarget.value)}
 						ref={inputRef}
@@ -86,23 +86,23 @@ const LocationInput: FC<Props> = ({
 				<div className="mt-7">
 					{value
 						? renderSearchValues({
-								heading: T['HeroSearchForm']['Locations'],
+								heading: 'Popular locations',
 								items: [
-									'Afghanistan',
-									'Albania',
-									'Algeria',
-									'American Samao',
-									'Andorra',
+									'London',
+									'Richmond',
+									'Ealing',
+									'Twickenham',
+									'Hackney',
 								],
 							})
 						: renderSearchValues({
-								heading: T['HeroSearchForm']['Popular destinations'],
+								heading: 'Popular locations',
 								items: [
-									'Australia',
-									'Canada',
-									'Germany',
-									'United Kingdom',
-									'United Arab Emirates',
+									'London',
+									'Richmond',
+									'Ealing',
+									'Twickenham',
+									'Hackney',
 								],
 							})}
 				</div>

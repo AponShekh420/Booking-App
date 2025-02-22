@@ -9,7 +9,7 @@ import {
 	DisclosureButton,
 	DisclosurePanel,
 } from '@headlessui/react'
-import { NAVIGATION_DEMO } from '@/data/navigation'
+import { MobileNavigation } from '@/data/navigation'
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -20,7 +20,7 @@ export interface NavMobileProps {
 }
 
 const NavMobile: React.FC<NavMobileProps> = ({
-	data = NAVIGATION_DEMO,
+	data = MobileNavigation,
 	onClickClose,
 }) => {
 

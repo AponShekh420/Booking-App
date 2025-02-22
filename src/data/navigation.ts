@@ -173,6 +173,25 @@ const templatesChildrenMenus: NavItemType[] = [
 	},
 ]
 
+
+export const MobileNavigation: NavItemType[] = [
+	{
+		id: ncNanoId(),
+		href: '/',
+		name: 'Home',
+		type: 'megaMenu',
+		megaMenu: megaMenuDemo,
+	},
+	{
+		id: ncNanoId(),
+		href: '/blog',
+		name: 'Latest Topics',
+		type: 'megaMenu',
+		megaMenu: megaMenuDemo,
+	},
+]
+
+
 export const NAVIGATION_DEMO: NavItemType[] = [
 	{
 		id: ncNanoId(),

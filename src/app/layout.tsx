@@ -35,7 +35,7 @@ export default function RootLayout({
 					<div>
 						{/* <SiteHeader /> */}
 						{children}
-						<FooterNav />
+						{/* <FooterNav /> */}
 
 						{/* Chose footer style here!!!! */}
 						{/* <Footer /> */}

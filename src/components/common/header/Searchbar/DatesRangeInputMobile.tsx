@@ -28,7 +28,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 		<div>
 			<div className="p-5">
 				<span className="block text-xl font-semibold sm:text-2xl">
-					{T['HeroSearchForm']["When's your trip?"]}
+					{"Your date?"}
 				</span>
 			</div>
 			<div
@@ -57,7 +57,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
 					monthsShown={1}
 					showPopperArrow={false}
 					inline
-					className='!w-full'
+					className='w-full'
 					renderCustomHeader={(p) => (
 						<DatePickerCustomHeaderTwoMonth {...p} />
 					)}

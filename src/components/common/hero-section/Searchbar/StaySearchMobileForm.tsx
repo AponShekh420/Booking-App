@@ -101,7 +101,7 @@ const StaySearchForm = () => {
 						onClick={() => setFieldNameShow('dates')}
 					>
 						<span className="text-neutral-400">
-							{T['HeroSearchForm']['When']}
+							{"Date"}
 						</span>
 						<span>
 							{startDate
@@ -150,7 +150,7 @@ const StaySearchForm = () => {
 
 	return (
 		<div>
-			<div className="w-full space-y-3">
+			<div className="w-full space-y-3 max-h-full">
 				{/*  */}
 				{renderInputGuests()}
 				{/*  */}
