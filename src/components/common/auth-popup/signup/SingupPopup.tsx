@@ -26,7 +26,7 @@ const SingupPopup = () => {
 	// };
 
 	return (
-		<div className="flex min-h-screen max-h-screen w-full flex-col items-center bg-white px-8 py-4 shadow-lg sm:!min-h-fit sm:w-[605.65px] sm:rounded-[33.83px] sm:p-8">
+		<div className="flex min-h-screen max-h-screen w-full flex-col items-center bg-white px-8 py-4 shadow-lg sm:!min-h-fit sm:w-[605.65px] sm:rounded-[33.83px] sm:p-8 ">
 			{/* common content like title, subtitle and cross btn etc */}
 			<div className="mb-5 flex w-full items-center justify-between">
 				<button onClick={() => dispatch(signinActive())}>
